@@ -1,0 +1,7 @@
+from enum import StrEnum
+
+
+class Timing(StrEnum):
+    AUTOMATIC = 'AUTOMATIC'
+    MANUAL3 = 'MANUAL3'
+    MANUAL1 = 'MANUAL1'
