@@ -25,7 +25,7 @@ class Meet(XmlRoot):
     agedate: AgeDate = XmlElement(name="AGEDATE")
     altitude: int = XmlAttribute(name="altitude")
     city: str = XmlAttribute(name="city", required=True)
-    cityEn: str = XmlAttribute(name="city.en")
+    city_en: str = XmlAttribute(name="city.en")
     clubs: List[Club] = XmlElementWrapper("CLUBS", 'CLUB')
     contact: Contact = XmlElement(name="CONTACT")
     course: Course = XmlAttribute(name="course")

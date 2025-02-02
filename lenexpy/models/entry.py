@@ -9,6 +9,8 @@ from .course import Course
 
 
 class Status(StrEnum):
+    DNS = "DNS"
+    DSQ = "DSQ"
     EXH = "EXH"
     RJC = "RJC"
     SICK = "SICK"

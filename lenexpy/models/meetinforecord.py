@@ -15,12 +15,12 @@ class Role(StrEnum):
 
 class MeetInfoRecord(XmlRoot):
     approved: str = XmlAttribute(name="approved")
-    city: str = XmlAttribute(name="city", required=True)
+    city: str = XmlAttribute(name="city")
     course: Course = XmlAttribute(name="course")
-    date: datetime = XmlAttribute(name="date", required=True)
+    date: datetime = XmlAttribute(name="date")
     daytime: dtime = XmlAttribute(name="daytime")
     name: str = XmlAttribute(name="name")
-    nation: str = XmlAttribute(name="nation", required=True)
+    nation: str = XmlAttribute(name="nation")
     pool: Pool = XmlElement(name="POOL")
     qualificationtime: SwimTime = XmlAttribute(name="qualificationtime")
     state: str = XmlAttribute(name="state")
