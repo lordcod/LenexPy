@@ -2,13 +2,10 @@ from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.result import Result
+from .result import Result
 
 from .entry import Entry
-from .contact import Contact
 from .gender import Gender
-from .athelete import Athlete
-from .meetinfoentry import MeetInfoEntry
 
 
 class RelayMeet(XmlRoot):

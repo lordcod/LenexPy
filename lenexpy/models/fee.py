@@ -13,6 +13,6 @@ class TypeFee(StrEnum):
 
 
 class Fee(XmlRoot):
-    currency: Currency = XmlAttribute(name="currency")
-    type: TypeFee = XmlAttribute(name="type", required=True)
-    value: int = XmlAttribute(name="value", required=True)
+    currency: Currency = XmlAttribute(name="currency", required=True)
+    type: TypeFee = XmlAttribute(name="type")
+    value: int = XmlAttribute("value", required=True)

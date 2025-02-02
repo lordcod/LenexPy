@@ -2,9 +2,9 @@ from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.meetinfoentry import MeetInfoEntry
-from lenexpy.models.replayposition import RelayPosition
-from lenexpy.models.swimtime import SwimTime
+from .meetinfoentry import MeetInfoEntry
+from .relayposition import RelayPosition
+from .swimtime import SwimTime
 from .course import Course
 
 

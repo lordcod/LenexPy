@@ -1,7 +1,7 @@
 from enum import StrEnum
 from xmlbind import XmlRoot, XmlAttribute, XmlElement
 
-from lenexpy.models.nation import Nation
+from .nation import Nation
 from .contact import Contact
 from .gender import Gender
 

@@ -1,13 +1,11 @@
 from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
-from .contact import Contact
 from .gender import Gender
-from .athelete import Athlete
-from .meetinfoentry import MeetInfoEntry
 from .agegroup import AgeGroup
 from .course import Course
 from .record import Record
+from datetime import datetime, time as dtime
 
 
 class RecordList(XmlRoot):
@@ -20,5 +18,5 @@ class RecordList(XmlRoot):
     order: int = XmlAttribute(name="order")
     records: List[Record] = XmlElementWrapper("RECORDS",  "RECORD", required=True)
     region: str = XmlAttribute(name="region")
-    updated: LocalDate = XmlAttribute(name="updated")
+    updated: datetime = XmlAttribute(name="updated")
     type: str = XmlAttribute(name="type")

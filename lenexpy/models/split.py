@@ -1,6 +1,6 @@
 from xmlbind import XmlRoot, XmlAttribute
 
-from lenexpy.models.swimtime import SwimTime
+from .swimtime import SwimTime
 
 
 class Split(XmlRoot):

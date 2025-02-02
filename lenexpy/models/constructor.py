@@ -4,7 +4,7 @@ from .contact import Contact
 
 
 class Constructor(XmlRoot):
-    contact: Contact = XmlElement(required=True)
+    contact: Contact = XmlElement(required=False)
     name: str = XmlAttribute(required=True)
     registration: str = XmlAttribute()
     version: str = XmlAttribute(required=True)

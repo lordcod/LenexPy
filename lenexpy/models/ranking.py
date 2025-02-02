@@ -1,7 +1,5 @@
 from enum import StrEnum
 from xmlbind import XmlRoot, XmlAttribute, XmlElement
-from .contact import Contact
-from .gender import Gender
 
 
 class Ranking(XmlRoot):

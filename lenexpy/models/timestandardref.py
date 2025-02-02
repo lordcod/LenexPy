@@ -1,6 +1,6 @@
 from xmlbind import XmlRoot, XmlAttribute, XmlElement
 
-from lenexpy.models.fee import Fee
+from .fee import Fee
 
 
 class TimeStandardRef(XmlRoot):

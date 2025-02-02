@@ -4,7 +4,7 @@ from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 class Contact(XmlRoot):
     city: str = XmlAttribute(name="city")
     country: str = XmlAttribute(name="country")
-    email: str = XmlAttribute(name="email", required=True)
+    email: str = XmlAttribute(name="email")
     fax: str = XmlAttribute(name="fax")
     internet: str = XmlAttribute(name="internet")
     name: str = XmlAttribute(name="name")

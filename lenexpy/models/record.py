@@ -1,11 +1,11 @@
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.meetinforecord import MeetInfoRecord
-from lenexpy.models.relayrecord import RelayRecord
-from lenexpy.models.split import Split
-from lenexpy.models.swimstyle import SwimStyle
-from lenexpy.models.swimtime import SwimTime
+from .meetinforecord import MeetInfoRecord
+from .relayrecord import RelayRecord
+from .split import Split
+from .swimstyle import SwimStyle
+from .swimtime import SwimTime
 from .athelete import Athlete
 
 

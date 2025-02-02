@@ -2,10 +2,10 @@ from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.agegroup import AgeGroup
-from lenexpy.models.course import Course
-from lenexpy.models.gender import Gender
-from lenexpy.models.timestandard import TimeStandard
+from .agegroup import AgeGroup
+from .course import Course
+from .gender import Gender
+from .timestandard import TimeStandard
 
 
 class TypeTimeStandardList(StrEnum):

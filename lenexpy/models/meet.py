@@ -1,14 +1,15 @@
+from datetime import datetime, time as dtime
 from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.agedate import AgeDate
-from lenexpy.models.nation import Nation
-from lenexpy.models.pointtable import PointTable
-from lenexpy.models.pool import Pool
-from lenexpy.models.qualify import Qualify
-from lenexpy.models.session import Session
-from lenexpy.models.timing import Timing
+from .agedate import AgeDate
+from .nation import Nation
+from .pointtable import PointTable
+from .pool import Pool
+from .qualify import Qualify
+from .session import Session
+from .timing import Timing
 from .course import Course
 from .contact import Contact
 from .club import Club
@@ -25,12 +26,12 @@ class Meet(XmlRoot):
     altitude: int = XmlAttribute(name="altitude")
     city: str = XmlAttribute(name="city", required=True)
     cityEn: str = XmlAttribute(name="city.en")
-    clubs: List[Club] = XmlElement(name="CLUB")
+    clubs: List[Club] = XmlElementWrapper("CLUBS", 'CLUB')
     contact: Contact = XmlElement(name="CONTACT")
     course: Course = XmlAttribute(name="course")
-    deadline: LocalDate = XmlAttribute(name="deadline")
-    deadline_time: LocalTime = XmlAttribute(name="deadlinetime")
-    entry_start_date: LocalDate = XmlAttribute(name="entrystartdate")
+    deadline: datetime = XmlAttribute(name="deadline")
+    deadline_time: dtime = XmlAttribute(name="deadlinetime")
+    entry_start_date: datetime = XmlAttribute(name="entrystartdate")
     entry_type: EntryType = XmlAttribute(name="entrytype")
     fees: List[Fee] = XmlElement(name="FEE")
     host_club: str = XmlAttribute(name="hostclub")

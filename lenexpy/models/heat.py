@@ -1,5 +1,6 @@
 from enum import StrEnum
 from xmlbind import XmlRoot, XmlAttribute
+from datetime import time as dtime
 
 
 class Final(StrEnum):
@@ -17,7 +18,7 @@ class StatusHeat(StrEnum):
 
 class Heat(XmlRoot):
     agegroupid: int = XmlAttribute(name="agegroupid")
-    daytime: LocalTime = XmlAttribute(name="daytime")
+    daytime: dtime = XmlAttribute(name="daytime")
     finalType: Final = XmlAttribute(name="final")
     heatid: int = XmlAttribute(name="heatid", required=True)
     number: int = XmlAttribute(name="number", required=True)

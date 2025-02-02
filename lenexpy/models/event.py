@@ -2,13 +2,14 @@ from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.agedate import TimeStandardRef
-from lenexpy.models.fee import Fee
-from lenexpy.models.gender import Gender
-from lenexpy.models.heat import Heat
-from lenexpy.models.swimstyle import SwimStyle
-from lenexpy.models.timing import Timing
+from .fee import Fee
+from .gender import Gender
+from .heat import Heat
+from .swimstyle import SwimStyle
+from .timestandardref import TimeStandardRef
+from .timing import Timing
 from .agegroup import AgeGroup
+from datetime import time as dtime
 
 
 class Round(StrEnum):
@@ -29,8 +30,8 @@ class TypeEvent(StrEnum):
 
 
 class Event(XmlRoot):
-    agegroups: List[AgeGroup] = XmlElementWrapper(name="AGEGROUPS")
-    daytime: LocalTime = XmlAttribute(name="daytime")
+    agegroups: List[AgeGroup] = XmlElementWrapper("AGEGROUPS", "AGEGROUP")
+    daytime: dtime = XmlAttribute(name="daytime")
     eventid: int = XmlAttribute(name="eventid", required=True)
     fee: Fee = XmlElement(name="FEE")
     gender: Gender = XmlAttribute(name="gender")

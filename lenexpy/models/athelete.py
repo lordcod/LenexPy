@@ -1,19 +1,16 @@
-from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
-
-from lenexpy.models.club import Club
-from lenexpy.models.entry import Entry
-from lenexpy.models.gender import Gender
-from lenexpy.models.handicap import Handicap
-from lenexpy.models.nation import Nation
-from lenexpy.models.result import Result
+from datetime import time as dtime
+from .entry import Entry
+from .gender import Gender
+from .handicap import Handicap
+from .nation import Nation
+from .result import Result
 
 
 class Athlete(XmlRoot):
     athleteid: int = XmlAttribute(name="athleteid", required=True)
-    birthdate: LocalDate = XmlAttribute(name="birthdate", required=True)
-    club: Club = XmlElement(name="CLUB")
+    birthdate: dtime = XmlAttribute(name="birthdate", required=True)
     entries: List[Entry] = XmlElement(name="ENTRY")
     firstname: str = XmlAttribute(name="firstname", required=True)
     firstnameEn: str = XmlAttribute(name="firstname.en")

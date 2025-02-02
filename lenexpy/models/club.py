@@ -1,10 +1,9 @@
-from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.nation import Nation
-from lenexpy.models.official import Official
-from lenexpy.models.relaymeet import RelayMeet
+from .nation import Nation
+from .official import Official
+from .relaymeet import RelayMeet
 from .athelete import Athlete
 from .contact import Contact
 

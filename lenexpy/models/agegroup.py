@@ -1,8 +1,8 @@
 from enum import StrEnum
 from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from xmlbind import XmlRoot, XmlAttribute, XmlElementWrapper
 
-from lenexpy.models.ranking import Ranking
+from .ranking import Ranking
 from .gender import Gender
 
 

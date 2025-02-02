@@ -1,16 +1,17 @@
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
-from lenexpy.models.pool import Pool
-from lenexpy.models.swimtime import SwimTime
+from .pool import Pool
+from .swimtime import SwimTime
 from .course import Course
+from datetime import datetime, time as dtime
 
 
 class MeetInfoEntry(XmlRoot):
     approved: str = XmlAttribute(name="approved")
     city: str = XmlAttribute(name="city", required=True)
     course: Course = XmlAttribute(name="course")
-    date: LocalDate = XmlAttribute(name="date", required=True)
-    daytime: LocalTime = XmlAttribute(name="daytime")
+    date: datetime = XmlAttribute(name="date", required=True)
+    daytime: dtime = XmlAttribute(name="daytime")
     name: str = XmlAttribute(name="name")
     nation: str = XmlAttribute(name="nation", required=True)
     pool: Pool = XmlElement(name="POOL")
