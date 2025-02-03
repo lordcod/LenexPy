@@ -4,9 +4,9 @@ from setuptools import setup, find_packages
 setup(
     name='lenexpy',
     description='LenexPY handler for MEET Entry Editor',
-    version='0.0.1',
+    version='0.0.2',
     install_requires=[
-        'xmlbind @ file:///C:/Users/2008d/working-space/XmlDecarator'
+        'xmlbind==0.0.3'
     ],
     packages=find_packages(),
     # package_dir={'spherical_functions': '.'},
