@@ -1,6 +1,6 @@
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
-from datetime import time as dtime
+from datetime import date
 from .entry import Entry
 from .gender import Gender
 from .handicap import Handicap
@@ -10,7 +10,7 @@ from .result import Result
 
 class Athlete(XmlRoot):
     athleteid: int = XmlAttribute(name="athleteid", required=True)
-    birthdate: dtime = XmlAttribute(name="birthdate", required=True)
+    birthdate: date = XmlAttribute(name="birthdate", required=True)
     entries: List[Entry] = XmlElementWrapper("ENTRIES", "ENTRY")
     firstname: str = XmlAttribute(name="firstname", required=True)
     firstname_en: str = XmlAttribute(name="firstname.en")

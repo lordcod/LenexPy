@@ -1,2 +1,2 @@
 from . import adapters
-from .decoder import decode as fromfile
+from .decoder import load as fromfile, save as tofile

@@ -1,3 +1,4 @@
+from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
@@ -8,7 +9,7 @@ from .athelete import Athlete
 from .contact import Contact
 
 
-class TypeClub:
+class TypeClub(StrEnum):
     CLUB = "CLUB",
     NATIONALTEAM = "NATIONALTEAM",
     REGIONALTEAM = "REGIONALTEAM",

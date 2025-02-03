@@ -4,9 +4,9 @@ from xmlbind import XmlRoot, XmlAttribute, XmlElement
 
 class TypePool(StrEnum):
     INDOOR = "INDOOR"
-    OUTDOOR = " OUTDOOR"
-    LAKE = " LAKE"
-    OCEAN = " OCEAN"
+    OUTDOOR = "OUTDOOR"
+    LAKE = "LAKE"
+    OCEAN = "OCEAN"
 
 
 class Pool(XmlRoot):

@@ -1,4 +1,4 @@
-from datetime import datetime, time as dtime
+from datetime import datetime, time as dtime, date
 from enum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
@@ -29,9 +29,9 @@ class Meet(XmlRoot):
     clubs: List[Club] = XmlElementWrapper("CLUBS", 'CLUB')
     contact: Contact = XmlElement(name="CONTACT")
     course: Course = XmlAttribute(name="course")
-    deadline: datetime = XmlAttribute(name="deadline")
+    deadline: date = XmlAttribute(name="deadline")
     deadline_time: dtime = XmlAttribute(name="deadlinetime")
-    entry_start_date: datetime = XmlAttribute(name="entrystartdate")
+    entry_start_date: date = XmlAttribute(name="entrystartdate")
     entry_type: EntryType = XmlAttribute(name="entrytype")
     fees: List[Fee] = XmlElement(name="FEE")
     host_club: str = XmlAttribute(name="hostclub")

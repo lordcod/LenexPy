@@ -1,19 +1,10 @@
-import lxml.etree as ET
-from lenexpy import fromfile
+from lenexpy import fromfile, tofile
+from validator import validate_type
 
-filename = r"C:\Users\2008d\OneDrive\Документы\Соревнования\31.01.2025 Наро-Фоминск\Заявка\entries.lxf"
+filename = "test.lxf"
 lenex = fromfile(filename)
+validate_type(lenex)
 
-for c in lenex.meet.clubs:
-    for a in c.athletes:
-        print(a.birthdate, type(a.birthdate))
+lenex.constructor.name = 'Name'
 
-
-el = lenex.dump('LENEX')
-text = ET.tostring(
-    el,
-    encoding='utf-8',
-    xml_declaration=True,
-    method='xml'
-)
-open('test2.xml', 'wb').write(text)
+tofile(lenex, 'test2.lef')

@@ -1,6 +1,6 @@
 from enum import StrEnum
 from xmlbind import XmlRoot, XmlAttribute, XmlElement
-from datetime import datetime, time as dtime
+from datetime import datetime, time as dtime, date
 
 
 class TypeAgeDate(StrEnum):
@@ -13,4 +13,4 @@ class TypeAgeDate(StrEnum):
 
 class AgeDate(XmlRoot):
     type: TypeAgeDate = XmlAttribute(name="type", required=True)
-    value: dtime = XmlAttribute(name="value", required=True)
+    value: date = XmlAttribute(name="value", required=True)
