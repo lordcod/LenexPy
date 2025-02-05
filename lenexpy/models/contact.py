@@ -1,4 +1,4 @@
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from xmlbind import XmlRoot, XmlAttribute
 
 
 class Contact(XmlRoot):

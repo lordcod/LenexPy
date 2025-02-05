@@ -12,7 +12,7 @@ class Calculate(StrEnum):
 
 
 class AgeGroup(XmlRoot):
-    id: int = XmlAttribute(name="agegroupid", required=True)
+    id: int = XmlAttribute(name="agegroupid")
     agemax: int = XmlAttribute(required=True)
     agemin: int = XmlAttribute(required=True)
     gender: Gender = XmlAttribute()
