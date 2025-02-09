@@ -5,9 +5,9 @@ from datetime import datetime, time as dtime
 
 class Conversion(StrEnum):
     NONE = "NONE"
-    FINA_POINTS = " FINA_POINTS"
-    PERCENT_LINEAR = " PERCENT_LINEAR"
-    NON_CONFORMING_LAST = " NON_CONFORMING_LAST"
+    FINA_POINTS = "FINA_POINTS"
+    PERCENT_LINEAR = "PERCENT_LINEAR"
+    NON_CONFORMING_LAST = "NON_CONFORMING_LAST"
 
 
 class Qualify(XmlRoot):

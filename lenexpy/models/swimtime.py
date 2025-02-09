@@ -1,6 +1,6 @@
 from datetime import time
 from enum import StrEnum
-from typing import Union
+from typing import TYPE_CHECKING, Union
 
 
 class SwimTimeAttr(StrEnum):
@@ -9,6 +9,9 @@ class SwimTimeAttr(StrEnum):
 
 
 class SwimTime:
+    if TYPE_CHECKING:
+        NT: 'SwimTime'
+
     def __init__(self, hour: int, minute: int, second: int, hsec: int):
         self.attrib = None
         self.hour = hour
@@ -17,7 +20,7 @@ class SwimTime:
         self.hsec = hsec
 
     @classmethod
-    def from_attrib(cls, attrib: SwimTimeAttr):
+    def from_attrib(cls, attrib: SwimTimeAttr) -> 'SwimTime':
         self = cls(0, 0, 0, 0)
         self.attrib = attrib
         return self
@@ -25,6 +28,7 @@ class SwimTime:
     @classmethod
     def _parse(cls, t: Union[time, str]):
         if isinstance(t, str):
+            t = t.strip()
             if t == SwimTimeAttr.NT:
                 return cls.from_attrib(t)
             t = time.fromisoformat(t)
@@ -37,3 +41,6 @@ class SwimTime:
 
     def as_duration(self):
         return self.hour*60*60 + self.minute*60 + self.second + self.hsec / 100
+
+
+SwimTime.NT = SwimTime.from_attrib(SwimTimeAttr.NT)

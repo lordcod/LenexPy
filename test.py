@@ -2,6 +2,8 @@ from datetime import date
 from lenexpy import fromfile, tofile
 from lenexpy.models.athelete import Athlete
 from lenexpy.models.club import Club
+from lenexpy.models.entry import Entry
+from lenexpy.models.swimtime import SwimTime
 from validator import validate_type
 
 filename = "testlb.lef"
@@ -33,6 +35,9 @@ athl = Athlete(
     gender='M',
     firstname='Аникин',
     lastname='Даниил'
+)
+entry = Entry(
+    SwimTime.NT
 )
 lenex2.meet.clubs.append(vostok)
 vostok.athletes.append(athl)

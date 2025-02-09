@@ -1,5 +1,6 @@
+from datetime import time
 from enum import StrEnum
-from typing import List
+from typing import List, Optional, Union
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
 from .meetinfoentry import MeetInfoEntry
@@ -18,6 +19,20 @@ class Status(StrEnum):
 
 
 class Entry(XmlRoot):
+    def __init__(
+        self,
+        eventid: int,
+        entrytime: Optional[Union[str, time, SwimTime]] = None,
+        **kwargs
+    ):
+        kwargs['eventid'] = eventid
+
+        if isinstance(entrytime, (str, time)):
+            entrytime = SwimTime._parse(entrytime)
+        kwargs['entrytime'] = entrytime
+
+        super().__init__(**kwargs)
+
     agegroupid: int = XmlAttribute(name="agegroupid")
     entrycourse: Course = XmlAttribute(name="entrycourse")
     entrytime: SwimTime = XmlAttribute(name="entrytime")
@@ -25,5 +40,6 @@ class Entry(XmlRoot):
     heatid: int = XmlAttribute(name="heatid")
     lane: int = XmlAttribute(name="lane")
     meetinfo: MeetInfoEntry = XmlElement(name="MEETINFO")
-    relayPositions: List[RelayPosition] = XmlElementWrapper(name="RELAYPOSITIONS")
+    relay_positions: List[RelayPosition] = XmlElementWrapper(
+        name="RELAYPOSITIONS")
     status: Status = XmlAttribute(name="status")
