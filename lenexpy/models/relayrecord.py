@@ -1,4 +1,4 @@
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
@@ -14,4 +14,5 @@ class StatusRelayPosition(StrEnum):
 class RelayRecord(XmlRoot):
     club: Club = XmlElement(name="CLUB")
     name: str = XmlAttribute(name="name")
-    relayPositions: List[RelayPosition] = XmlElementWrapper("RELAYPOSITIONS", "RELAYPOSITION")
+    relayPositions: List[RelayPosition] = XmlElementWrapper(
+        "RELAYPOSITIONS", "RELAYPOSITION")

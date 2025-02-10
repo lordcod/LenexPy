@@ -1,4 +1,4 @@
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
@@ -43,6 +43,7 @@ class Event(XmlRoot):
     round: Round = XmlAttribute(name="round")
     run: int = XmlAttribute(name="run")
     swimstyle: SwimStyle = XmlElement(name="SWIMSTYLE", required=True)
-    timeStandardRefs: List[TimeStandardRef] = XmlElementWrapper("TIMESTANDARDREFS", "TIMESTANDARDREF")
+    timeStandardRefs: List[TimeStandardRef] = XmlElementWrapper(
+        "TIMESTANDARDREFS", "TIMESTANDARDREF")
     timing: Timing = XmlAttribute(name="timing")
     type: TypeEvent = XmlAttribute(name="type")

@@ -1,4 +1,4 @@
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
@@ -21,5 +21,6 @@ class TimeStandardList(XmlRoot):
     gender: Gender = XmlAttribute(name="gender", required=True)
     handicap: int = XmlAttribute(name="handicap")
     name: str = XmlAttribute(name="name", required=True)
-    timeStandards: List[TimeStandard] = XmlElementWrapper("TIMESTANDARDS", "TIMESTANDARD", required=True)
+    timeStandards: List[TimeStandard] = XmlElementWrapper(
+        "TIMESTANDARDS", "TIMESTANDARD", required=True)
     type: TypeTimeStandardList = XmlAttribute(name="type")

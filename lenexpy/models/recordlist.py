@@ -1,4 +1,4 @@
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 from .gender import Gender
@@ -16,7 +16,8 @@ class RecordList(XmlRoot):
     name: str = XmlAttribute(name="name", required=True)
     nation: str = XmlAttribute(name="nation")
     order: int = XmlAttribute(name="order")
-    records: List[Record] = XmlElementWrapper("RECORDS",  "RECORD", required=True)
+    records: List[Record] = XmlElementWrapper(
+        "RECORDS",  "RECORD", required=True)
     region: str = XmlAttribute(name="region")
     updated: datetime = XmlAttribute(name="updated")
     type: str = XmlAttribute(name="type")

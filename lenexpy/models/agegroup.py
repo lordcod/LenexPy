@@ -1,4 +1,4 @@
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElementWrapper
 

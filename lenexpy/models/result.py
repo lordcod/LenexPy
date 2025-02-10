@@ -1,4 +1,4 @@
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElementWrapper
 
@@ -25,7 +25,8 @@ class Result(XmlRoot):
     lane: int = XmlAttribute(name="lane")
     points: int = XmlAttribute(name="points")
     reactionTime: ReactionTime = XmlAttribute(name="reactiontime")
-    relayPositions: List[RelayPosition] = XmlElementWrapper(name="RELAYPOSITIONS")
+    relayPositions: List[RelayPosition] = XmlElementWrapper(
+        name="RELAYPOSITIONS")
     resultid: int = XmlAttribute(name="resultid", required=True)
     status: StatusResult = XmlAttribute(name="status")
     splits: List[Split] = XmlElementWrapper(name="SPLITS")

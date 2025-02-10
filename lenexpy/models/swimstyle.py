@@ -1,4 +1,4 @@
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from xmlbind import XmlRoot, XmlAttribute
 from .stroke import Stroke
 

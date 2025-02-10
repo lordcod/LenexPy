@@ -1,5 +1,5 @@
 from datetime import datetime, time as dtime, date
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import List
 from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 
@@ -47,7 +47,8 @@ class Meet(XmlRoot):
     pool: Pool = XmlElement(name="POOL")
     qualify: Qualify = XmlElement(name="QUALIFY")
     result_url: str = XmlAttribute(name="result.url")
-    sessions: List[Session] = XmlElementWrapper("SESSIONS", 'SESSION', required=True)
+    sessions: List[Session] = XmlElementWrapper(
+        "SESSIONS", 'SESSION', required=True)
     state: str = XmlAttribute(name="state")
     uid: str = XmlAttribute(name="swrid")
     timing: Timing = XmlAttribute(name="timing")

@@ -1,5 +1,5 @@
 
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 
 
 class Nation(StrEnum):

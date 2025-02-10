@@ -1,5 +1,5 @@
 from datetime import time
-from enum import StrEnum
+from lenexpy.strenum import StrEnum
 from typing import TYPE_CHECKING, Union
 
 
