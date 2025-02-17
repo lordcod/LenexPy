@@ -1,6 +1,6 @@
 from lenexpy.strenum import StrEnum
 from xmlbind import XmlRoot, XmlAttribute, XmlElement
-from datetime import datetime, time as dtime
+from datetime import datetime, time as dtime, date
 
 
 class Conversion(StrEnum):
@@ -12,6 +12,6 @@ class Conversion(StrEnum):
 
 class Qualify(XmlRoot):
     conversion: Conversion = XmlAttribute(name="conversion")
-    from_: dtime = XmlAttribute(name="from", required=True)
+    from_: date = XmlAttribute(name="from", required=True)
     percent: int = XmlAttribute(name="percent")
-    until: dtime = XmlAttribute(name="until")
+    until: date = XmlAttribute(name="until")
