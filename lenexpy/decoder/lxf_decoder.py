@@ -1,3 +1,4 @@
+from io import BytesIO
 import re
 import lxml.etree as ET
 from zipfile import ZipFile
@@ -6,10 +7,10 @@ from lenexpy.models.lenex import Lenex
 
 def decode_lxf(filename: str) -> Lenex:
     with open(filename, 'rb') as file:
-        return decode_lxf_bytes(file.read())
+        return decode_lxf_bytes(BytesIO(file.read()))
 
 
-def decode_lxf_bytes(data: bytes) -> Lenex:
+def decode_lxf_bytes(data: BytesIO) -> Lenex:
     with ZipFile(data) as zp:
         if len(zp.filelist) != 1:
             raise TypeError("Incorrect lenex file")
