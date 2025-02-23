@@ -36,7 +36,7 @@ class Entry(XmlRoot):
     agegroupid: int = XmlAttribute(name="agegroupid")
     entrycourse: Course = XmlAttribute(name="entrycourse")
     entrytime: SwimTime = XmlAttribute(name="entrytime")
-    eventid: int = XmlAttribute(name="eventid", required=True)
+    eventid: int = XmlAttribute(name="eventid")
     heatid: int = XmlAttribute(name="heatid")
     lane: int = XmlAttribute(name="lane")
     meetinfo: MeetInfoEntry = XmlElement(name="MEETINFO")
