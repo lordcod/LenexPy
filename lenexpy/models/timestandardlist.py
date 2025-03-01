@@ -21,6 +21,7 @@ class TimeStandardList(XmlRoot):
     gender: Gender = XmlAttribute(name="gender", required=True)
     handicap: int = XmlAttribute(name="handicap")
     name: str = XmlAttribute(name="name", required=True)
+    code: str = XmlAttribute(name="code")
     timeStandards: List[TimeStandard] = XmlElementWrapper(
         "TIMESTANDARDS", "TIMESTANDARD", required=True)
     type: TypeTimeStandardList = XmlAttribute(name="type")

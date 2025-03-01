@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='lenexpy',
-    description='LenexPY handler for MEET Entry Editor',
-    version='0.0.8',
+    description='LenexPY handler for MEET Entry Editor and ALGE SwimTime',
+    version='0.0.10',
     install_requires=[
         'xmlbind'
     ],
