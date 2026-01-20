@@ -1,6 +1,9 @@
+from datetime import date
+
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute, XmlElement
-from datetime import datetime, time as dtime, date
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 
 class TypeAgeDate(StrEnum):
@@ -11,6 +14,7 @@ class TypeAgeDate(StrEnum):
     LUX = "LUX"
 
 
-class AgeDate(XmlRoot):
-    type: TypeAgeDate = XmlAttribute(name="type", required=True)
-    value: date = XmlAttribute(name="value", required=True)
+# TODO: confirm root tag for AgeDate.
+class AgeDate(LenexBaseXmlModel, tag="AGEDATE"):
+    type: TypeAgeDate = attr(name="type")
+    value: date = attr(name="value")

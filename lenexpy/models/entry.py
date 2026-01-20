@@ -1,7 +1,11 @@
 from datetime import time
-from lenexpy.strenum import StrEnum
 from typing import List, Optional, Union
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+
+from lenexpy.strenum import StrEnum
+from pydantic import field_validator
+from pydantic_xml import attr, element, wrapped
+
+from .base import LenexBaseXmlModel
 
 from .meetinfoentry import MeetInfoEntry
 from .relayposition import RelayPosition
@@ -18,28 +22,26 @@ class Status(StrEnum):
     WDR = "WDR"
 
 
-class Entry(XmlRoot):
-    def __init__(
-        self,
-        eventid: int,
-        entrytime: Optional[Union[str, time, SwimTime]] = None,
-        **kwargs
-    ):
-        kwargs['eventid'] = eventid
+# TODO: confirm root tag for Entry.
+class Entry(LenexBaseXmlModel, tag="ENTRY"):
+    agegroupid: Optional[int] = attr(name="agegroupid", default=None)
+    entrycourse: Optional[Course] = attr(name="entrycourse", default=None)
+    entrytime: Optional[SwimTime] = attr(name="entrytime", default=None)
+    eventid: Optional[int] = attr(name="eventid", default=None)
+    heatid: Optional[int] = attr(name="heatid", default=None)
+    lane: Optional[int] = attr(name="lane", default=None)
+    meetinfo: Optional[MeetInfoEntry] = element(tag="MEETINFO", default=None)
+    relay_positions: List[RelayPosition] = element(
+        tag="RELAYPOSITIONS",
+        default_factory=list,
+    )
+    status: Optional[Status] = attr(name="status", default=None)
 
-        if isinstance(entrytime, (str, time)):
-            entrytime = SwimTime._parse(entrytime)
-        kwargs['entrytime'] = entrytime
-
-        super().__init__(**kwargs)
-
-    agegroupid: int = XmlAttribute(name="agegroupid")
-    entrycourse: Course = XmlAttribute(name="entrycourse")
-    entrytime: SwimTime = XmlAttribute(name="entrytime")
-    eventid: int = XmlAttribute(name="eventid")
-    heatid: int = XmlAttribute(name="heatid")
-    lane: int = XmlAttribute(name="lane")
-    meetinfo: MeetInfoEntry = XmlElement(name="MEETINFO")
-    relay_positions: List[RelayPosition] = XmlElementWrapper(
-        name="RELAYPOSITIONS")
-    status: Status = XmlAttribute(name="status")
+    @field_validator("entrytime", mode="before")
+    @classmethod
+    def _parse_entrytime(cls, value):
+        if value is None or isinstance(value, SwimTime):
+            return value
+        if isinstance(value, (str, time)):
+            return SwimTime._parse(value)
+        return value

@@ -1,6 +1,9 @@
+from typing import List, Optional
+
 from lenexpy.strenum import StrEnum
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElementWrapper
+from pydantic_xml import attr, element
+
+from .base import LenexBaseXmlModel
 
 from .split import Split
 from .swimtime import SwimTime
@@ -18,16 +21,19 @@ class StatusResult(StrEnum):
     WDR = "WDR"
 
 
-class Result(XmlRoot):
-    comment: str = XmlAttribute(name="comment")
-    eventid: int = XmlAttribute(name="eventid", required=True)
-    heatid: int = XmlAttribute(name="heatid")
-    lane: int = XmlAttribute(name="lane")
-    points: int = XmlAttribute(name="points")
-    reactionTime: ReactionTime = XmlAttribute(name="reactiontime")
-    relayPositions: List[RelayPosition] = XmlElementWrapper(
-        name="RELAYPOSITIONS")
-    resultid: int = XmlAttribute(name="resultid", required=True)
-    status: StatusResult = XmlAttribute(name="status")
-    splits: List[Split] = XmlElementWrapper(name="SPLITS")
-    swimTime: SwimTime = XmlAttribute(name="swimtime")
+# TODO: confirm root tag for Result.
+class Result(LenexBaseXmlModel, tag="RESULT"):
+    comment: Optional[str] = attr(name="comment", default=None)
+    eventid: int = attr(name="eventid")
+    heatid: Optional[int] = attr(name="heatid", default=None)
+    lane: Optional[int] = attr(name="lane", default=None)
+    points: Optional[int] = attr(name="points", default=None)
+    reactionTime: Optional[ReactionTime] = attr(name="reactiontime", default=None)
+    relayPositions: List[RelayPosition] = element(
+        tag="RELAYPOSITIONS",
+        default_factory=list,
+    )
+    resultid: int = attr(name="resultid")
+    status: Optional[StatusResult] = attr(name="status", default=None)
+    splits: List[Split] = element(tag="SPLITS", default_factory=list)
+    swimTime: Optional[SwimTime] = attr(name="swimtime", default=None)

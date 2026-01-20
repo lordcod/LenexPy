@@ -1,9 +1,14 @@
-from xmlbind import XmlRoot, XmlAttribute, XmlElement
+from typing import Optional
+
+from pydantic_xml import attr, element
+
+from .base import LenexBaseXmlModel
 
 from .fee import Fee
 
 
-class TimeStandardRef(XmlRoot):
-    time_standard_list_id: int = XmlAttribute(name="timestandardlistid", required=True)
-    fee: Fee = XmlElement(name="FEE")
-    marker: str = XmlAttribute(name="marker")
+# TODO: confirm root tag for TimeStandardRef.
+class TimeStandardRef(LenexBaseXmlModel, tag="TIMESTANDARDREF"):
+    time_standard_list_id: int = attr(name="timestandardlistid")
+    fee: Optional[Fee] = element(tag="FEE", default=None)
+    marker: Optional[str] = attr(name="marker", default=None)

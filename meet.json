@@ -1,0 +1,594 @@
+{
+"version": "3.0",
+"constructor": {
+"name": "lenexpy",
+"version": "1.0"
+},
+"meet": {
+"name": "Турнир – НацПлав – Дети",
+"city": "Москва",
+"nation": "RUS",
+"lanemin": 1,
+"lanemax": 10,
+"pool": {
+"lanemin": 1,
+"lanemax": 10,
+"type": "INDOOR",
+"temperature": 27
+},
+"sessions": [
+{
+"number": 1,
+"date": "2025-11-29",
+"events": [
+{
+"eventid": 101,
+"number": 101,
+"gender": "F",
+"swimstyle": {
+"distance": 800,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 1001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 1002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 1003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 1004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 1005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 1006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 1007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 1008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 102,
+"number": 102,
+"gender": "M",
+"swimstyle": {
+"distance": 800,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 1009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 1010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 1011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 1012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 1013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 1014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 1015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 1016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 103,
+"number": 103,
+"gender": "F",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "BACK"
+},
+"agegroups": [
+{ "id": 1001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 1002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 1003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 1004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 1005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 1006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 1007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 1008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 104,
+"number": 104,
+"gender": "M",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "BACK"
+},
+"agegroups": [
+{ "id": 1009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 1010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 1011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 1012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 1013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 1014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 1015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 1016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 105,
+"number": 105,
+"gender": "F",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "FLY"
+},
+"agegroups": [
+{ "id": 1001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 1002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 1003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 1004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 1005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 1006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 1007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 1008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 106,
+"number": 106,
+"gender": "M",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "FLY"
+},
+"agegroups": [
+{ "id": 1009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 1010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 1011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 1012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 1013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 1014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 1015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 1016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 107,
+"number": 107,
+"gender": "F",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "BREAST"
+},
+"agegroups": [
+{ "id": 1001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 1002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 1003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 1004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 1005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 1006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 1007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 1008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 108,
+"number": 108,
+"gender": "M",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "BREAST"
+},
+"agegroups": [
+{ "id": 1009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 1010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 1011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 1012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 1013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 1014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 1015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 1016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 109,
+"number": 109,
+"gender": "F",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 1001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 1002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 1003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 1004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 1005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 1006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 1007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 1008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 110,
+"number": 110,
+"gender": "M",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 1009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 1010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 1011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 1012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 1013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 1014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 1015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 1016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 111,
+"number": 111,
+"gender": "F",
+"swimstyle": {
+"distance": 200,
+"relaycount": 1,
+"stroke": "MEDLEY"
+},
+"agegroups": [
+{ "id": 1001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 1002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 1003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 1004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 1005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 1006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 1007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 1008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 112,
+"number": 112,
+"gender": "M",
+"swimstyle": {
+"distance": 200,
+"relaycount": 1,
+"stroke": "MEDLEY"
+},
+"agegroups": [
+{ "id": 1009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 1010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 1011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 1012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 1013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 1014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 1015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 1016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 113,
+"number": 113,
+"gender": "F",
+"swimstyle": {
+"distance": 50,
+"relaycount": 6,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 1001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 1002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 1003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 1004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 1005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 1006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 1007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 1008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 114,
+"number": 114,
+"gender": "M",
+"swimstyle": {
+"distance": 50,
+"relaycount": 6,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 1009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 1010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 1011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 1012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 1013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 1014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 1015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 1016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+}
+]
+},
+{
+"number": 2,
+"date": "2025-11-30",
+"events": [
+{
+"eventid": 201,
+"number": 201,
+"gender": "F",
+"swimstyle": {
+"distance": 400,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 2001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 2002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 2003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 2004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 2005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 2006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 2007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 2008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 202,
+"number": 202,
+"gender": "M",
+"swimstyle": {
+"distance": 400,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 2009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 2010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 2011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 2012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 2013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 2014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 2015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 2016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 203,
+"number": 203,
+"gender": "F",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "BREAST"
+},
+"agegroups": [
+{ "id": 2001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 2002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 2003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 2004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 2005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 2006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 2007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 2008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 204,
+"number": 204,
+"gender": "M",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "BREAST"
+},
+"agegroups": [
+{ "id": 2009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 2010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 2011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 2012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 2013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 2014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 2015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 2016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 205,
+"number": 205,
+"gender": "F",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 2001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 2002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 2003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 2004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 2005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 2006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 2007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 2008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 206,
+"number": 206,
+"gender": "M",
+"swimstyle": {
+"distance": 50,
+"relaycount": 1,
+"stroke": "FREE"
+},
+"agegroups": [
+{ "id": 2009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 2010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 2011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 2012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 2013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 2014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 2015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 2016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 207,
+"number": 207,
+"gender": "F",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "FLY"
+},
+"agegroups": [
+{ "id": 2001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 2002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 2003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 2004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 2005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 2006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 2007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 2008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 208,
+"number": 208,
+"gender": "M",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "FLY"
+},
+"agegroups": [
+{ "id": 2009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 2010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 2011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 2012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 2013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 2014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 2015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 2016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 209,
+"number": 209,
+"gender": "F",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "BACK"
+},
+"agegroups": [
+{ "id": 2001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 2002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 2003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 2004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 2005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 2006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 2007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 2008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 210,
+"number": 210,
+"gender": "M",
+"swimstyle": {
+"distance": 100,
+"relaycount": 1,
+"stroke": "BACK"
+},
+"agegroups": [
+{ "id": 2009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 2010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 2011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 2012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 2013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 2014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 2015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 2016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 211,
+"number": 211,
+"gender": "F",
+"swimstyle": {
+"distance": 200,
+"relaycount": 1,
+"stroke": "BREAST"
+},
+"agegroups": [
+{ "id": 2001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 2002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 2003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 2004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 2005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 2006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 2007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 2008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 212,
+"number": 212,
+"gender": "M",
+"swimstyle": {
+"distance": 200,
+"relaycount": 1,
+"stroke": "BREAST"
+},
+"agegroups": [
+{ "id": 2009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 2010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 2011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 2012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 2013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 2014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 2015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 2016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+},
+{
+"eventid": 213,
+"number": 213,
+"gender": "F",
+"swimstyle": {
+"distance": 50,
+"relaycount": 4,
+"stroke": "MEDLEY"
+},
+"agegroups": [
+{ "id": 2001, "agemin": 9, "agemax": 9, "gender": "F" },
+{ "id": 2002, "agemin": 10, "agemax": 10, "gender": "F" },
+{ "id": 2003, "agemin": 11, "agemax": 11, "gender": "F" },
+{ "id": 2004, "agemin": 12, "agemax": 12, "gender": "F" },
+{ "id": 2005, "agemin": 13, "agemax": 13, "gender": "F" },
+{ "id": 2006, "agemin": 14, "agemax": 14, "gender": "F" },
+{ "id": 2007, "agemin": 15, "agemax": 15, "gender": "F" },
+{ "id": 2008, "agemin": 16, "agemax": 99, "gender": "F" }
+]
+},
+{
+"eventid": 214,
+"number": 214,
+"gender": "M",
+"swimstyle": {
+"distance": 50,
+"relaycount": 4,
+"stroke": "MEDLEY"
+},
+"agegroups": [
+{ "id": 2009, "agemin": 9, "agemax": 9, "gender": "M" },
+{ "id": 2010, "agemin": 10, "agemax": 10, "gender": "M" },
+{ "id": 2011, "agemin": 11, "agemax": 11, "gender": "M" },
+{ "id": 2012, "agemin": 12, "agemax": 12, "gender": "M" },
+{ "id": 2013, "agemin": 13, "agemax": 13, "gender": "M" },
+{ "id": 2014, "agemin": 14, "agemax": 14, "gender": "M" },
+{ "id": 2015, "agemin": 15, "agemax": 15, "gender": "M" },
+{ "id": 2016, "agemin": 16, "agemax": 99, "gender": "M" }
+]
+}
+]
+}
+]
+}
+}

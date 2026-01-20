@@ -1,36 +1,29 @@
-from typing import TYPE_CHECKING, List, Literal, Optional, overload
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
 from datetime import date
-from .handicap import Handicap
-from .nation import Nation
+from typing import Optional
+
+from pydantic import model_validator
+from pydantic_xml import attr, element
+
+from lenexpy.models.base import LenexBaseXmlModel
+from lenexpy.models.handicap import Handicap
+from lenexpy.models.nation import Nation
 
 
 # required_params = {'birthday', 'gender', 'firstname', 'lastname'}/
 
 
-class Athlete(XmlRoot):
-    if TYPE_CHECKING:
-        @overload
-        def __init__(
-            self,
-            athleteid: int,
-            *,
-            birthdate: date,
-            gender: Literal['F', 'M'],
-            firstname: str,
-            lastname: str,
-            level: Optional[str] = None,
-            **kwargs
-        ):
-            pass
+# TODO: confirm root tag for Athlete.
+class Athlete(LenexBaseXmlModel, tag="ATHLETE"):
+    athleteid: int = attr(name="athleteid")
+    birthdate: date = attr(name="birthdate")
+    firstname: str = attr(name="firstname")
+    lastname: str = attr(name="lastname")
+    handicap: Optional[Handicap] = element(tag="HANDICAP", default=None)
+    nation: Optional[Nation] = attr(name="nation", default=None)
 
-    def __init__(self, id: int, **kwargs) -> None:
-        self.athleteid = id
-        super().__init__(**kwargs)
-
-    athleteid: int = XmlAttribute(name="athleteid", required=True)
-    birthdate: date = XmlAttribute(name="birthdate", required=True)
-    firstname: str = XmlAttribute(name="firstname", required=True)
-    lastname: str = XmlAttribute(name="lastname", required=True)
-    handicap: Handicap = XmlElement(name="HANDICAP")
-    nation: Nation = XmlAttribute(name="nation")
+    @model_validator(mode="before")
+    @classmethod
+    def _map_id(cls, data):
+        if isinstance(data, dict) and "id" in data and "athleteid" not in data:
+            data["athleteid"] = data.pop("id")
+        return data

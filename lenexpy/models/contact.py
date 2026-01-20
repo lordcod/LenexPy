@@ -1,35 +1,21 @@
-from typing import TYPE_CHECKING, Optional
-from xmlbind import XmlRoot, XmlAttribute
+from typing import Optional
+
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 
-class Contact(XmlRoot):
-    if TYPE_CHECKING:
-        def __init__(
-            self,
-            name: Optional[str] = None,
-            city: Optional[str] = None,
-            country: Optional[str] = None,
-            email: Optional[str] = None,
-            fax: Optional[str] = None,
-            internet: Optional[str] = None,
-            mobile: Optional[str] = None,
-            phone: Optional[str] = None,
-            state: Optional[str] = None,
-            street: Optional[str] = None,
-            street2: Optional[str] = None,
-            zip: Optional[str] = None
-        ):
-            pass
-
-    city: str = XmlAttribute(name="city")
-    country: str = XmlAttribute(name="country")
-    email: str = XmlAttribute(name="email")
-    fax: str = XmlAttribute(name="fax")
-    internet: str = XmlAttribute(name="internet")
-    name: str = XmlAttribute(name="name")
-    mobile: str = XmlAttribute(name="mobile")
-    phone: str = XmlAttribute(name="phone")
-    state: str = XmlAttribute(name="state")
-    street: str = XmlAttribute(name="street")
-    street2: str = XmlAttribute(name="street2")
-    zip: str = XmlAttribute(name="zip")
+# TODO: confirm root tag for Contact.
+class Contact(LenexBaseXmlModel, tag="CONTACT"):
+    city: Optional[str] = attr(name="city", default=None)
+    country: Optional[str] = attr(name="country", default=None)
+    email: Optional[str] = attr(name="email", default=None)
+    fax: Optional[str] = attr(name="fax", default=None)
+    internet: Optional[str] = attr(name="internet", default=None)
+    name: Optional[str] = attr(name="name", default=None)
+    mobile: Optional[str] = attr(name="mobile", default=None)
+    phone: Optional[str] = attr(name="phone", default=None)
+    state: Optional[str] = attr(name="state", default=None)
+    street: Optional[str] = attr(name="street", default=None)
+    street2: Optional[str] = attr(name="street2", default=None)
+    zip: Optional[str] = attr(name="zip", default=None)

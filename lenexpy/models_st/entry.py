@@ -1,8 +1,11 @@
-from datetime import time
+from typing import Optional
+
 from lenexpy.models.athelete import Athlete
+from lenexpy.models.swimtime import SwimTime
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
-from .swimtime import SwimTime
+from pydantic_xml import attr, element
+
+from lenexpy.models.base import LenexBaseXmlModel
 
 
 class Status(StrEnum):
@@ -14,16 +17,10 @@ class Status(StrEnum):
     WDR = "WDR"
 
 
-class Entry(XmlRoot):
-    def __init__(
-        self,
-        **kwargs
-    ):
-
-        super().__init__(**kwargs)
-
-    entrytime: SwimTime = XmlAttribute(name="entrytime")
-    lane: int = XmlAttribute(name="lane")
-    status: Status = XmlAttribute(name="status")
-    clubname: str = XmlAttribute(name="clubname")
-    athlete: Athlete = XmlElement(name='ATHLETE')
+# TODO: confirm root tag for Entry.
+class Entry(LenexBaseXmlModel, tag="ENTRY"):
+    entrytime: Optional[SwimTime] = attr(name="entrytime", default=None)
+    lane: Optional[int] = attr(name="lane", default=None)
+    status: Optional[Status] = attr(name="status", default=None)
+    clubname: Optional[str] = attr(name="clubname", default=None)
+    athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)

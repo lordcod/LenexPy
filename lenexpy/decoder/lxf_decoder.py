@@ -1,21 +1,21 @@
 from io import BytesIO
-import re
-import lxml.etree as ET
 from zipfile import ZipFile
+
+from lenexpy.decoder.lef_decoder import decode_lef_bytes
 from lenexpy.models.lenex import Lenex
 
 
 def decode_lxf(filename: str) -> Lenex:
-    with open(filename, 'rb') as file:
-        return decode_lxf_bytes(BytesIO(file.read()))
+    with open(filename, "rb") as file:
+        return decode_lxf_bytes(file.read())
 
 
-def decode_lxf_bytes(data: BytesIO) -> Lenex:
-    with ZipFile(data) as zp:
-        if len(zp.filelist) != 1:
+def decode_lxf_bytes(data: bytes) -> Lenex:
+    with ZipFile(BytesIO(data)) as zp:
+        if not zp.filelist:
             raise TypeError("Incorrect lenex file")
-        with zp.open(zp.filelist[0]) as file:
-            data = file.read()
 
-    element = ET.fromstring(data)
-    return Lenex._parse(element)
+        lef_members = [m for m in zp.filelist if m.filename.lower().endswith(".lef")]
+        member = lef_members[0] if lef_members else zp.filelist[0]
+        with zp.open(member) as file:
+            return decode_lef_bytes(file.read())

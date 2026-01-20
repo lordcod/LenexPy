@@ -1,7 +1,12 @@
-from xmlbind import XmlRoot, XmlAttribute
+from typing import Optional
+
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 
-class PointTable(XmlRoot):
-    name: str = XmlAttribute(name="name", required=True)
-    point_table_id: int = XmlAttribute(name="pointtableid")
-    version: str = XmlAttribute(name="version", required=True)
+# TODO: confirm root tag for PointTable.
+class PointTable(LenexBaseXmlModel, tag="POINTTABLE"):
+    name: str = attr(name="name")
+    point_table_id: Optional[int] = attr(name="pointtableid", default=None)
+    version: str = attr(name="version")

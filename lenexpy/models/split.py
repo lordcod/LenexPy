@@ -1,8 +1,11 @@
-from xmlbind import XmlRoot, XmlAttribute
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 from .swimtime import SwimTime
 
 
-class Split(XmlRoot):
-    distance: int = XmlAttribute(name="distance", required=True)
-    swimTime: SwimTime = XmlAttribute(name="swimtime", required=True)
+# TODO: confirm root tag for Split.
+class Split(LenexBaseXmlModel, tag="SPLIT"):
+    distance: int = attr(name="distance")
+    swimTime: SwimTime = attr(name="swimtime")

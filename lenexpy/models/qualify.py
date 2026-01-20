@@ -1,6 +1,10 @@
+from datetime import date
+from typing import Optional
+
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute, XmlElement
-from datetime import datetime, time as dtime, date
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 
 class Conversion(StrEnum):
@@ -10,8 +14,9 @@ class Conversion(StrEnum):
     NON_CONFORMING_LAST = "NON_CONFORMING_LAST"
 
 
-class Qualify(XmlRoot):
-    conversion: Conversion = XmlAttribute(name="conversion")
-    from_: date = XmlAttribute(name="from", required=True)
-    percent: int = XmlAttribute(name="percent")
-    until: date = XmlAttribute(name="until")
+# TODO: confirm root tag for Qualify.
+class Qualify(LenexBaseXmlModel, tag="QUALIFY"):
+    conversion: Optional[Conversion] = attr(name="conversion", default=None)
+    from_: date = attr(name="from")
+    percent: Optional[int] = attr(name="percent", default=None)
+    until: Optional[date] = attr(name="until", default=None)

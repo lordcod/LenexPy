@@ -1,10 +1,12 @@
-from lenexpy.strenum import StrEnum
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElementWrapper
+from typing import List, Optional
 
-from .split import Split
-from .swimtime import SwimTime
-from .reactiontime import ReactionTime
+from lenexpy.strenum import StrEnum
+from pydantic_xml import attr, wrapped, element
+
+from lenexpy.models.base import LenexBaseXmlModel
+from lenexpy.models.reactiontime import ReactionTime
+from lenexpy.models.split import Split
+from lenexpy.models.swimtime import SwimTime
 
 
 class StatusResult(StrEnum):
@@ -16,9 +18,14 @@ class StatusResult(StrEnum):
     WDR = "WDR"
 
 
-class Result(XmlRoot):
-    lane: int = XmlAttribute(name="lane", required=True)
-    swim_time: SwimTime = XmlAttribute(name="swimtime", required=True)
-    status: StatusResult = XmlAttribute(name="status")
-    reaction_time: ReactionTime = XmlAttribute(name="reactiontime")
-    splits: List[Split] = XmlElementWrapper("SPLITS", "SPLIT")
+# TODO: confirm root tag for Result.
+class Result(LenexBaseXmlModel, tag="RESULT"):
+    lane: int = attr(name="lane")
+    swim_time: SwimTime = attr(name="swimtime")
+    status: Optional[StatusResult] = attr(name="status", default=None)
+    reaction_time: Optional[ReactionTime] = attr(name="reactiontime", default=None)
+    splits: List[Split] = wrapped(
+        "SPLITS",
+        element(tag="SPLIT"),
+        default_factory=list,
+    )

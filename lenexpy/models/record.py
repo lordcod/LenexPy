@@ -1,5 +1,8 @@
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from typing import List, Optional
+
+from pydantic_xml import attr, element, wrapped
+
+from .base import LenexBaseXmlModel
 
 from .meetinforecord import MeetInfoRecord
 from .relayrecord import RelayRecord
@@ -9,12 +12,17 @@ from .swimtime import SwimTime
 from .athelete import Athlete
 
 
-class Record(XmlRoot):
-    athlete: Athlete = XmlElement(name="ATHLETE")
-    comment: str = XmlAttribute(name="comment")
-    meetInfo: MeetInfoRecord = XmlElement(name="MEETINFO")
-    relay: RelayRecord = XmlElement(name="RELAY")
-    splits: List[Split] = XmlElementWrapper("SPLITS", "SPLIT")
-    swimstyle: SwimStyle = XmlElement(name="SWIMSTYLE", required=True)
-    swimtime: SwimTime = XmlAttribute(name="swimtime", required=True)
-    status: str = XmlAttribute(name="status")
+# TODO: confirm root tag for Record.
+class Record(LenexBaseXmlModel, tag="RECORD"):
+    athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)
+    comment: Optional[str] = attr(name="comment", default=None)
+    meetInfo: Optional[MeetInfoRecord] = element(tag="MEETINFO", default=None)
+    relay: Optional[RelayRecord] = element(tag="RELAY", default=None)
+    splits: List[Split] = wrapped(
+        "SPLITS",
+        element(tag="SPLIT"),
+        default_factory=list,
+    )
+    swimstyle: SwimStyle = element(tag="SWIMSTYLE")
+    swimtime: SwimTime = attr(name="swimtime")
+    status: Optional[str] = attr(name="status", default=None)

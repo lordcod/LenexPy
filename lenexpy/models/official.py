@@ -1,19 +1,24 @@
+from typing import Optional
+
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute, XmlElement
+from pydantic_xml import attr, element
+
+from .base import LenexBaseXmlModel
 
 from .nation import Nation
 from .contact import Contact
 from .gender import Gender
 
 
-class Official(XmlRoot):
-    contact: Contact = XmlElement(name="CONTACT")
-    firstname: str = XmlAttribute(name="firstname", required=True)
-    gender: Gender = XmlAttribute(name="gender")
-    grade: str = XmlAttribute(name="grade")
-    lastname: str = XmlAttribute(name="lastname", required=True)
-    license: str = XmlAttribute(name="license")
-    nameprefix: str = XmlAttribute(name="nameprefix")
-    nation: Nation = XmlAttribute(name="nation")
-    officialid: int = XmlAttribute(name="officialid", required=True)
-    passport: str = XmlAttribute(name="passport")
+# TODO: confirm root tag for Official.
+class Official(LenexBaseXmlModel, tag="OFFICIAL"):
+    contact: Optional[Contact] = element(tag="CONTACT", default=None)
+    firstname: str = attr(name="firstname")
+    gender: Optional[Gender] = attr(name="gender", default=None)
+    grade: Optional[str] = attr(name="grade", default=None)
+    lastname: str = attr(name="lastname")
+    license: Optional[str] = attr(name="license", default=None)
+    nameprefix: Optional[str] = attr(name="nameprefix", default=None)
+    nation: Optional[Nation] = attr(name="nation", default=None)
+    officialid: int = attr(name="officialid")
+    passport: Optional[str] = attr(name="passport", default=None)

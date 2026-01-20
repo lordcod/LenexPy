@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name='lenexpy',
     description='LenexPY handler for MEET Entry Editor and ALGE SwimTime',
-    version='0.0.10',
+    version='0.0.11',
     install_requires=[
         'xmlbind'
     ],

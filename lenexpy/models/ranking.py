@@ -1,8 +1,13 @@
+from typing import Optional
+
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute, XmlElement
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 
-class Ranking(XmlRoot):
-    order: int = XmlAttribute(name="order")
-    place: int = XmlAttribute(name="place", required=True)
-    result_id: int = XmlAttribute(name="resultid", required=True)
+# TODO: confirm root tag for Ranking.
+class Ranking(LenexBaseXmlModel, tag="RANKING"):
+    order: Optional[int] = attr(name="order", default=None)
+    place: int = attr(name="place")
+    result_id: int = attr(name="resultid")

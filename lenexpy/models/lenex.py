@@ -1,5 +1,8 @@
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from typing import List, Optional
+
+from pydantic_xml import attr, element, wrapped
+
+from .base import LenexBaseXmlModel
 
 from .meet import Meet
 from .recordlist import RecordList
@@ -7,9 +10,22 @@ from .timestandardlist import TimeStandardList
 from .constructor import Constructor
 
 
-class Lenex(XmlRoot):
-    constructor: Constructor = XmlElement(name="CONSTRUCTOR", required=True)
-    meet: Meet = XmlElementWrapper("MEETS", 'MEET', with_list=False)
-    recordLists: List[RecordList] = XmlElementWrapper("RECORDLISTS", "RECORDLIST")
-    timeStandardLists: List[TimeStandardList] = XmlElementWrapper("TIMESTANDARDLISTS", "TIMESTANDARDLIST")
-    version: str = XmlAttribute(name="version", required=True)
+# TODO: confirm root tag for Lenex.
+class Lenex(LenexBaseXmlModel, tag="LENEX"):
+    constructor: Constructor = element(tag="CONSTRUCTOR")
+    meet: Optional[Meet] = wrapped(
+        "MEETS",
+        element(tag="MEET"),
+        default=None,
+    )
+    recordLists: List[RecordList] = wrapped(
+        "RECORDLISTS",
+        element(tag="RECORDLIST"),
+        default_factory=list,
+    )
+    timeStandardLists: List[TimeStandardList] = wrapped(
+        "TIMESTANDARDLISTS",
+        element(tag="TIMESTANDARDLIST"),
+        default_factory=list,
+    )
+    version: str = attr(name="version")

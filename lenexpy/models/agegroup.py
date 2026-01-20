@@ -1,6 +1,8 @@
 from lenexpy.strenum import StrEnum
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElementWrapper
+from typing import List, Optional
+from pydantic_xml import attr, wrapped, element
+
+from .base import LenexBaseXmlModel
 
 from .ranking import Ranking
 from .gender import Gender
@@ -11,15 +13,20 @@ class Calculate(StrEnum):
     SINGLE: str = 'SINGLE'
 
 
-class AgeGroup(XmlRoot):
-    id: int = XmlAttribute(name="agegroupid")
-    agemax: int = XmlAttribute(required=True)
-    agemin: int = XmlAttribute(required=True)
-    gender: Gender = XmlAttribute()
-    calculate: Calculate = XmlAttribute()
-    handicap: int = XmlAttribute()
-    levelmax: int = XmlAttribute()
-    levelmin: int = XmlAttribute()
-    levels: str = XmlAttribute()
-    name: str = XmlAttribute()
-    rankings: List[Ranking] = XmlElementWrapper('RANKINGS', 'RANKING')
+# TODO: confirm root tag for AgeGroup.
+class AgeGroup(LenexBaseXmlModel, tag="AGEGROUP"):
+    id: Optional[int] = attr(name="agegroupid", default=None)
+    agemax: int = attr(name="agemax")
+    agemin: int = attr(name="agemin")
+    gender: Optional[Gender] = attr(name="gender", default=None)
+    calculate: Optional[Calculate] = attr(name="calculate", default=None)
+    handicap: Optional[int] = attr(name="handicap", default=None)
+    levelmax: Optional[int] = attr(name="levelmax", default=None)
+    levelmin: Optional[int] = attr(name="levelmin", default=None)
+    levels: Optional[str] = attr(name="levels", default=None)
+    name: Optional[str] = attr(name="name", default=None)
+    rankings: List[Ranking] = wrapped(
+        "RANKINGS",
+        element(tag="RANKING"),
+        default_factory=list,
+    )

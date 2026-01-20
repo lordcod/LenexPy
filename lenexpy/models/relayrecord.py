@@ -1,6 +1,9 @@
+from typing import List, Optional
+
 from lenexpy.strenum import StrEnum
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from pydantic_xml import attr, element, wrapped
+
+from .base import LenexBaseXmlModel
 
 from .relayposition import RelayPosition
 from .club import Club
@@ -11,8 +14,12 @@ class StatusRelayPosition(StrEnum):
     DNF = 'DNF'
 
 
-class RelayRecord(XmlRoot):
-    club: Club = XmlElement(name="CLUB")
-    name: str = XmlAttribute(name="name")
-    relayPositions: List[RelayPosition] = XmlElementWrapper(
-        "RELAYPOSITIONS", "RELAYPOSITION")
+# TODO: confirm root tag for RelayRecord.
+class RelayRecord(LenexBaseXmlModel, tag="RELAY"):
+    club: Optional[Club] = element(tag="CLUB", default=None)
+    name: Optional[str] = attr(name="name", default=None)
+    relayPositions: List[RelayPosition] = wrapped(
+        "RELAYPOSITIONS",
+        element(tag="RELAYPOSITION"),
+        default_factory=list,
+    )

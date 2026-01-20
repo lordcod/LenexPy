@@ -1,5 +1,9 @@
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute
+from typing import Optional
+
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 from datetime import time as dtime
 
 
@@ -16,11 +20,12 @@ class StatusHeat(StrEnum):
     OFFICIAL = 'OFFICIAL'
 
 
-class Heat(XmlRoot):
-    agegroupid: int = XmlAttribute(name="agegroupid")
-    daytime: dtime = XmlAttribute(name="daytime")
-    finalType: Final = XmlAttribute(name="final")
-    heatid: int = XmlAttribute(name="heatid", required=True)
-    number: int = XmlAttribute(name="number", required=True)
-    order: int = XmlAttribute(name="order")
-    status: StatusHeat = XmlAttribute(name="status")
+# TODO: confirm root tag for Heat.
+class Heat(LenexBaseXmlModel, tag="HEAT"):
+    agegroupid: Optional[int] = attr(name="agegroupid", default=None)
+    daytime: Optional[dtime] = attr(name="daytime", default=None)
+    finalType: Optional[Final] = attr(name="final", default=None)
+    heatid: int = attr(name="heatid")
+    number: int = attr(name="number")
+    order: Optional[int] = attr(name="order", default=None)
+    status: Optional[StatusHeat] = attr(name="status", default=None)

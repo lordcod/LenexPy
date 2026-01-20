@@ -1,10 +1,14 @@
 from typing import Optional
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+
+from pydantic_xml import attr, element
+
+from .base import LenexBaseXmlModel
 from .contact import Contact
 
 
-class Constructor(XmlRoot):
-    contact: Contact = XmlElement(required=False)
-    name: str = XmlAttribute(required=True)
-    registration: str = XmlAttribute()
-    version: str = XmlAttribute(required=True)
+# TODO: confirm root tag for Constructor.
+class Constructor(LenexBaseXmlModel, tag="CONSTRUCTOR"):
+    contact: Optional[Contact] = element(tag="CONTACT", default=None)
+    name: str = attr(name="name")
+    registration: Optional[str] = attr(name="registration", default=None)
+    version: str = attr(name="version")

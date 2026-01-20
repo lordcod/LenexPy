@@ -1,5 +1,9 @@
+from typing import Optional
+
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute, XmlElement
+from pydantic_xml import attr, element
+
+from .base import LenexBaseXmlModel
 
 from .reactiontime import ReactionTime
 from .meetinfoentry import MeetInfoEntry
@@ -10,9 +14,10 @@ class StatusRelayPosition(StrEnum):
     DNF = 'DNF'
 
 
-class RelayPosition(XmlRoot):
-    athleteid: int = XmlAttribute(name="athleteid")
-    meetinfo: MeetInfoEntry = XmlElement(name="MEETINFO")
-    number: int = XmlAttribute(name="number", required=True)
-    reaction_time: ReactionTime = XmlAttribute(name="reactiontime")
-    status: StatusRelayPosition = XmlAttribute(name="status")
+# TODO: confirm root tag for RelayPosition.
+class RelayPosition(LenexBaseXmlModel, tag="RELAYPOSITION"):
+    athleteid: Optional[int] = attr(name="athleteid", default=None)
+    meetinfo: Optional[MeetInfoEntry] = element(tag="MEETINFO", default=None)
+    number: int = attr(name="number")
+    reaction_time: Optional[ReactionTime] = attr(name="reactiontime", default=None)
+    status: Optional[StatusRelayPosition] = attr(name="status", default=None)

@@ -2,12 +2,18 @@ from lenexpy.strenum import StrEnum
 
 
 class Stroke(StrEnum):
-    APNEA = "APNEA"
-    BACK = "BACK"
-    BREAST = "BREAST"
+    # Swimming stroke types
     FLY = "FLY"
     FREE = "FREE"
+    BREAST = "BREAST"
+    BACK = "BACK"
+
+    # Underwater disciplines
+    APNEA = "APNEA"
     IMMERSION = "IMMERSION"
     MEDLEY = "MEDLEY"
     SURFACE = "SURFACE"
+
+    # Unknown stroke type
     UNKNOWN = "UNKNOWN"
+    CUSTOM = "CUSTOM"

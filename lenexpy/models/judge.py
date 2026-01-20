@@ -1,6 +1,10 @@
 from lenexpy.strenum import StrEnum
 from typing import List
-from xmlbind import XmlRoot, XmlAttribute
+from typing import Optional
+
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 
 class Role(StrEnum):
@@ -26,7 +30,8 @@ class Role(StrEnum):
     MED = "MED"
 
 
-class Judge(XmlRoot):
-    number: int = XmlAttribute(name="number")
-    officialid: int = XmlAttribute(name="officialid", required=True)
-    role: Role = XmlAttribute(name="role")
+# TODO: confirm root tag for Judge.
+class Judge(LenexBaseXmlModel, tag="JUDGE"):
+    number: Optional[int] = attr(name="number", default=None)
+    officialid: int = attr(name="officialid")
+    role: Optional[Role] = attr(name="role", default=None)

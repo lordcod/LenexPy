@@ -1,6 +1,9 @@
+from typing import List, Optional
+
 from lenexpy.strenum import StrEnum
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from pydantic_xml import attr, wrapped, element
+
+from .base import LenexBaseXmlModel
 
 from .result import Result
 
@@ -8,14 +11,23 @@ from .entry import Entry
 from .gender import Gender
 
 
-class RelayMeet(XmlRoot):
-    agemax: int = XmlAttribute(name="agemax", required=True)
-    agemin: int = XmlAttribute(name="agemin", required=True)
-    agetotalmax: int = XmlAttribute(name="agetotalmax", required=True)
-    agetotalmin: int = XmlAttribute(name="agetotalmin", required=True)
-    entries: List[Entry] = XmlElementWrapper("ENTRIES", "ENTRY")
-    gender: Gender = XmlAttribute(name="gender", required=True)
-    handicap: int = XmlAttribute(name="handicap")
-    name: str = XmlAttribute(name="name")
-    number: int = XmlAttribute(name="number")
-    results: List[Result] = XmlElementWrapper("RESULTS", "RESULT")
+# TODO: confirm root tag for RelayMeet.
+class RelayMeet(LenexBaseXmlModel, tag="RELAY"):
+    agemax: int = attr(name="agemax")
+    agemin: int = attr(name="agemin")
+    agetotalmax: int = attr(name="agetotalmax")
+    agetotalmin: int = attr(name="agetotalmin")
+    entries: List[Entry] = wrapped(
+        "ENTRIES",
+        element(tag="ENTRY"),
+        default_factory=list,
+    )
+    gender: Gender = attr(name="gender")
+    handicap: Optional[int] = attr(name="handicap", default=None)
+    name: Optional[str] = attr(name="name", default=None)
+    number: Optional[int] = attr(name="number", default=None)
+    results: List[Result] = wrapped(
+        "RESULTS",
+        element(tag="RESULT"),
+        default_factory=list,
+    )

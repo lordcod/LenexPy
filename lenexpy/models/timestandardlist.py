@@ -1,6 +1,9 @@
+from typing import List, Optional
+
 from lenexpy.strenum import StrEnum
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from pydantic_xml import attr, element, wrapped
+
+from .base import LenexBaseXmlModel
 
 from .agegroup import AgeGroup
 from .course import Course
@@ -14,14 +17,19 @@ class TypeTimeStandardList(StrEnum):
     MINIMUM = "MINIMUM"
 
 
-class TimeStandardList(XmlRoot):
-    id: int = XmlAttribute(name="timestandardlistid", required=True)
-    age_group: AgeGroup = XmlElement(name="AGEGROUP")
-    course: Course = XmlAttribute(name="course", required=True)
-    gender: Gender = XmlAttribute(name="gender", required=True)
-    handicap: int = XmlAttribute(name="handicap")
-    name: str = XmlAttribute(name="name", required=True)
-    code: str = XmlAttribute(name="code")
-    timeStandards: List[TimeStandard] = XmlElementWrapper(
-        "TIMESTANDARDS", "TIMESTANDARD", required=True)
-    type: TypeTimeStandardList = XmlAttribute(name="type")
+# TODO: confirm root tag for TimeStandardList.
+class TimeStandardList(LenexBaseXmlModel, tag="TIMESTANDARDLIST"):
+    id: int = attr(name="timestandardlistid")
+    age_group: Optional[AgeGroup] = element(tag="AGEGROUP", default=None)
+    course: Course = attr(name="course")
+    gender: Gender = attr(name="gender")
+    handicap: Optional[int] = attr(name="handicap", default=None)
+    name: str = attr(name="name")
+    code: Optional[str] = attr(name="code", default=None)
+    # TODO: validate at least one time standard if required by contract.
+    timeStandards: List[TimeStandard] = wrapped(
+        "TIMESTANDARDS",
+        element(tag="TIMESTANDARD"),
+        default_factory=list,
+    )
+    type: Optional[TypeTimeStandardList] = attr(name="type", default=None)

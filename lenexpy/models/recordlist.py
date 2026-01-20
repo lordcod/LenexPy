@@ -1,23 +1,30 @@
+from datetime import datetime
+from typing import List, Optional
+
 from lenexpy.strenum import StrEnum
-from typing import List
-from xmlbind import XmlRoot, XmlAttribute, XmlElement, XmlElementWrapper
+from pydantic_xml import attr, element, wrapped
+
+from .base import LenexBaseXmlModel
 from .gender import Gender
 from .agegroup import AgeGroup
 from .course import Course
 from .record import Record
-from datetime import datetime, time as dtime
 
 
-class RecordList(XmlRoot):
-    ageGroup: AgeGroup = XmlElement(name="AGEGROUP")
-    course: Course = XmlAttribute(name="course", required=True)
-    gender: Gender = XmlAttribute(name="gender", required=True)
-    handicap: int = XmlAttribute(name="handicap")
-    name: str = XmlAttribute(name="name", required=True)
-    nation: str = XmlAttribute(name="nation")
-    order: int = XmlAttribute(name="order")
-    records: List[Record] = XmlElementWrapper(
-        "RECORDS",  "RECORD", required=True)
-    region: str = XmlAttribute(name="region")
-    updated: datetime = XmlAttribute(name="updated")
-    type: str = XmlAttribute(name="type")
+# TODO: confirm root tag for RecordList.
+class RecordList(LenexBaseXmlModel, tag="RECORDLIST"):
+    ageGroup: Optional[AgeGroup] = element(tag="AGEGROUP", default=None)
+    course: Course = attr(name="course")
+    gender: Gender = attr(name="gender")
+    handicap: Optional[int] = attr(name="handicap", default=None)
+    name: str = attr(name="name")
+    nation: Optional[str] = attr(name="nation", default=None)
+    order: Optional[int] = attr(name="order", default=None)
+    records: List[Record] = wrapped(
+        "RECORDS",
+        element(tag="RECORD"),
+        default_factory=list,
+    )
+    region: Optional[str] = attr(name="region", default=None)
+    updated: Optional[datetime] = attr(name="updated", default=None)
+    type: Optional[str] = attr(name="type", default=None)

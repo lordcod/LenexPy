@@ -1,5 +1,9 @@
 from lenexpy.strenum import StrEnum
-from xmlbind import XmlRoot, XmlAttribute
+from typing import Optional
+
+from pydantic_xml import attr
+
+from .base import LenexBaseXmlModel
 
 
 class HandicapClass(StrEnum):
@@ -22,8 +26,9 @@ class HandicapClass(StrEnum):
     GER_GB = "GER.GB"
 
 
-class Handicap(XmlRoot):
-    breast: HandicapClass = XmlAttribute(name="breast", required=True)
-    exception: str = XmlAttribute(name="exception")
-    free: HandicapClass = XmlAttribute(name="free", required=True)
-    medley: HandicapClass = XmlAttribute(name="medley", required=True)
+# TODO: confirm root tag for Handicap.
+class Handicap(LenexBaseXmlModel, tag="HANDICAP"):
+    breast: HandicapClass = attr(name="breast")
+    exception: Optional[str] = attr(name="exception", default=None)
+    free: HandicapClass = attr(name="free")
+    medley: HandicapClass = attr(name="medley")
