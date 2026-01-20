@@ -22,10 +22,7 @@ FIXTURE_PATHS = [
 @pytest.mark.skipif(not FIXTURE_PATHS, reason="No fixtures found")
 @pytest.mark.parametrize("path", FIXTURE_PATHS)
 def test_fixture_roundtrip(path: Path):
-    try:
-        lenex = fromfile(str(path))
-    except ValidationError as exc:
-        pytest.xfail(f"Fixture violates Lenex spec: {exc}")
+    lenex = fromfile(str(path))
 
     if path.suffix.lower() == ".lxf":
         lxf_bytes = encode_lxf_bytes(lenex, path.name)

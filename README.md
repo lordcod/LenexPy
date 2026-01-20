@@ -1,32 +1,31 @@
 LenexPy
 =======
 
-Библиотека для чтения/записи LENEX (LEF/LXF) и преобразования "удобного JSON" в Lenex.
+Python toolkit for reading and writing Lenex 3.0 swimming data (.lef/.lxf). Models and validation follow the official Lenex technical documentation (Version 3.0, 4 Mar 2025) — see https://wiki.swimrankings.net/images/6/62/Lenex_3.0_Technical_Documentation.pdf.
 
-Основное
---------
-- LEF: обычный XML Lenex.
-- LXF: ZIP с одним LEF файлом внутри.
-- Модели на pydantic-xml, сериализация/десериализация без изменения XML‑контракта.
+What it does
+------------
+- Decode/encode Lenex XML (.lef) and zipped Lenex (.lxf).
+- Pydantic + pydantic-xml data models aligned with the 4 Mar 2025 spec (required/optional attributes, timing modes, meet/session/event fields, etc.).
+- JSON helpers to build Lenex objects and emit .lef/.lxf.
 
-Установка
----------
+Install
+-------
 ```bash
 pip install lenexpy
 ```
 
-Быстрый старт
--------------
-Чтение/запись:
+Quick start
+-----------
 ```python
 from lenexpy import fromfile, tofile
 
-lenex = fromfile("meet.lxf")   # .lxf / .lef / .xml
+lenex = fromfile("meet.lxf")      # .lxf / .lef / .xml
 tofile(lenex, "out.lxf")
 tofile(lenex, "out.lef")
 ```
 
-Работа с bytes:
+Work with bytes directly:
 ```python
 from lenexpy.decoder.lef_decoder import decode_lef_bytes
 from lenexpy.decoder.lef_encoder import encode_lef_bytes
@@ -40,37 +39,61 @@ lenex = decode_lxf_bytes(lxf_bytes)
 lxf_bytes = encode_lxf_bytes(lenex, "meet.lxf")
 ```
 
-Удобный JSON -> Lenex
+Build Lenex from JSON
 ---------------------
-Файл `parser.py` принимает простой JSON и строит Lenex.
+`scripts/parser.py` can create Lenex objects from JSON and write Lenex files.
 
 ```python
-from parser import create_lenex_from_json_file
+from scripts.parser import create_lenex_from_json_file
 from lenexpy import tofile
 
 lenex = create_lenex_from_json_file("meet.json")
 tofile(lenex, "meet.lxf")
 ```
 
-Минимальный JSON:
+Minimal JSON shape:
 ```json
 {
   "version": "3.0",
-  "constructor": {"name": "Bot", "version": "1.0.0"},
-  "meet": {"name": "Test Meet", "city": "City", "nation": "RUS"}
+  "constructor": {
+    "name": "Bot",
+    "version": "1.0.0",
+    "contact": {"email": "bot@example.com"}
+  },
+  "meet": {
+    "name": "Test Meet",
+    "city": "City",
+    "nation": "RUS",
+    "sessions": [
+      {
+        "number": 1,
+        "date": "2025-01-01T00:00:00",
+        "events": [
+          {
+            "eventid": 1,
+            "number": 1,
+            "swimstyle": {
+              "distance": 50,
+              "relaycount": 1,
+              "stroke": "FREE"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
 ```
 
-Тесты
+Tests
 -----
 ```bash
 pytest
 ```
+Fixture-based round trips live in `tests/fixtures`. Some third-party fixtures may xfail if they are not spec-conformant (e.g., missing required IDs).
 
-Фикстуры кладите в `tests/fixtures` (поддержка вложенных папок).
-
-Сборка
-------
+Build
+-----
 ```bash
 python -m build
 ```
