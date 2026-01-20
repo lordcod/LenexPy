@@ -70,6 +70,12 @@ jobs:
         run: |
           poetry config pypi-token.pypi "$PYPI_TOKEN"
 
+      - name: Set version from git tag
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          VERSION="${TAG#v}"
+          poetry version "$VERSION"
+
       - name: Publish to PyPI with Poetry
         run: |
           poetry publish --build
