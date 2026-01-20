@@ -7,15 +7,14 @@ from pydantic_xml import attr, element, wrapped
 
 from .base import LenexBaseXmlModel
 
+from .course import Course
+from .handicap import HandicapClass
 from .meetinfoentry import MeetInfoEntry
 from .relayposition import RelayPosition
 from .swimtime import SwimTime
-from .course import Course
 
 
 class Status(StrEnum):
-    DNS = "DNS"
-    DSQ = "DSQ"
     EXH = "EXH"
     RJC = "RJC"
     SICK = "SICK"
@@ -26,13 +25,16 @@ class Status(StrEnum):
 class Entry(LenexBaseXmlModel, tag="ENTRY"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
     entrycourse: Optional[Course] = attr(name="entrycourse", default=None)
+    entrydistance: Optional[int] = attr(name="entrydistance", default=None)
     entrytime: Optional[SwimTime] = attr(name="entrytime", default=None)
     eventid: int = attr(name="eventid")
+    handicap: Optional[HandicapClass] = attr(name="handicap", default=None)
     heatid: Optional[int] = attr(name="heatid", default=None)
     lane: Optional[int] = attr(name="lane", default=None)
     meetinfo: Optional[MeetInfoEntry] = element(tag="MEETINFO", default=None)
-    relay_positions: List[RelayPosition] = element(
-        tag="RELAYPOSITIONS",
+    relay_positions: List[RelayPosition] = wrapped(
+        "RELAYPOSITIONS",
+        element(tag="RELAYPOSITION"),
         default_factory=list,
     )
     status: Optional[Status] = attr(name="status", default=None)

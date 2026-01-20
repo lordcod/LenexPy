@@ -34,4 +34,6 @@ class Role(StrEnum):
 class Judge(LenexBaseXmlModel, tag="JUDGE"):
     number: Optional[int] = attr(name="number", default=None)
     officialid: int = attr(name="officialid")
+    remarks: Optional[str] = attr(name="remarks", default=None)
     role: Optional[Role] = attr(name="role", default=None)
+    status: Optional[str] = attr(name="status", default=None)

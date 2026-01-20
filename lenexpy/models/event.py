@@ -7,6 +7,7 @@ from pydantic_xml import attr, element, wrapped
 
 from .base import LenexBaseXmlModel
 
+from .common import StatusEvent
 from .fee import Fee
 from .gender import Gender
 from .heat import Heat
@@ -55,6 +56,7 @@ class Event(LenexBaseXmlModel, tag="EVENT"):
     preveventid: Optional[int] = attr(name="preveventid", default=None)
     round: Optional[Round] = attr(name="round", default=None)
     run: Optional[int] = attr(name="run", default=None)
+    status: Optional[StatusEvent] = attr(name="status", default=None)
     swimstyle: SwimStyle = element(tag="SWIMSTYLE")
     time_standard_refs: List[TimeStandardRef] = wrapped(
         "TIMESTANDARDREFS",
