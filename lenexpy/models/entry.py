@@ -27,7 +27,7 @@ class Entry(LenexBaseXmlModel, tag="ENTRY"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
     entrycourse: Optional[Course] = attr(name="entrycourse", default=None)
     entrytime: Optional[SwimTime] = attr(name="entrytime", default=None)
-    eventid: Optional[int] = attr(name="eventid", default=None)
+    eventid: int = attr(name="eventid")
     heatid: Optional[int] = attr(name="heatid", default=None)
     lane: Optional[int] = attr(name="lane", default=None)
     meetinfo: Optional[MeetInfoEntry] = element(tag="MEETINFO", default=None)

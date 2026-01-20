@@ -2,6 +2,7 @@ from datetime import datetime, time as dtime
 from typing import List, Optional
 
 from lenexpy.strenum import StrEnum
+from pydantic import model_validator
 from pydantic_xml import attr, element, wrapped
 
 from .base import LenexBaseXmlModel
@@ -36,3 +37,9 @@ class Session(LenexBaseXmlModel, tag="SESSION"):
     )
     warmupfrom: Optional[dtime] = attr(name="warmupfrom", default=None)
     warmupuntil: Optional[dtime] = attr(name="warmupuntil", default=None)
+
+    @model_validator(mode="after")
+    def _require_events(self):
+        if not self.events:
+            raise ValueError("EVENTS collection is required and must contain at least one EVENT")
+        return self

@@ -2,6 +2,7 @@ from datetime import time as dtime
 from typing import List, Optional
 
 from lenexpy.strenum import StrEnum
+from pydantic import model_validator
 from pydantic_xml import attr, element, wrapped
 
 from .base import LenexBaseXmlModel
@@ -62,3 +63,9 @@ class Event(LenexBaseXmlModel, tag="EVENT"):
     )
     timing: Optional[Timing] = attr(name="timing", default=None)
     type: Optional[TypeEvent] = attr(name="type", default=None)
+
+    @model_validator(mode="after")
+    def _validate_agegroups(self):
+        if any(agegroup.id is None for agegroup in self.agegroups):
+            raise ValueError("AGEGROUP elements inside EVENT must define agegroupid")
+        return self

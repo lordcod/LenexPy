@@ -36,4 +36,4 @@ class Result(LenexBaseXmlModel, tag="RESULT"):
     resultid: int = attr(name="resultid")
     status: Optional[StatusResult] = attr(name="status", default=None)
     splits: List[Split] = element(tag="SPLITS", default_factory=list)
-    swimtime: Optional[SwimTime] = attr(name="swimtime", default=None)
+    swimtime: SwimTime = attr(name="swimtime")

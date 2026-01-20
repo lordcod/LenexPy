@@ -8,7 +8,7 @@ from .contact import Contact
 
 # TODO: confirm root tag for Constructor.
 class Constructor(LenexBaseXmlModel, tag="CONSTRUCTOR"):
-    contact: Optional[Contact] = element(tag="CONTACT", default=None)
+    contact: Contact = element(tag="CONTACT")
     name: str = attr(name="name")
     registration: Optional[str] = attr(name="registration", default=None)
     version: str = attr(name="version")

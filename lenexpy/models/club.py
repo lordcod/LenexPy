@@ -46,7 +46,3 @@ class Club(LenexBaseXmlModel, tag="CLUB"):
     shortname_en: Optional[str] = attr(name="shortname.en", default=None)
     swrid: Optional[str] = attr(name="swrid", default=None)
     type: Optional[TypeClub] = attr(name="type", default=None)
-
-    def model_post_init(self, __context) -> None:
-        if self.contact is None or getattr(self.contact, "name", None) is None:
-            self.contact = Contact(name=self.name)

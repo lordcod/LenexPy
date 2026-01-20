@@ -10,6 +10,7 @@ from lenexpy.models.event import Event
 from lenexpy.models.gender import Gender
 from lenexpy.models.lenex import Lenex
 from lenexpy.models.meet import Meet
+from lenexpy.models.contact import Contact
 from lenexpy.models.pool import Pool, TypePool
 from lenexpy.models.session import Session
 from lenexpy.models.stroke import Stroke
@@ -20,6 +21,13 @@ def _require(data: Mapping[str, Any], key: str):
     if key not in data:
         raise KeyError(f"Missing required key: {key}")
     return data[key]
+
+
+def _require_any(data: Mapping[str, Any], *keys: str):
+    for key in keys:
+        if key in data:
+            return data[key]
+    raise KeyError(f"Missing required key, expected one of: {', '.join(keys)}")
 
 
 def _get(data: Mapping[str, Any], *keys: str, default: Any = None):
@@ -35,9 +43,14 @@ def _enum(enum_cls, value):
     return enum_cls(value)
 
 
+def parse_contact(contact_json: Mapping[str, Any]) -> Contact:
+    _require(contact_json, "email")
+    return Contact(**contact_json)
+
+
 def parse_agegroup(ag_json: Mapping[str, Any]) -> AgeGroup:
     return AgeGroup(
-        id=_get(ag_json, "id", "agegroupid"),
+        id=_require_any(ag_json, "id", "agegroupid"),
         agemin=_require(ag_json, "agemin"),
         agemax=_require(ag_json, "agemax"),
         gender=_enum(Gender, ag_json.get("gender")),
@@ -93,24 +106,28 @@ def parse_pool(p_json: Mapping[str, Any]) -> Pool:
 
 
 def parse_meet(meet_json: Mapping[str, Any]) -> Meet:
+    sessions_json = _require(meet_json, "sessions")
+    if not isinstance(sessions_json, list) or len(sessions_json) == 0:
+        raise ValueError("Meet.sessions must contain at least one session")
+
     meet = Meet(
         name=_require(meet_json, "name"),
         city=_require(meet_json, "city"),
         nation=_require(meet_json, "nation"),
-        sessions=[],
+        sessions=[parse_session(s) for s in sessions_json],
     )
     if "pool" in meet_json:
         meet.pool = parse_pool(meet_json["pool"])
-    if "sessions" in meet_json:
-        meet.sessions = [parse_session(s) for s in meet_json["sessions"]]
     return meet
 
 
 def create_lenex_from_json(json_data: Mapping[str, Any]) -> Lenex:
     constructor_json = _require(json_data, "constructor")
+    contact_json = _require(constructor_json, "contact")
     constructor = Constructor(
         name=_require(constructor_json, "name"),
         version=_require(constructor_json, "version"),
+        contact=parse_contact(contact_json),
     )
 
     meet = parse_meet(_require(json_data, "meet"))

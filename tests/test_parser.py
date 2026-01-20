@@ -1,29 +1,63 @@
 import json
 import tempfile
 import unittest
+from datetime import datetime
 
 from lenexpy import tofile
 from lenexpy.decoder.lef_decoder import decode_lef_bytes
 from lenexpy.decoder.lef_encoder import encode_lef_bytes
 from lenexpy.decoder.lxf_decoder import decode_lxf_bytes
 from lenexpy.decoder.lxf_encoder import encode_lxf_bytes
+from lenexpy.models.contact import Contact
 from lenexpy.models.constructor import Constructor
+from lenexpy.models.event import Event
 from lenexpy.models.lenex import Lenex
 from lenexpy.models.meet import Meet
+from lenexpy.models.session import Session
+from lenexpy.models.swimstyle import SwimStyle
 from scripts.parser import create_lenex_from_json, create_lenex_from_json_file
 
 
 class TestParser(unittest.TestCase):
     def _make_lenex(self) -> Lenex:
-        constructor = Constructor(name="Bot", version="1.0.0")
-        meet = Meet(name="Test Meet", city="City", nation="RUS", sessions=[])
+        contact = Contact(email="bot@example.com", name="Bot")
+        constructor = Constructor(name="Bot", version="1.0.0", contact=contact)
+        swimstyle = SwimStyle(distance=50, relaycount=1, stroke="FREE")
+        event = Event(eventid=1, number=1, swimstyle=swimstyle)
+        session = Session(number=1, date=datetime.fromisoformat("2025-01-01T00:00:00"), events=[event])
+        meet = Meet(name="Test Meet", city="City", nation="RUS", sessions=[session])
         return Lenex(constructor=constructor, meet=meet, version="3.0")
 
     def test_parse_minimal_lenex(self):
         data = {
             "version": "3.0",
-            "constructor": {"name": "Bot", "version": "1.0.0"},
-            "meet": {"name": "Test Meet", "city": "City", "nation": "RUS"},
+            "constructor": {
+                "name": "Bot",
+                "version": "1.0.0",
+                "contact": {"email": "bot@example.com"},
+            },
+            "meet": {
+                "name": "Test Meet",
+                "city": "City",
+                "nation": "RUS",
+                "sessions": [
+                    {
+                        "number": 1,
+                        "date": "2025-01-01T00:00:00",
+                        "events": [
+                            {
+                                "eventid": 1,
+                                "number": 1,
+                                "swimstyle": {
+                                    "distance": 50,
+                                    "relaycount": 1,
+                                    "stroke": "FREE",
+                                },
+                            }
+                        ],
+                    }
+                ],
+            },
         }
 
         lenex = create_lenex_from_json(data)
@@ -37,7 +71,11 @@ class TestParser(unittest.TestCase):
     def test_parse_event_with_agegroups(self):
         data = {
             "version": "3.0",
-            "constructor": {"name": "Bot", "version": "1.0.0"},
+            "constructor": {
+                "name": "Bot",
+                "version": "1.0.0",
+                "contact": {"email": "bot@example.com"},
+            },
             "meet": {
                 "name": "Test Meet",
                 "city": "City",
@@ -111,8 +149,33 @@ class TestParser(unittest.TestCase):
     def test_parse_from_json_file(self):
         data = {
             "version": "3.0",
-            "constructor": {"name": "Bot", "version": "1.0.0"},
-            "meet": {"name": "File Meet", "city": "City", "nation": "RUS"},
+            "constructor": {
+                "name": "Bot",
+                "version": "1.0.0",
+                "contact": {"email": "bot@example.com"},
+            },
+            "meet": {
+                "name": "File Meet",
+                "city": "City",
+                "nation": "RUS",
+                "sessions": [
+                    {
+                        "number": 1,
+                        "date": "2025-01-01T00:00:00",
+                        "events": [
+                            {
+                                "eventid": 1,
+                                "number": 1,
+                                "swimstyle": {
+                                    "distance": 50,
+                                    "relaycount": 1,
+                                    "stroke": "FREE",
+                                },
+                            }
+                        ],
+                    }
+                ],
+            },
         }
 
         with tempfile.TemporaryDirectory() as tmpdir:

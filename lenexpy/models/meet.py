@@ -45,7 +45,7 @@ class Meet(LenexBaseXmlModel, tag="MEET"):
     host_club: Optional[str] = attr(name="hostclub", default=None)
     host_club_url: Optional[str] = attr(name="hostclub.url", default=None)
     max_entries: Optional[int] = attr(name="maxentries", default=None)
-    name: Optional[str] = attr(name="name", default=None)
+    name: str = attr(name="name")
     name_en: Optional[str] = attr(name="name.en", default=None)
     nation: Nation = attr(name="nation")
     number: Optional[str] = attr(name="number", default=None)
