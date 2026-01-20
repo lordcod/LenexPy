@@ -27,7 +27,7 @@ class TimeStandardList(LenexBaseXmlModel, tag="TIMESTANDARDLIST"):
     name: str = attr(name="name")
     code: Optional[str] = attr(name="code", default=None)
     # TODO: validate at least one time standard if required by contract.
-    timeStandards: List[TimeStandard] = wrapped(
+    time_standards: List[TimeStandard] = wrapped(
         "TIMESTANDARDS",
         element(tag="TIMESTANDARD"),
         default_factory=list,

@@ -55,7 +55,7 @@ class Event(LenexBaseXmlModel, tag="EVENT"):
     round: Optional[Round] = attr(name="round", default=None)
     run: Optional[int] = attr(name="run", default=None)
     swimstyle: SwimStyle = element(tag="SWIMSTYLE")
-    timeStandardRefs: List[TimeStandardRef] = wrapped(
+    time_standard_refs: List[TimeStandardRef] = wrapped(
         "TIMESTANDARDREFS",
         element(tag="TIMESTANDARDREF"),
         default_factory=list,

@@ -28,12 +28,12 @@ class Result(LenexBaseXmlModel, tag="RESULT"):
     heatid: Optional[int] = attr(name="heatid", default=None)
     lane: Optional[int] = attr(name="lane", default=None)
     points: Optional[int] = attr(name="points", default=None)
-    reactionTime: Optional[ReactionTime] = attr(name="reactiontime", default=None)
-    relayPositions: List[RelayPosition] = element(
+    reactiontime: Optional[ReactionTime] = attr(name="reactiontime", default=None)
+    relay_positions: List[RelayPosition] = element(
         tag="RELAYPOSITIONS",
         default_factory=list,
     )
     resultid: int = attr(name="resultid")
     status: Optional[StatusResult] = attr(name="status", default=None)
     splits: List[Split] = element(tag="SPLITS", default_factory=list)
-    swimTime: Optional[SwimTime] = attr(name="swimtime", default=None)
+    swimtime: Optional[SwimTime] = attr(name="swimtime", default=None)

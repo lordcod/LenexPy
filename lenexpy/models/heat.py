@@ -24,7 +24,7 @@ class StatusHeat(StrEnum):
 class Heat(LenexBaseXmlModel, tag="HEAT"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
     daytime: Optional[dtime] = attr(name="daytime", default=None)
-    finalType: Optional[Final] = attr(name="final", default=None)
+    finaltype: Optional[Final] = attr(name="final", default=None)
     heatid: int = attr(name="heatid")
     number: int = attr(name="number")
     order: Optional[int] = attr(name="order", default=None)

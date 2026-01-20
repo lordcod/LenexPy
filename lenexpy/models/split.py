@@ -8,4 +8,4 @@ from .swimtime import SwimTime
 # TODO: confirm root tag for Split.
 class Split(LenexBaseXmlModel, tag="SPLIT"):
     distance: int = attr(name="distance")
-    swimTime: SwimTime = attr(name="swimtime")
+    swimtime: SwimTime = attr(name="swimtime")

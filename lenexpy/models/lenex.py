@@ -18,12 +18,12 @@ class Lenex(LenexBaseXmlModel, tag="LENEX"):
         element(tag="MEET"),
         default=None,
     )
-    recordLists: List[RecordList] = wrapped(
+    record_lists: List[RecordList] = wrapped(
         "RECORDLISTS",
         element(tag="RECORDLIST"),
         default_factory=list,
     )
-    timeStandardLists: List[TimeStandardList] = wrapped(
+    time_standard_lists: List[TimeStandardList] = wrapped(
         "TIMESTANDARDLISTS",
         element(tag="TIMESTANDARDLIST"),
         default_factory=list,

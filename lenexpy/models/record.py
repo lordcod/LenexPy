@@ -16,7 +16,7 @@ from .athelete import Athlete
 class Record(LenexBaseXmlModel, tag="RECORD"):
     athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)
     comment: Optional[str] = attr(name="comment", default=None)
-    meetInfo: Optional[MeetInfoRecord] = element(tag="MEETINFO", default=None)
+    meetinfo: Optional[MeetInfoRecord] = element(tag="MEETINFO", default=None)
     relay: Optional[RelayRecord] = element(tag="RELAY", default=None)
     splits: List[Split] = wrapped(
         "SPLITS",

@@ -18,7 +18,7 @@ class StatusRelayPosition(StrEnum):
 class RelayRecord(LenexBaseXmlModel, tag="RELAY"):
     club: Optional[Club] = element(tag="CLUB", default=None)
     name: Optional[str] = attr(name="name", default=None)
-    relayPositions: List[RelayPosition] = wrapped(
+    relay_positions: List[RelayPosition] = wrapped(
         "RELAYPOSITIONS",
         element(tag="RELAYPOSITION"),
         default_factory=list,

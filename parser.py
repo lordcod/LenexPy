@@ -1,7 +1,6 @@
 import json
 from datetime import datetime
 
-from matplotlib.pyplot import isinteractive
 from lenexpy import tofile
 from lenexpy.models.agegroup import AgeGroup
 from lenexpy.models.constructor import Constructor
@@ -39,7 +38,6 @@ def parse_swimstyle(sw_json):
 
 def parse_event(order, ev_json):
     ags_json = ev_json.get("agegroups", [])
-    print(ags_json)
     if not isinstance(ags_json, list):
         ags_json = []
     return Event(
@@ -109,5 +107,4 @@ if __name__ == "__main__":
         data = json.load(f)
 
     lenex_obj = create_lenex_from_json(data)
-    print(lenex_obj)
     tofile(lenex_obj, "meet.lxf")

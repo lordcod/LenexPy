@@ -13,7 +13,7 @@ from .record import Record
 
 # TODO: confirm root tag for RecordList.
 class RecordList(LenexBaseXmlModel, tag="RECORDLIST"):
-    ageGroup: Optional[AgeGroup] = element(tag="AGEGROUP", default=None)
+    agegroup: Optional[AgeGroup] = element(tag="AGEGROUP", default=None)
     course: Course = attr(name="course")
     gender: Gender = attr(name="gender")
     handicap: Optional[int] = attr(name="handicap", default=None)
