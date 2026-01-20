@@ -13,6 +13,7 @@ class Stroke(StrEnum):
     IMMERSION = "IMMERSION"
     MEDLEY = "MEDLEY"
     SURFACE = "SURFACE"
+    BIFINS = "BIFINS"
 
     # Unknown stroke type
     UNKNOWN = "UNKNOWN"
