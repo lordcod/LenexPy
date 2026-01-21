@@ -1,5 +1,5 @@
 from lenexpy.strenum import StrEnum
-from typing import List, Optional
+from typing import List, Optional, Union
 from pydantic_xml import attr, wrapped, element
 
 from .base import LenexBaseXmlModel
@@ -20,7 +20,8 @@ class AgeGroup(LenexBaseXmlModel, tag="AGEGROUP"):
     agemin: int = attr(name="agemin")
     gender: Optional[Gender] = attr(name="gender", default=None)
     calculate: Optional[Calculate] = attr(name="calculate", default=None)
-    handicap: Optional[int] = attr(name="handicap", default=None)
+    # list handicap, example "1,2,3", parsing for ,
+    handicap: Optional[Union[int, str]] = attr(name="handicap", default=None)
     levelmax: Optional[int] = attr(name="levelmax", default=None)
     levelmin: Optional[int] = attr(name="levelmin", default=None)
     levels: Optional[str] = attr(name="levels", default=None)

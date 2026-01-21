@@ -28,7 +28,7 @@ class HandicapClass(StrEnum):
 
 # TODO: confirm root tag for Handicap.
 class Handicap(LenexBaseXmlModel, tag="HANDICAP"):
-    breast: HandicapClass = attr(name="breast")
+    breast: Optional[HandicapClass] = attr(name="breast", default=None)
     exception: Optional[str] = attr(name="exception", default=None)
-    free: HandicapClass = attr(name="free")
-    medley: HandicapClass = attr(name="medley")
+    free: Optional[HandicapClass] = attr(name="free", default=None)
+    medley: Optional[HandicapClass] = attr(name="medley", default=None)

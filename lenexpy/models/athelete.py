@@ -1,5 +1,7 @@
+from __future__ import annotations
+
 from datetime import date
-from typing import List, Optional
+from typing import TYPE_CHECKING, List, Optional
 
 from pydantic import model_validator
 from pydantic_xml import attr, element, wrapped
@@ -12,6 +14,9 @@ from .gender import Gender
 from .handicap import Handicap
 from .nation import Nation
 from .result import Result
+
+if TYPE_CHECKING:
+    from .club import Club
 
 
 class AthleteStatus(StrEnum):
@@ -26,18 +31,20 @@ class AthleteStatus(StrEnum):
 
 # TODO: confirm root tag for Athlete.
 class Athlete(LenexBaseXmlModel, tag="ATHLETE"):
-    athleteid: int = attr(name="athleteid")
-    birthdate: date = attr(name="birthdate")
+    athleteid: Optional[int] = attr(name="athleteid", default=None)
+    sdmsid: Optional[int] = attr(name="sdmsid", default=None)
+    birthdate: Optional[date] = attr(name="birthdate", default=None)
+    firstname: Optional[str] = attr(name="firstname", default=None)
+    firstname_en: Optional[str] = attr(name="firstname.en", default=None)
+    gender: Gender = attr(name="gender", default="")
+    club: Optional[Club] = element(name="CLUB", default=None)
+    handicap: Optional[Handicap] = element(tag="HANDICAP", default=None)
     entries: List[Entry] = wrapped(
         "ENTRIES",
         element(tag="ENTRY"),
         default_factory=list,
     )
-    firstname: str = attr(name="firstname")
-    firstname_en: Optional[str] = attr(name="firstname.en", default=None)
-    gender: Gender = attr(name="gender")
-    handicap: Optional[Handicap] = element(tag="HANDICAP", default=None)
-    lastname: str = attr(name="lastname")
+    lastname: Optional[str] = attr(name="lastname", default=None)
     lastname_en: Optional[str] = attr(name="lastname.en", default=None)
     level: Optional[str] = attr(name="level", default=None)
     license: Optional[str] = attr(name="license", default=None)
@@ -54,6 +61,7 @@ class Athlete(LenexBaseXmlModel, tag="ATHLETE"):
     )
     status: Optional[AthleteStatus] = attr(name="status", default=None)
     swrid: Optional[int] = attr(name="swrid", default=None)
+    domicile: Optional[str] = attr(name="domicile", default=None)
 
     @model_validator(mode="before")
     @classmethod

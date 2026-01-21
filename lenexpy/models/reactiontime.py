@@ -1,5 +1,5 @@
 class ReactionTime:
-    time: int
+    time: str
 
     def __init__(self, time: str):
         self.time = time

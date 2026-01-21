@@ -18,7 +18,7 @@ from .timing import Timing
 # TODO: confirm root tag for Session.
 class Session(LenexBaseXmlModel, tag="SESSION"):
     course: Optional[Course] = attr(name="course", default=None)
-    date: Union[ddate, datetime] = attr(name="date")
+    date: Optional[ddate] = attr(name="date", default=None)
     daytime: Optional[dtime] = attr(name="daytime", default=None)
     endtime: Optional[dtime] = attr(name="endtime", default=None)
     events: List[Event] = wrapped(
@@ -62,3 +62,21 @@ class Session(LenexBaseXmlModel, tag="SESSION"):
             raise ValueError(
                 "EVENTS collection is required and must contain at least one EVENT")
         return self
+
+    @model_validator(mode="before")
+    @classmethod
+    def _normalize_date(cls, data):
+        if isinstance(data, dict) and "date" in data:
+            value = data["date"]
+            if isinstance(value, datetime):
+                data["date"] = value.date()
+            elif isinstance(value, str):
+                try:
+                    data["date"] = datetime.fromisoformat(value).date()
+                except ValueError:
+                    # Fallback to plain date parsing; keep raw if it still fails.
+                    try:
+                        data["date"] = ddate.fromisoformat(value)
+                    except ValueError:
+                        pass
+        return data

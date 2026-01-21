@@ -7,14 +7,14 @@ from .base import LenexBaseXmlModel
 from .nation import Nation
 from .official import Official
 from .relaymeet import RelayMeet
-from .athelete import Athlete
 from .contact import Contact
+from .athelete import Athlete
 
 
 class TypeClub(StrEnum):
-    CLUB = "CLUB",
-    NATIONALTEAM = "NATIONALTEAM",
-    REGIONALTEAM = "REGIONALTEAM",
+    CLUB = "CLUB"
+    NATIONALTEAM = "NATIONALTEAM"
+    REGIONALTEAM = "REGIONALTEAM"
     UNATTACHED = "UNATTACHED"
 
 
@@ -22,12 +22,13 @@ class TypeClub(StrEnum):
 class Club(LenexBaseXmlModel, tag="CLUB"):
     contact: Optional[Contact] = element(tag="CONTACT", default=None)
     code: Optional[str] = attr(name="code", default=None)
+    clubid: Optional[int] = attr(name="clubid", default=None)
     athletes: List[Athlete] = wrapped(
         "ATHLETES",
         element(tag="ATHLETE"),
         default_factory=list,
     )
-    name: str = attr(name="name")
+    name: Optional[str] = attr(name="name", default=None)
     name_en: Optional[str] = attr(name="name.en", default=None)
     nation: Optional[Nation] = attr(name="nation", default=None)
     number: Optional[int] = attr(name="number", default=None)

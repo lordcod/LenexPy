@@ -9,7 +9,7 @@ from .base import LenexBaseXmlModel
 class Contact(LenexBaseXmlModel, tag="CONTACT"):
     city: Optional[str] = attr(name="city", default=None)
     country: Optional[str] = attr(name="country", default=None)
-    email: str = attr(name="email")
+    email: Optional[str] = attr(name="email", default=None)
     fax: Optional[str] = attr(name="fax", default=None)
     internet: Optional[str] = attr(name="internet", default=None)
     name: Optional[str] = attr(name="name", default=None)

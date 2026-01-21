@@ -1,3 +1,7 @@
+from lenexpy.models._bootstrap import bootstrap_models
+
+
+from typing import Tuple
 from .decoder import load as fromfile, save as tofile
 from .models.agedate import TypeAgeDate, AgeDate
 from .models.agegroup import Calculate, AgeGroup
@@ -52,7 +56,11 @@ from .models_st.entry import Status as StatusST, Entry as EntryST
 from .models_st.heat import Final as FinalST, StatusHeat as StatusHeatST, Heat as HeatST
 from .models_st.result import StatusResult as StatusResultST, Result as ResultST
 
-__all__ = [
+Club.model_rebuild(force=True, _types_namespace={"Athlete": Athlete})
+Athlete.model_rebuild(force=True, _types_namespace={"Club": Club})
+RelayRecord.model_rebuild(force=True, _types_namespace={"Club": Club})
+
+__all__: Tuple[str, ...] = (
     "fromfile",
     "tofile",
     "TypeAgeDate",
@@ -126,4 +134,4 @@ __all__ = [
     "HeatST",
     "StatusResultST",
     "ResultST",
-]
+)

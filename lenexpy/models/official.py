@@ -20,5 +20,5 @@ class Official(LenexBaseXmlModel, tag="OFFICIAL"):
     license: Optional[str] = attr(name="license", default=None)
     nameprefix: Optional[str] = attr(name="nameprefix", default=None)
     nation: Optional[Nation] = attr(name="nation", default=None)
-    officialid: int = attr(name="officialid")
+    officialid: Optional[int] = attr(name="officialid", default=None)
     passport: Optional[str] = attr(name="passport", default=None)

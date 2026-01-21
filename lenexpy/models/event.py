@@ -27,6 +27,10 @@ class Round(StrEnum):
     SOP = "SOP"
     SOS = "SOS"
     SOQ = "SOQ"
+    # Additional values observed in fixtures; keep here for reference while
+    # allowing arbitrary strings through the model.
+    EXTRAHEATS = "EXTRAHEATS"
+    TIMETRIAL = "TIMETRIAL"
 
 
 class TypeEvent(StrEnum):
@@ -36,33 +40,38 @@ class TypeEvent(StrEnum):
 
 # TODO: confirm root tag for Event.
 class Event(LenexBaseXmlModel, tag="EVENT"):
+    # Preserve child order observed in fixtures: SWIMSTYLE, AGEGROUPS,
+    # TIMESTANDARDREFS, HEATS.
+    swimstyle: SwimStyle = element(tag="SWIMSTYLE")
     agegroups: List[AgeGroup] = wrapped(
         "AGEGROUPS",
         element(tag="AGEGROUP"),
         default_factory=list,
     )
-    daytime: Optional[dtime] = attr(name="daytime", default=None)
-    eventid: int = attr(name="eventid")
-    fee: Optional[Fee] = element(tag="FEE", default=None)
-    gender: Optional[Gender] = attr(name="gender", default=None)
-    heats: List[Heat] = wrapped(
-        "HEATS",
-        element(tag="HEAT"),
-        default_factory=list,
-    )
-    maxentries: Optional[int] = attr(name="maxentries", default=None)
-    number: int = attr(name="number")
-    order: Optional[int] = attr(name="order", default=None)
-    preveventid: Optional[int] = attr(name="preveventid", default=None)
-    round: Optional[Round] = attr(name="round", default=None)
-    run: Optional[int] = attr(name="run", default=None)
-    status: Optional[StatusEvent] = attr(name="status", default=None)
-    swimstyle: SwimStyle = element(tag="SWIMSTYLE")
     time_standard_refs: List[TimeStandardRef] = wrapped(
         "TIMESTANDARDREFS",
         element(tag="TIMESTANDARDREF"),
         default_factory=list,
     )
+    heats: List[Heat] = wrapped(
+        "HEATS",
+        element(tag="HEAT"),
+        default_factory=list,
+    )
+    fee: Optional[Fee] = element(tag="FEE", default=None)
+
+    daytime: Optional[dtime] = attr(name="daytime", default=None)
+    eventid: int = attr(name="eventid")
+    gender: Optional[Gender] = attr(name="gender", default=None)
+    maxentries: Optional[int] = attr(name="maxentries", default=None)
+    number: int = attr(name="number")
+    order: Optional[int] = attr(name="order", default=None)
+    preveventid: Optional[int] = attr(name="preveventid", default=None)
+    # Use str to avoid dropping non-standard round values such as EXTRAHEATS
+    # or TIMETRIAL found in fixtures.
+    round: Optional[str] = attr(name="round", default=None)
+    run: Optional[int] = attr(name="run", default=None)
+    status: Optional[StatusEvent] = attr(name="status", default=None)
     timing: Optional[Timing] = attr(name="timing", default=None)
     type: Optional[TypeEvent] = attr(name="type", default=None)
 

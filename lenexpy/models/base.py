@@ -5,6 +5,7 @@ from typing import Any
 
 from pydantic import ConfigDict, model_validator, model_serializer
 from pydantic_xml import BaseXmlModel
+from pydantic_xml.model import SearchMode
 
 
 def _lenex_time_str(t: dtime) -> str:
@@ -27,7 +28,19 @@ def _convert_times(obj: Any) -> Any:
 
 
 class LenexBaseXmlModel(BaseXmlModel):
-    model_config = ConfigDict(arbitrary_types_allowed=True)
+    # ! DEV VERSION ! #
+    # model_config = ConfigDict(
+    #     arbitrary_types_allowed=True,
+    #     extra="allow",
+    #     protected_namespaces=(),
+    #     search_mode="unordered",
+    # )
+
+    model_config = ConfigDict(
+        arbitrary_types_allowed=False,
+        extra="forbid",
+    )
+    __xml_search_mode__ = SearchMode.UNORDERED
 
     @model_validator(mode="before")
     @classmethod

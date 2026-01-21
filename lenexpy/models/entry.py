@@ -19,6 +19,7 @@ class Status(StrEnum):
     RJC = "RJC"
     SICK = "SICK"
     WDR = "WDR"
+    DNS = "DNS"
 
 
 # TODO: confirm root tag for Entry.
@@ -37,7 +38,10 @@ class Entry(LenexBaseXmlModel, tag="ENTRY"):
         element(tag="RELAYPOSITION"),
         default_factory=list,
     )
-    status: Optional[Status] = attr(name="status", default=None)
+    # Accept any status string to avoid losing data from fixtures that use
+    # additional values like DNS.
+    status: Optional[str] = attr(name="status", default=None)
+    late: Optional[str] = attr(name="late", default=None)
 
     @field_validator("entrytime", mode="before")
     @classmethod

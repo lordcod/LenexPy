@@ -14,15 +14,16 @@ from .athelete import Athlete
 
 # TODO: confirm root tag for Record.
 class Record(LenexBaseXmlModel, tag="RECORD"):
-    athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)
-    comment: Optional[str] = attr(name="comment", default=None)
-    meetinfo: Optional[MeetInfoRecord] = element(tag="MEETINFO", default=None)
-    relay: Optional[RelayRecord] = element(tag="RELAY", default=None)
+    # Child order observed in fixtures: SWIMSTYLE, (SPLITS), MEETINFO, RELAY, ATHLETE
+    swimstyle: SwimStyle = element(tag="SWIMSTYLE")
     splits: List[Split] = wrapped(
         "SPLITS",
         element(tag="SPLIT"),
         default_factory=list,
     )
-    swimstyle: SwimStyle = element(tag="SWIMSTYLE")
+    meetinfo: Optional[MeetInfoRecord] = element(tag="MEETINFO", default=None)
+    relay: Optional[RelayRecord] = element(tag="RELAY", default=None)
+    athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)
+    comment: Optional[str] = attr(name="comment", default=None)
     swimtime: SwimTime = attr(name="swimtime")
     status: Optional[str] = attr(name="status", default=None)

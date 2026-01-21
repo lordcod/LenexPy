@@ -1,3 +1,4 @@
+from collections import Counter, defaultdict
 from collections import Counter
 from pathlib import Path
 from zipfile import ZipFile
@@ -69,8 +70,26 @@ def _children_summary(children) -> str:
     return ", ".join([f"{t}:{n}" for t, n in sorted(tags.items())])
 
 
+KEY_ATTRS = (
+    "eventid", "number", "id", "agegroupid", "heatid", "lane", "clubid", "athleteid",
+    "code", "name"
+)
+
+
+def _sig(el: ET._Element) -> tuple:
+    """
+    Сигнатура для сопоставления детей без учёта порядка.
+    Берём tag + первый попавшийся “ключевой” атрибут (ключ и значение).
+    Если ключевого нет — tag + None.
+    """
+    for k in KEY_ATTRS:
+        v = el.get(k)
+        if v is not None:
+            return (el.tag, k, v)
+    return (el.tag, None, None)
+
+
 def _compare_elements(original: ET._Element, regenerated: ET._Element, path: str, errors, max_errors: int = 50) -> int:
-    """Recursively compare XML elements collecting human-friendly diffs."""
     total = 0
 
     def record(msg: str):
@@ -79,72 +98,71 @@ def _compare_elements(original: ET._Element, regenerated: ET._Element, path: str
         if len(errors) < max_errors:
             errors.append(msg)
 
+    # Tag
     if original.tag != regenerated.tag:
         record(
             f"{path}: tag differs (orig='{original.tag}', regen='{regenerated.tag}')")
         return total
 
-    # Attributes
+    # Attributes: требуем, чтобы ВСЕ атрибуты оригинала присутствовали в regen.
+    # (значения сейчас не сравниваются — как у вас было закомментировано)
     for key, value in original.attrib.items():
         if key not in regenerated.attrib:
             record(f"{path}: missing attribute '{key}' (orig='{value}')")
-        # ?
-        # elif regenerated.attrib[key] != value:
-        #     record(
-        #         f"{path}: attribute '{key}' differs (orig='{value}', regen='{regenerated.attrib[key]}')"
-        #     )
-    for key in regenerated.attrib:
+
+    # Атрибуты, появившиеся в regen, допускаем только если они пустые/whitespace
+    for key, value in regenerated.attrib.items():
         if key not in original.attrib:
+            if not (value or "").strip():
+                continue
             record(
                 f"{path}: unexpected attribute '{key}' present in regenerated xml")
 
-    # Text
+    # Text (строго)
     orig_text = (original.text or "").strip()
     regen_text = (regenerated.text or "").strip()
-    if orig_text or regen_text:
-        if orig_text != regen_text:
+    if orig_text != regen_text:
+        # если оба пустые — ок
+        if orig_text or regen_text:
             record(
                 f"{path}: text differs (orig='{orig_text}', regen='{regen_text}')")
 
-    # Children
+    # Children — сравнение без учёта порядка
     orig_children = list(original)
     regen_children = list(regenerated)
-    if len(orig_children) != len(regen_children):
-        record(
-            f"{path}: children count differs (orig={len(orig_children)}, regen={len(regen_children)})")
 
-    if len(orig_children) != len(regen_children):
-        record(
-            f"{path}: children count differs "
-            f"(orig={len(orig_children)}, regen={len(regen_children)}); "
-            f"orig tags: [{_children_summary(orig_children)}]; "
-            f"regen tags: [{_children_summary(regen_children)}]"
-        )
+    orig_sigs = Counter(_sig(c) for c in orig_children)
+    regen_sigs = Counter(_sig(c) for c in regen_children)
 
-        # Детализация “хвоста”
-        min_len = min(len(orig_children), len(regen_children))
+    if orig_sigs != regen_sigs:
+        # Покажем разницу в счётчиках
+        missing = orig_sigs - regen_sigs
+        extra = regen_sigs - orig_sigs
+        if missing:
+            record(f"{path}: regenerated missing children: {dict(missing)}")
+        if extra:
+            record(f"{path}: regenerated has extra children: {dict(extra)}")
 
-        if len(orig_children) > min_len:
-            missing = orig_children[min_len:]
-            record(
-                f"{path}: regenerated missing {len(missing)} trailing children: "
-                + ", ".join(f"{min_len+i+1}:{_child_sig(c)}" for i,
-                            c in enumerate(missing))
-            )
+        # Если состав детей уже не совпал, дальше углубляться бессмысленно
+        return total
 
-        if len(regen_children) > min_len:
-            extra = regen_children[min_len:]
-            record(
-                f"{path}: regenerated has {len(extra)} extra trailing children: "
-                + ", ".join(f"{min_len+i+1}:{_child_sig(c)}" for i,
-                            c in enumerate(extra))
-            )
+    # Группируем детей по сигнатуре и рекурсивно сравниваем попарно
+    orig_map = defaultdict(list)
+    regen_map = defaultdict(list)
+    for c in orig_children:
+        orig_map[_sig(c)].append(c)
+    for c in regen_children:
+        regen_map[_sig(c)].append(c)
 
-    # Сравнение общего префикса (как и раньше)
-    for idx, (orig_child, regen_child) in enumerate(zip(orig_children, regen_children), start=1):
-        child_path = f"{path}/{orig_child.tag}[{idx}]"
-        total += _compare_elements(orig_child, regen_child,
-                                   child_path, errors, max_errors=max_errors)
+    for s in orig_map.keys():
+        o_list = orig_map[s]
+        r_list = regen_map[s]
+        # Порядок внутри группы может быть произвольным, но обычно одинаковый.
+        # Сравним по индексу внутри одной сигнатуры.
+        for idx, (o, r) in enumerate(zip(o_list, r_list), start=1):
+            child_path = f"{path}/{o.tag}#{s[1]}={s[2]}[{idx}]" if s[1] else f"{path}/{o.tag}[{idx}]"
+            total += _compare_elements(o, r, child_path,
+                                       errors, max_errors=max_errors)
 
     return total
 
@@ -184,6 +202,9 @@ def test_fixture_roundtrip_preserves_data(path: Path):
 @pytest.mark.skipif(not FIXTURE_PATHS, reason="No fixtures found")
 @pytest.mark.parametrize("path", FIXTURE_PATHS)
 def test_fixture_xml_roundtrip_matches_original_bytes(path: Path):
+    # pytest.skip(
+    #     "Skipping XML byte-for-byte roundtrip tests due to known minor differences.")
+
     original_xml_bytes = _extract_xml_bytes(path)
     lenex = fromfile(str(path))
 

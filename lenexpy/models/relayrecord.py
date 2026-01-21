@@ -1,4 +1,6 @@
-from typing import List, Optional
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, List, Optional
 
 from lenexpy.strenum import StrEnum
 from pydantic_xml import attr, element, wrapped
@@ -6,7 +8,9 @@ from pydantic_xml import attr, element, wrapped
 from .base import LenexBaseXmlModel
 
 from .relayposition import RelayPosition
-from .club import Club
+
+if TYPE_CHECKING:
+    from .club import Club
 
 
 class StatusRelayPosition(StrEnum):
