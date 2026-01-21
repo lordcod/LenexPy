@@ -1,0 +1,2163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LENEX version="3.0">
+    <CONSTRUCTOR name="SPLASH Meet Manager 11" registration="GRC Group" version="11.83565">
+        <CONTACT city="Spiegel b. Bern" country="CH" email="sales@swimrankings.net"
+            internet="https://www.swimrankings.net" name="Splash Software GmbH" street="Ahornweg 41"
+            zip="3095" />
+    </CONSTRUCTOR>
+    <MEETS>
+        <MEET city="Москва" course="SCM" name="День брассиста в Люблино" nation="RUS"
+            reservecount="2" startmethod="1" timing="SEMIAUTOMATIC">
+            <AGEDATE type="YEAR" value="2026-12-31" />
+            <POOL lanemax="5" lanemin="1" />
+            <FACILITY city="Москва" nation="RUS" />
+            <POINTTABLE name="AQUA Point Scoring" pointtableid="3018" version="2025" />
+            <SESSIONS>
+                <SESSION date="2026-01-25T00:00:00" daytime="14:30:00" number="1">
+                    <EVENTS>
+                        <EVENT eventid="1114" gender="F" number="1" order="1" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="25" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                        <EVENT eventid="1139" gender="M" number="2" order="2" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="25" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                        <EVENT eventid="1153" gender="F" number="3" order="3" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                        <EVENT eventid="1167" gender="M" number="4" order="4" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                        <EVENT eventid="1181" gender="F" number="5" order="5" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                        <EVENT eventid="1195" gender="M" number="6" order="6" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                        <EVENT eventid="3471" gender="F" number="7" order="7" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                        <EVENT eventid="3495" gender="M" number="8" order="8" preveventid="-1"
+                            round="TIM">
+                            <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                        </EVENT>
+                    </EVENTS>
+                </SESSION>
+            </SESSIONS>
+        </MEET>
+    </MEETS>
+    <TIMESTANDARDLISTS>
+        <TIMESTANDARDLIST timestandardlistid="1059" course="SCM" gender="F" name="Норматив I разряд"
+            code="I" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:09.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:53.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:35.95">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:10:11.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:52.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:21.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:38.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:03.84">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:34.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:34.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:20.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.95">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:31.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:27.85">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:14.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:37.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:20:04.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:13.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1060" course="SCM" gender="M" name="Норматив I разряд"
+            code="I" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:01.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:36.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:31.65">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:24.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:25.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:11.40">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:21.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:56.70">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:17.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:19.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:05.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.95">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.35">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:24.45">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:05.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:02.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:05.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:04.40">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1061" course="LCM" gender="F" name="Норматив I разряд"
+            code="I" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:11.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:56.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:36.70">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:10:23.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:59.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:22.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:42.75">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:05.34">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:37.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:37.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:23.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:31.70">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:32.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:28.60">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:42.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:20:27.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:14.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1062" course="LCM" gender="M" name="Норматив I разряд"
+            code="I" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:03.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:39.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:32.40">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:37.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:31.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:13.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:25.75">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:58.30">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:20.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:22.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:08.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:27.70">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.95">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:25.20">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:07.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:29.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:06.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1063" course="LCM" gender="M"
+            name="Норматив II разряд" code="II" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:11.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:58.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:35.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:11:14.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:06.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:21.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:44.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:04.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:39.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:38.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:23.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:32.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:27.60">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:48.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:20:50.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:14.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1064" course="SCM" gender="F"
+            name="Норматив II разряд" code="II" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:19.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:14.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:40.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:11:42.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:34.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:29.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:59.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:11.40">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:55.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:54.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:36.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:33.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:36.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:23.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:21.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:22:34.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:21.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1065" course="LCM" gender="F"
+            name="Норматив II разряд" code="II" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:20.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:17.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:40.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:11:54.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:40.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:31.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:03.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:12.90">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:58.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:57.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:38.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:34.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:37.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:31.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:27.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:22:57.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:22.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1066" course="SCM" gender="M"
+            name="Норматив II разряд" code="II" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:10.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:55.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:35.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:11:02.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:00.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:20.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:38.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:03.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:36.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:36.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:20.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:32.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.85">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:13.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:43.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:20:27.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:12.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1067" course="SCM" gender="F"
+            name="Норматив III разряд" code="III" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:30.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:39.60">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:44.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:13:15.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:18.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:41.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:25.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:19.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:18.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:16.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:54.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:36.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:40.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:32.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:34.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:14.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:25:57.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:31.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1068" course="LCM" gender="M"
+            name="Норматив III разряд" code="III" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:21.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:21.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:39.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:12:36.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:47.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:29.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:08.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:12.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:00.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:59.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:41.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:33.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:36.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:37.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:23:50.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:22.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1069" course="LCM" gender="F"
+            name="Норматив III разряд" code="III" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:31.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:42.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:44.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:13:27.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:24.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:43.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:29.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:20.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:21.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:19.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:57.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:37.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:41.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:33.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:20.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:26:20.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:32.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1070" course="SCM" gender="M"
+            name="Норматив III разряд" code="III" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="9" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:20.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:18.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:38.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:12:24.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:41.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:28.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:04.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:10.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:57.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:56.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:38.70">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:33.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:35.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:23.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:31.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:23:27.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:21.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1071" course="LCM" gender="M"
+            name="Норматив III юн. разряд" code="IIIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:02:10.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:07.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:05.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:38.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:35.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:24.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:48.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:04.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:39.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:53.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:27.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:58.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:02.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:55.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:24.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:35:52.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:17.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1072" course="SCM" gender="M"
+            name="Норматив III юн. разряд" code="IIIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:02:01.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:04.60">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:05.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:26.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:29.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:23.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:44.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:03.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:36.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:50.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:24.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:58.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:01.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:55.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:13.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:18.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:35:30.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:16.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1073" course="LCM" gender="F"
+            name="Норматив III юн. разряд" code="IIIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:02:22.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:36.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:12.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:21:12.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:57.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:38.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:14.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:13.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:04.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:18.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:46.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:04.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:07.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:59.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:10:43.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:38:42.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:29.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1074" course="SCM" gender="F"
+            name="Норматив III юн. разряд" code="IIIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:02:21.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:33.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:11.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:21:00.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:51.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:37.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:10.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:12.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:01.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:15.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:43.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:03.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:07.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:59.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:45.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:10:37.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:38:20.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:28.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1075" course="SCM" gender="F"
+            name="Норматив II юн. разряд" code="IIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:02:01.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:51.60">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:01.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:30.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:40.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:16.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:30.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:53.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:21.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:35.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:05.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:53.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:57.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:49.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:05.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:26.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:34:10.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:08.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1076" course="SCM" gender="M"
+            name="Норматив II юн. разряд" code="IIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:49.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:24.60">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:55.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:16:26.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:33.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:03.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:04.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:43.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:56.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:10.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:45.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:48.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:51.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:45.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:53.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:22.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:31:30.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:56.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1077" course="LCM" gender="M"
+            name="Норматив II юн. разряд" code="IIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:50.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:27.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:55.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:16:38.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:39.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:04.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:08.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:44.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:59.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:13.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:47.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:48.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:52.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:45.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:28.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:31:52.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:57.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1078" course="LCM" gender="F"
+            name="Норматив II юн. разряд" code="IIю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:02:02.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:54.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:02.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:42.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:46.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:17.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:34.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:54.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:24.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:38.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:08.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:54.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:57.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:50.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:32.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:34:32.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:09.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1079" course="SCM" gender="F"
+            name="Норматив I юн. разряд" code="Iю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:42.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:16.60">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:51.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:16:00.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:29.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:06.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:54.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:33.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:45.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:50.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:25.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:43.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:47.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:39.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:46.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:15.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:30:05.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:45.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1080" course="LCM" gender="F"
+            name="Норматив I юн. разряд" code="Iю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:43.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:19.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:52.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:16:12.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:35.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:07.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:58.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:34.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:48.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:53.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:28.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:44.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:47.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:40.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:21.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:30:27.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:46.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1081" course="SCM" gender="M"
+            name="Норматив I юн. разряд" code="Iю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:30.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:51.60">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:45.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:14:26.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:37.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:44.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:29.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:23.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:21.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:24.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:04.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:38.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:41.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:35.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:34.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:26.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:27:30.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:33.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1082" course="LCM" gender="M"
+            name="Норматив I юн. разряд" code="Iю" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="8" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:31.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:54.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:45.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:14:38.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:06:43.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:45.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:33.00">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:24.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:24.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:27.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:07.20">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:38.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:42.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:35.80">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:32.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:27:52.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:35.10">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1083" course="LCM" gender="F" name="Норматив КМС"
+            code="КМС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="10" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:06.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:46.40">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:35.00">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:42.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:41.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:17.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:33.25">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:01.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:27.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:28.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:14.76">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.20">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.70">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:27.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:20.50">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:44.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:10.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1084" course="SCM" gender="F" name="Норматив КМС"
+            code="КМС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="10" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:05.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:43.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:34.25">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:30.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:30.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:16.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:29.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:00.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:24.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:25.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:11.75">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:28.45">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.85">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.55">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:09.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:15.50">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:18:21.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:08.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1085" course="LCM" gender="M" name="Норматив КМС"
+            code="КМС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="10" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:59.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:29.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.50">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:58.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:14.50">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:08.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:17.25">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:54.90">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:13.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:15.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:00.65">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:25.70">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:28.15">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:23.95">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:48.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:17:29.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:02.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1086" course="SCM" gender="M" name="Норматив КМС"
+            code="КМС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="10" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:58.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:26.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.00">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:50.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:08.50">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:06.90">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:14.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:53.30">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:09.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:11.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:57.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:24.95">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:27.35">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:23.20">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:01.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:43.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:17:06.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:00.40">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1087" course="SCM" gender="F" name="Норматив МС"
+            code="МС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="12" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:01.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:34.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:32.45">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:00.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:20.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:12.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:20.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:56.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:16.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:17.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:03.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:27.30">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:28.65">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:25.75">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:04.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:58.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:17:12.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:03.60">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1088" course="SCM" gender="M" name="Норматив МС"
+            code="МС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="12" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:54.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:18.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:28.25">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:17.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:56.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:03.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:05.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:50.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:02.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:04.75">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:50.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:23.95">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:25.89">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:22.45">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:56.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:28.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:15:28.50">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:57.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1089" course="LCM" gender="F" name="Норматив МС"
+            code="МС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="12" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:01:03.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:37.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:33.20">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:09:08.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:26.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:13.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:24.75">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:57.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:19.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:20.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:06.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:28.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.00">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.50">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:05:03.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:17:35.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:06.00">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1090" course="LCM" gender="M" name="Норматив МС"
+            code="МС" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="12" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:55.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:21.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:29.00">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:25.00">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:02.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:04.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:09.75">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:51.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:05.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:07.75">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:53.95">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:24.70">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.65">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:23.20">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:34.00">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:15:51.00">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:58.50">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1091" course="SCM" gender="F" name="Норматив МСМК"
+            code="МСМК" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="14" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:57.16">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:21.34">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.04">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:23.99">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:03.32">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:05.05">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:08.11">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:52.68">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:07.15">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:05.15">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:55.02">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:25.62">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.57">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:24.13">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:59.56">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:35.03">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:16:12.06">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:57.36">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1092" course="SCM" gender="M" name="Норматив МСМК"
+            code="МСМК" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="14" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:50.15">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:05.56">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.28">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:42.70">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:40.94">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:57.34">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:54.17">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:46.72">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:52.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:52.45">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:43.02">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:22.52">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:23.29">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:21.18">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:52.57">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:06.68">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:14:44.74">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:50.54">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1093" course="LCM" gender="F" name="Норматив МСМК"
+            code="МСМК" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="14" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:58.06">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:25.24">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:30.77">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:08:31.12">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:08.04">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:06.88">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:12.12">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:53.99">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:08.90">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:09.77">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:56.90">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:26.03">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:28.05">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:24.82">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:40.80">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:16:20.88">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:59.80">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+        <TIMESTANDARDLIST timestandardlistid="1094" course="LCM" gender="M" name="Норматив МСМК"
+            code="МСМК" type="MINIMUM">
+            <AGEGROUP agemax="-1" agemin="14" />
+            <TIMESTANDARDS>
+                <TIMESTANDARD swimtime="00:00:51.62">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:02:09.97">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:27.22">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:07:52.60">
+                    <SWIMSTYLE distance="800" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:03:47.71">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:59.91">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:58.59">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:48.25">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:56.23">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:57.30">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:01:46.50">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:23.27">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:24.85">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:21.92">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:04:13.76">
+                    <SWIMSTYLE distance="400" relaycount="1" stroke="MEDLEY" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:15:06.19">
+                    <SWIMSTYLE distance="1500" relaycount="1" stroke="FREE" />
+                </TIMESTANDARD>
+                <TIMESTANDARD swimtime="00:00:53.72">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BACK" />
+                </TIMESTANDARD>
+            </TIMESTANDARDS>
+        </TIMESTANDARDLIST>
+    </TIMESTANDARDLISTS>
+</LENEX>
