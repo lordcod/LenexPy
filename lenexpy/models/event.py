@@ -2,7 +2,7 @@ from datetime import time as dtime
 from typing import List, Optional
 
 from lenexpy.strenum import StrEnum
-from pydantic import model_validator
+from pydantic import field_serializer, field_validator, model_validator
 from pydantic_xml import attr, element, wrapped
 
 from .base import LenexBaseXmlModel
@@ -69,5 +69,28 @@ class Event(LenexBaseXmlModel, tag="EVENT"):
     @model_validator(mode="after")
     def _validate_agegroups(self):
         if any(agegroup.id is None for agegroup in self.agegroups):
-            raise ValueError("AGEGROUP elements inside EVENT must define agegroupid")
+            raise ValueError(
+                "AGEGROUP elements inside EVENT must define agegroupid")
         return self
+
+    @field_validator("daytime", mode="before")
+    @classmethod
+    def _parse_daytime(cls, v):
+        if v is None or v == "":
+            return None
+        if isinstance(v, dtime):
+            return v
+        # fromisoformat понимает "HH:MM", "HH:MM:SS", "HH:MM:SS.ffffff"
+        return dtime.fromisoformat(v)
+
+    @field_serializer("daytime")
+    def _serialize_daytime(self, v: Optional[dtime], _info):
+        if v is None:
+            return None
+        if v.second == 0 and v.microsecond == 0:
+            return v.strftime("%H:%M")
+        if v.microsecond == 0:
+            return v.strftime("%H:%M:%S")
+
+        # иначе ISO с микросекундами (стандартное поведение)
+        return v.isoformat()

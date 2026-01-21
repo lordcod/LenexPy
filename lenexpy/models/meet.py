@@ -82,9 +82,15 @@ class Meet(LenexBaseXmlModel, tag="MEET"):
     uid: Optional[str] = attr(name="swrid", default=None)
     timing: Optional[Timing] = attr(name="timing", default=None)
     touchpadmode: Optional[TouchpadMode] = attr(
-        name="touchpadmode", default=None)
+        name="touchpad", default=None)
     type: Optional[str] = attr(name="type", default=None)
     withdraw_until: Optional[date] = attr(name="withdrawuntil", default=None)
+    # !            UNKNOWN PARAMETERS             ! #
+    # ! Please help to identify these parameters. ! #
+    masters: Optional[str] = attr(name="masters", default=None)
+    hytek_courseorder: Optional[str] = attr(
+        name="hytek.courseorder", default=None)
+    revisiondate: Optional[date] = attr(name="revisiondate", default=None)
 
     # ! Verification is disabled due to the fact that there are        !
     # ! a large number of files that do not support this rule.         !

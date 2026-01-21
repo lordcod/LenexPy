@@ -1,3 +1,4 @@
+from datetime import datetime, date
 from typing import List, Optional
 
 from pydantic_xml import attr, element, wrapped
@@ -28,4 +29,6 @@ class Lenex(LenexBaseXmlModel, tag="LENEX"):
         element(tag="TIMESTANDARDLIST"),
         default_factory=list,
     )
+    created: Optional[datetime] = attr(name="created", default=None)
+    revisiondate: Optional[date] = attr(name="revisiondate", default=None)
     version: str = attr(name="version")

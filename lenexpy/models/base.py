@@ -1,7 +1,29 @@
+from __future__ import annotations
+
+from datetime import time as dtime
 from typing import Any
 
-from pydantic import ConfigDict, model_validator
+from pydantic import ConfigDict, model_validator, model_serializer
 from pydantic_xml import BaseXmlModel
+
+
+def _lenex_time_str(t: dtime) -> str:
+    if t.microsecond == 0:
+        if t.second == 0:
+            return t.strftime("%H:%M")
+        return t.strftime("%H:%M:%S")
+    return t.isoformat()
+
+
+def _convert_times(obj: Any) -> Any:
+    if isinstance(obj, dtime):
+        return _lenex_time_str(obj)
+    if isinstance(obj, dict):
+        return {k: _convert_times(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        t = [_convert_times(v) for v in obj]
+        return t if isinstance(obj, list) else tuple(t)
+    return obj
 
 
 class LenexBaseXmlModel(BaseXmlModel):
@@ -22,3 +44,12 @@ class LenexBaseXmlModel(BaseXmlModel):
         if isinstance(data, (dict, list)):
             return normalize(data)
         return data
+
+    @model_serializer(mode="wrap")
+    def _lenex_serialize(self, handler, info):
+        """
+        Глобально приводит все datetime.time к нужному формату на выходе.
+        Работает для всех наследников LenexBaseXmlModel.
+        """
+        data = handler(self)
+        return _convert_times(data)

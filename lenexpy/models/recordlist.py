@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date
 from typing import List, Optional
 
 from lenexpy.strenum import StrEnum
@@ -26,5 +26,5 @@ class RecordList(LenexBaseXmlModel, tag="RECORDLIST"):
         default_factory=list,
     )
     region: Optional[str] = attr(name="region", default=None)
-    updated: Optional[datetime] = attr(name="updated", default=None)
+    updated: Optional[date] = attr(name="updated", default=None)
     type: Optional[str] = attr(name="type", default=None)

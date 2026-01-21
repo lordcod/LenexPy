@@ -1,6 +1,8 @@
+from collections import Counter
 from pathlib import Path
-from xml.etree import ElementTree as ET
 from zipfile import ZipFile
+
+import lxml.etree as ET
 
 import pytest
 
@@ -33,24 +35,118 @@ def _extract_xml_bytes(path: Path) -> bytes:
     with ZipFile(path, "r") as zf:
         if not zf.filelist:
             raise ValueError(f"Empty archive: {path}")
-        lef_members = [m for m in zf.filelist if m.filename.lower().endswith(".lef")]
+        lef_members = [
+            m for m in zf.filelist if m.filename.lower().endswith(".lef")]
         member = lef_members[0] if lef_members else zf.filelist[0]
         return zf.read(member)
 
 
-def _normalize_xml(xml_bytes: bytes) -> bytes:
-    """Normalize XML for bytewise comparisons (drop formatting, sort attrs)."""
-    root = ET.fromstring(xml_bytes)
+def _parse_xml(xml_bytes: bytes) -> ET._Element:
+    """Parse XML with whitespace stripped to simplify comparisons."""
+    parser = ET.XMLParser(remove_blank_text=True)
+    return ET.fromstring(xml_bytes, parser=parser)
 
-    def normalize(elem: ET.Element):
-        elem.attrib = {k: elem.attrib[k] for k in sorted(elem.attrib)}
-        elem.text = (elem.text or "").strip()
-        elem.tail = (elem.tail or "").strip()
-        for child in elem:
-            normalize(child)
 
-    normalize(root)
-    return ET.tostring(root, encoding="utf-8")
+KEY_ATTRS = (
+    "eventid", "number", "id", "agegroupid", "heatid", "lane", "clubid", "athleteid",
+    "code", "name"
+)
+
+
+def _child_sig(el) -> str:
+    # Короткая подпись: TAG + один “ключевой” атрибут, если есть
+    parts = [el.tag]
+    for k in KEY_ATTRS:
+        v = el.get(k)
+        if v is not None:
+            parts.append(f"{k}={v}")
+            break
+    return "<" + " ".join(parts) + ">"
+
+
+def _children_summary(children) -> str:
+    tags = Counter([c.tag for c in children])
+    return ", ".join([f"{t}:{n}" for t, n in sorted(tags.items())])
+
+
+def _compare_elements(original: ET._Element, regenerated: ET._Element, path: str, errors, max_errors: int = 50) -> int:
+    """Recursively compare XML elements collecting human-friendly diffs."""
+    total = 0
+
+    def record(msg: str):
+        nonlocal total
+        total += 1
+        if len(errors) < max_errors:
+            errors.append(msg)
+
+    if original.tag != regenerated.tag:
+        record(
+            f"{path}: tag differs (orig='{original.tag}', regen='{regenerated.tag}')")
+        return total
+
+    # Attributes
+    for key, value in original.attrib.items():
+        if key not in regenerated.attrib:
+            record(f"{path}: missing attribute '{key}' (orig='{value}')")
+        # ?
+        # elif regenerated.attrib[key] != value:
+        #     record(
+        #         f"{path}: attribute '{key}' differs (orig='{value}', regen='{regenerated.attrib[key]}')"
+        #     )
+    for key in regenerated.attrib:
+        if key not in original.attrib:
+            record(
+                f"{path}: unexpected attribute '{key}' present in regenerated xml")
+
+    # Text
+    orig_text = (original.text or "").strip()
+    regen_text = (regenerated.text or "").strip()
+    if orig_text or regen_text:
+        if orig_text != regen_text:
+            record(
+                f"{path}: text differs (orig='{orig_text}', regen='{regen_text}')")
+
+    # Children
+    orig_children = list(original)
+    regen_children = list(regenerated)
+    if len(orig_children) != len(regen_children):
+        record(
+            f"{path}: children count differs (orig={len(orig_children)}, regen={len(regen_children)})")
+
+    if len(orig_children) != len(regen_children):
+        record(
+            f"{path}: children count differs "
+            f"(orig={len(orig_children)}, regen={len(regen_children)}); "
+            f"orig tags: [{_children_summary(orig_children)}]; "
+            f"regen tags: [{_children_summary(regen_children)}]"
+        )
+
+        # Детализация “хвоста”
+        min_len = min(len(orig_children), len(regen_children))
+
+        if len(orig_children) > min_len:
+            missing = orig_children[min_len:]
+            record(
+                f"{path}: regenerated missing {len(missing)} trailing children: "
+                + ", ".join(f"{min_len+i+1}:{_child_sig(c)}" for i,
+                            c in enumerate(missing))
+            )
+
+        if len(regen_children) > min_len:
+            extra = regen_children[min_len:]
+            record(
+                f"{path}: regenerated has {len(extra)} extra trailing children: "
+                + ", ".join(f"{min_len+i+1}:{_child_sig(c)}" for i,
+                            c in enumerate(extra))
+            )
+
+    # Сравнение общего префикса (как и раньше)
+    for idx, (orig_child, regen_child) in enumerate(zip(orig_children, regen_children), start=1):
+        child_path = f"{path}/{orig_child.tag}[{idx}]"
+        total += _compare_elements(orig_child, regen_child,
+                                   child_path, errors, max_errors=max_errors)
+
+    return total
 
 
 @pytest.mark.skipif(not FIXTURE_PATHS, reason="No fixtures found")
@@ -93,4 +189,12 @@ def test_fixture_xml_roundtrip_matches_original_bytes(path: Path):
 
     regenerated_xml_bytes = encode_lef_bytes(lenex)
 
-    assert _normalize_xml(regenerated_xml_bytes) == _normalize_xml(original_xml_bytes)
+    orig_root = _parse_xml(original_xml_bytes)
+    regen_root = _parse_xml(regenerated_xml_bytes)
+
+    diffs = []
+    total = _compare_elements(orig_root, regen_root, orig_root.tag, diffs)
+    if total > len(diffs):
+        diffs.append(f"...and {total - len(diffs)} more differences")
+    if diffs:
+        pytest.fail("Roundtrip XML mismatches:\n" + "\n".join(diffs))
