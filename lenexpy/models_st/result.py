@@ -4,7 +4,6 @@ from lenexpy.strenum import StrEnum
 from pydantic_xml import attr, wrapped, element
 
 from lenexpy.models.base import LenexBaseXmlModel
-from lenexpy.models.reactiontime import ReactionTime
 from lenexpy.models.split import Split
 from lenexpy.models.swimtime import SwimTime
 
@@ -23,7 +22,7 @@ class Result(LenexBaseXmlModel, tag="RESULT"):
     lane: int = attr(name="lane")
     swim_time: SwimTime = attr(name="swimtime")
     status: Optional[StatusResult] = attr(name="status", default=None)
-    reaction_time: Optional[ReactionTime] = attr(name="reactiontime", default=None)
+    reaction_time: Optional[str] = attr(name="reactiontime", default=None)
     splits: List[Split] = wrapped(
         "SPLITS",
         element(tag="SPLIT"),

@@ -29,7 +29,6 @@ from .models.pointtable import PointTable
 from .models.pool import TypePool, Pool
 from .models.qualify import Conversion, Qualify
 from .models.ranking import Ranking
-from .models.reactiontime import ReactionTime
 from .models.record import Record
 from .models.recordlist import RecordList
 from .models.relaymeet import RelayMeet
@@ -104,7 +103,6 @@ __all__: Tuple[str, ...] = (
     "Conversion",
     "Qualify",
     "Ranking",
-    "ReactionTime",
     "Record",
     "RecordList",
     "RelayMeet",

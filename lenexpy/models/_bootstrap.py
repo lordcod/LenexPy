@@ -39,7 +39,6 @@ def bootstrap_models() -> None:
     from .swimstyle import SwimStyle
     from .stroke import Stroke
     from .swimtime import SwimTime
-    from .reactiontime import ReactionTime
     from .timestandardlist import TimeStandardList
     from .timestandard import TimeStandard
     from .timestandardref import TimeStandardRef
@@ -77,7 +76,6 @@ def bootstrap_models() -> None:
         "SwimStyle": SwimStyle,
         "Stroke": Stroke,
         "SwimTime": SwimTime,
-        "ReactionTime": ReactionTime,
         "TimeStandardList": TimeStandardList,
         "TimeStandard": TimeStandard,
         "TimeStandardRef": TimeStandardRef,
