@@ -4,7 +4,8 @@ ENCODING = 'utf-8'
 
 
 def encode_lef_bytes(lenex: Lenex) -> bytes:
-    xml_value = lenex.to_xml(encoding=ENCODING, xml_declaration=True)
+    xml_value = lenex.to_xml(
+        encoding=ENCODING, xml_declaration=True, skip_empty=True)
     if isinstance(xml_value, str):
         return xml_value.encode(ENCODING)
     return xml_value
