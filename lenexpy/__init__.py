@@ -17,7 +17,7 @@ from .models.event import Round, TypeEvent, Event
 from .models.fee import TypeFee, Fee
 from .models.gender import Gender
 from .models.handicap import HandicapClass, Handicap
-from .models.heat import Final, StatusHeat, Heat
+from .models.heat import Final, Heat
 from .models.judge import Role as JudgeRole, Judge
 from .models.lenex import Lenex
 from .models.meet import EntryType, Meet
@@ -52,7 +52,7 @@ from .models.timestandardref import TimeStandardRef
 from .models.timing import Timing
 from .models_st.athelete import Athlete as AthleteST
 from .models_st.entry import Status as StatusST, Entry as EntryST
-from .models_st.heat import Final as FinalST, StatusHeat as StatusHeatST, Heat as HeatST
+from .models_st.heat import Final as FinalST, Heat as HeatST
 from .models_st.result import StatusResult as StatusResultST, Result as ResultST
 
 Club.model_rebuild(force=True, _types_namespace={"Athlete": Athlete})
@@ -85,7 +85,6 @@ __all__: Tuple[str, ...] = (
     "HandicapClass",
     "Handicap",
     "Final",
-    "StatusHeat",
     "Heat",
     "JudgeRole",
     "Judge",
@@ -128,7 +127,6 @@ __all__: Tuple[str, ...] = (
     "StatusST",
     "EntryST",
     "FinalST",
-    "StatusHeatST",
     "HeatST",
     "StatusResultST",
     "ResultST",

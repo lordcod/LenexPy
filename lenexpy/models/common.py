@@ -11,24 +11,10 @@ class TouchpadMode(StrEnum):
     BOTHSIDE = "BOTHSIDE"
 
 
-class StatusMeet(StrEnum):
+class BaseStatus(StrEnum):
     ENTRIES = "ENTRIES"
     SEEDED = "SEEDED"
     RUNNING = "RUNNING"
-    OFFICIAL = "OFFICIAL"
-
-
-class StatusSession(StrEnum):
-    ENTRIES = "ENTRIES"
-    SEEDED = "SEEDED"
-    RUNNING = "RUNNING"
-    UNOFFICIAL = "UNOFFICIAL"
-    OFFICIAL = "OFFICIAL"
-
-
-class StatusEvent(StrEnum):
-    ENTRIES = "ENTRIES"
-    SEEDED = "SEEDED"
-    RUNNING = "RUNNING"
-    UNOFFICIAL = "UNOFFICIAL"
+    UNOFFICIAL = 'UNOFFICIAL'
+    INOFFICIAL = 'INOFFICIAL'
     OFFICIAL = "OFFICIAL"

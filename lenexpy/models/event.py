@@ -7,7 +7,7 @@ from pydantic_xml import attr, element, wrapped
 
 from .base import LenexBaseXmlModel
 
-from .common import StatusEvent
+from .common import BaseStatus
 from .fee import Fee
 from .gender import Gender
 from .heat import Heat
@@ -71,7 +71,7 @@ class Event(LenexBaseXmlModel, tag="EVENT"):
     # or TIMETRIAL found in fixtures.
     round: Optional[str] = attr(name="round", default=None)
     run: Optional[int] = attr(name="run", default=None)
-    status: Optional[StatusEvent] = attr(name="status", default=None)
+    status: Optional[BaseStatus] = attr(name="status", default=None)
     timing: Optional[Timing] = attr(name="timing", default=None)
     type: Optional[TypeEvent] = attr(name="type", default=None)
 

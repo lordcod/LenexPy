@@ -1,3 +1,4 @@
+from lenexpy.models.common import BaseStatus
 from lenexpy.strenum import StrEnum
 from typing import Optional
 
@@ -14,12 +15,6 @@ class Final(StrEnum):
     D = 'D'
 
 
-class StatusHeat(StrEnum):
-    SEEDED = 'SEEDED'
-    INOFFICIAL = 'INOFFICIAL'
-    OFFICIAL = 'OFFICIAL'
-
-
 # TODO: confirm root tag for Heat.
 class Heat(LenexBaseXmlModel, tag="HEAT"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
@@ -28,4 +23,4 @@ class Heat(LenexBaseXmlModel, tag="HEAT"):
     heatid: int = attr(name="heatid")
     number: int = attr(name="number")
     order: Optional[int] = attr(name="order", default=None)
-    status: Optional[StatusHeat] = attr(name="status", default=None)
+    status: Optional[BaseStatus] = attr(name="status", default=None)

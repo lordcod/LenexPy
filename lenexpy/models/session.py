@@ -6,7 +6,7 @@ from pydantic_xml import attr, element, wrapped
 
 from .base import LenexBaseXmlModel
 
-from .common import StatusSession, TouchpadMode
+from .common import BaseStatus, TouchpadMode
 from .course import Course
 from .event import Event
 from .fee import Fee
@@ -45,7 +45,7 @@ class Session(LenexBaseXmlModel, tag="SESSION"):
         name="officialmeeting", default=None)
     pool: Optional[Pool] = element(tag="POOL", default=None)
     remarksjudge: Optional[str] = attr(name="remarksjudge", default=None)
-    status: Optional[StatusSession] = attr(name="status", default=None)
+    status: Optional[BaseStatus] = attr(name="status", default=None)
     teamleadermeeting: Optional[dtime] = attr(
         name="teamleadermeeting",
         default=None,

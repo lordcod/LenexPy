@@ -9,7 +9,7 @@ from .base import LenexBaseXmlModel
 
 from .agedate import AgeDate
 from .bank import Bank
-from .common import StartMethod, StatusMeet, TouchpadMode
+from .common import StartMethod, BaseStatus, TouchpadMode
 from .facility import Facility
 from .nation import Nation
 from .pointtable import PointTable
@@ -79,7 +79,7 @@ class Meet(LenexBaseXmlModel, tag="MEET"):
     reservecount: Optional[int] = attr(name="reservecount", default=None)
     result_url: Optional[str] = attr(name="result.url", default=None)
     startmethod: Optional[StartMethod] = attr(name="startmethod", default=None)
-    status: Optional[StatusMeet] = attr(name="status", default=None)
+    status: Optional[BaseStatus] = attr(name="status", default=None)
     state: Optional[str] = attr(name="state", default=None)
     uid: Optional[str] = attr(name="swrid", default=None)
     timing: Optional[Timing] = attr(name="timing", default=None)
