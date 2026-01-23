@@ -1,0 +1,253 @@
+<MEET city="Мытищи" name="Мытищи CUP - 1 этап" course="SCM"
+    organizer="АНО &quot;Профессиональная Лига Плавания&quot;"
+    organizer.url="https://www.swim-grc.ru " reservecount="2" startmethod="1" status="RUNNING"
+    timing="AUTOMATIC" touchpad="ONESIDE" masters="F" nation="RUS">
+    <AGEDATE value="2026-12-31" type="YEAR" />
+    <POOL name="МАУ ДО «СШОР по плаванию», бассейн Бригантина" lanemin="1" lanemax="6" />
+    <FACILITY city="Мытищи" name="МАУ ДО «СШОР по плаванию», бассейн Бригантина" nation="RUS"
+        street="Московская область, г. Мытищи, ул. Коминтерна, стр. 16"
+        street2="пл. Мытищи Ярославского направления ЖД, либо до а/с Мытищи. Далее 10-15  минут пешком до бассейна Бригантина" />
+    <POINTTABLE pointtableid="3018" name="AQUA Point Scoring" version="2025" />
+    <FEES />
+    <SESSIONS>
+        <SESSION date="2026-01-17" daytime="09:40" endtime="12:28" number="1" status="UNOFFICIAL"
+            warmupfrom="09:00" warmupuntil="09:30" course="SCM">
+            <FEES />
+            <POOL lanemin="1" lanemax="6" />
+            <EVENTS>
+                <EVENT eventid="1060" daytime="09:40" gender="F" number="1" order="1" round="TIM"
+                    status="SEEDED" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                    <HEATS>
+                        <HEAT heatid="3949" daytime="09:40" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3950" daytime="09:42" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3951" daytime="09:43" name="Заплыв 3" number="3" order="3" />
+                        <HEAT heatid="3952" daytime="09:45" name="Заплыв 4" number="4" order="4" />
+                        <HEAT heatid="3953" daytime="09:47" name="Заплыв 5" number="5" order="5" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1062" daytime="09:49" gender="M" number="2" order="2" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                    <HEATS>
+                        <HEAT heatid="3954" daytime="09:49" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3955" daytime="09:51" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3956" daytime="09:53" name="Заплыв 3" number="3" order="3" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2124" daytime="09:55" gender="F" number="3" order="4" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </EVENT>
+                <EVENT eventid="2135" daytime="09:55" gender="M" number="4" order="5" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+                </EVENT>
+                <EVENT eventid="1064" daytime="09:55" gender="F" number="5" order="6" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                    <HEATS>
+                        <HEAT heatid="3957" daytime="09:55" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3958" daytime="09:57" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3959" daytime="09:59" name="Заплыв 3" number="3" order="3" />
+                        <HEAT heatid="3960" daytime="10:02" name="Заплыв 4" number="4" order="4" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1066" daytime="10:05" gender="M" number="6" order="7" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                    <HEATS>
+                        <HEAT heatid="3961" daytime="10:05" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3962" daytime="10:07" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3963" daytime="10:10" name="Заплыв 3" number="3" order="3" />
+                        <HEAT heatid="3964" daytime="10:12" name="Заплыв 4" number="4" order="4" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2146" daytime="10:15" gender="F" number="7" order="8" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                    <HEATS>
+                        <HEAT heatid="3965" daytime="10:15" name="Заплыв 1" number="1" order="1" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2157" daytime="10:18" gender="M" number="8" order="9" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+                </EVENT>
+                <EVENT eventid="1068" daytime="10:18" gender="F" number="9" order="10" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                    <HEATS>
+                        <HEAT heatid="3966" daytime="10:18" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3967" daytime="10:20" name="Заплыв 2" number="2" order="2" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1070" daytime="10:24" gender="M" number="10" order="11" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                    <HEATS>
+                        <HEAT heatid="3968" daytime="10:24" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3969" daytime="10:26" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3970" daytime="10:29" name="Заплыв 3" number="3" order="3" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2168" daytime="10:32" gender="F" number="11" order="12" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </EVENT>
+                <EVENT eventid="2179" daytime="10:32" gender="M" number="12" order="13" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+                </EVENT>
+                <EVENT eventid="1072" daytime="10:32" gender="F" number="13" order="14" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                    <HEATS>
+                        <HEAT heatid="3971" daytime="10:32" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3972" daytime="10:36" name="Заплыв 2" number="2" order="2" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1074" daytime="10:41" gender="M" number="14" order="15" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                    <HEATS>
+                        <HEAT heatid="3973" daytime="10:41" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3974" daytime="10:45" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3975" daytime="10:50" name="Заплыв 3" number="3" order="3" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2190" daytime="10:54" gender="F" number="15" order="16" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </EVENT>
+                <EVENT eventid="2201" daytime="10:54" gender="M" number="16" order="17" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+                </EVENT>
+                <EVENT eventid="1343" daytime="10:54" order="18" round="BREAK" date="2026-01-17"
+                    comment="Награждение">
+                    <SWIMSTYLE stroke="UNKNOWN" />
+                </EVENT>
+                <EVENT eventid="1076" daytime="11:29" gender="F" number="17" order="19" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                    <HEATS>
+                        <HEAT heatid="3976" daytime="11:29" name="Заплыв 1" number="1" order="1" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1078" daytime="11:35" gender="M" number="18" order="20" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                    <HEATS>
+                        <HEAT heatid="3978" daytime="11:35" name="Заплыв 1" number="1" order="1" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2212" daytime="11:38" gender="F" number="19" order="21" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </EVENT>
+                <EVENT eventid="2223" daytime="11:38" gender="M" number="20" order="22" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+                </EVENT>
+                <EVENT eventid="1080" daytime="11:38" gender="F" number="21" order="23" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                    <HEATS>
+                        <HEAT heatid="3979" daytime="11:38" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3980" daytime="11:39" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3981" daytime="11:41" name="Заплыв 3" number="3" order="3" />
+                        <HEAT heatid="3982" daytime="11:43" name="Заплыв 4" number="4" order="4" />
+                        <HEAT heatid="3983" daytime="11:45" name="Заплыв 5" number="5" order="5" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1082" daytime="11:47" gender="M" number="22" order="24" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                    <HEATS>
+                        <HEAT heatid="3984" daytime="11:47" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3985" daytime="11:48" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3986" daytime="11:50" name="Заплыв 3" number="3" order="3" />
+                        <HEAT heatid="3987" daytime="11:52" name="Заплыв 4" number="4" order="4" />
+                        <HEAT heatid="3988" daytime="11:53" name="Заплыв 5" number="5" order="5" />
+                        <HEAT heatid="3989" daytime="11:55" name="Заплыв 6" number="6" order="6" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2234" daytime="11:58" gender="F" number="23" order="25" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                    <HEATS>
+                        <HEAT heatid="3990" daytime="11:58" name="Заплыв 1" number="1" order="1" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2245" daytime="11:59" gender="M" number="24" order="26" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+                </EVENT>
+                <EVENT eventid="1084" daytime="11:59" gender="F" number="25" order="27" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                    <HEATS>
+                        <HEAT heatid="3991" daytime="11:59" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3992" daytime="12:01" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3993" daytime="12:03" name="Заплыв 3" number="3" order="3" />
+                        <HEAT heatid="3994" daytime="12:05" name="Заплыв 4" number="4" order="4" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1086" daytime="12:07" gender="M" number="26" order="28" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                    <HEATS>
+                        <HEAT heatid="3995" daytime="12:07" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3996" daytime="12:08" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="3997" daytime="12:11" name="Заплыв 3" number="3" order="3" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2256" daytime="12:13" gender="F" number="27" order="29" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </EVENT>
+                <EVENT eventid="2267" daytime="12:13" gender="M" number="28" order="30" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+                </EVENT>
+                <EVENT eventid="1088" daytime="12:13" gender="F" number="29" order="31" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                    <HEATS>
+                        <HEAT heatid="3998" daytime="12:13" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="3999" daytime="12:14" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="4000" daytime="12:16" name="Заплыв 3" number="3" order="3" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="1090" daytime="12:18" gender="M" number="30" order="32" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                    <HEATS>
+                        <HEAT heatid="4001" daytime="12:18" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="4002" daytime="12:20" name="Заплыв 2" number="2" order="2" />
+                        <HEAT heatid="4003" daytime="12:22" name="Заплыв 3" number="3" order="3" />
+                        <HEAT heatid="4004" daytime="12:23" name="Заплыв 4" number="4" order="4" />
+                        <HEAT heatid="4005" daytime="12:26" name="Заплыв 5" number="5" order="5" />
+                    </HEATS>
+                </EVENT>
+                <EVENT eventid="2278" daytime="12:28" gender="F" number="31" order="33" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </EVENT>
+                <EVENT eventid="2289" daytime="12:28" gender="M" number="32" order="34" round="TIM"
+                    date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+                </EVENT>
+                <EVENT eventid="4018" gender="X" number="33" order="35" round="TIM"
+                    status="OFFICIAL" date="2026-01-17">
+                    <SWIMSTYLE distance="50" relaycount="4" stroke="BREAST" />
+                    <HEATS>
+                        <HEAT heatid="4056" name="Заплыв 1" number="1" order="1" />
+                        <HEAT heatid="4055" name="Заплыв 2" number="2" order="2" />
+                    </HEATS>
+                </EVENT>
+            </EVENTS>
+        </SESSION>
+    </SESSIONS>
+</MEET>

@@ -1,0 +1,34 @@
+<HEAT heatid="3950" daytime="09:42" name="Заплыв 2" number="2" order="2">
+  <ENTRIES>
+    <ENTRY lane="2" entrytime="00:00:39.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+      <ATHLETE firstname="Анна" lastname="Власова" birthdate="2012-09-26" gender="F" nameprefix="Владиславовна" nation="RUS" license="III" athleteid="3571">
+        <HANDICAP />
+      </ATHLETE>
+    </ENTRY>
+    <ENTRY lane="5" entrytime="00:00:39.67" clubname="Подольск" code="ПОДОЛЬСК">
+      <ATHLETE firstname="Мария" lastname="Коваль" birthdate="2013-09-28" gender="F" nameprefix="Алексеевна" nation="RUS" license="Iюн" athleteid="3464">
+        <HANDICAP />
+      </ATHLETE>
+    </ENTRY>
+    <ENTRY lane="4" entrytime="00:00:38.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+      <ATHLETE firstname="Надежда" lastname="Шаповалова" birthdate="2017-06-28" gender="F" nameprefix="Дмитриевна" nation="RUS" license="Iюн" athleteid="3357">
+        <HANDICAP />
+      </ATHLETE>
+    </ENTRY>
+    <ENTRY lane="6" entrytime="00:00:39.90" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+      <ATHLETE firstname="Варвара" lastname="Валикова" birthdate="2013-01-30" gender="F" nameprefix="Дмитриевна" nation="RUS" license="III" athleteid="3379">
+        <HANDICAP />
+      </ATHLETE>
+    </ENTRY>
+    <ENTRY lane="1" entrytime="00:00:39.87" clubname="Мытищи Дети воды" code="МЫТИЩИ">       
+      <ATHLETE firstname="Евгения" lastname="Шевалдина" birthdate="2012-09-15" gender="F" nameprefix="Вячеславовна" nation="RUS" license="II" athleteid="3438">
+        <HANDICAP />
+      </ATHLETE>
+    </ENTRY>
+    <ENTRY lane="3" entrytime="00:00:37.50" clubname="Москва" code="МОСКВА">
+      <ATHLETE firstname="Дарья" lastname="Ким" birthdate="2015-01-30" gender="F" nameprefix="Кирилловна" nation="RUS" license="II" athleteid="3414">
+        <HANDICAP />
+      </ATHLETE>
+    </ENTRY>
+  </ENTRIES>
+</HEAT>
