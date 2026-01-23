@@ -16,7 +16,6 @@ class Role(StrEnum):
     INVITATION = 'INVITATION'
 
 
-# TODO: confirm root tag for MeetInfoRecord.
 class MeetInfoRecord(LenexBaseXmlModel, tag="MEETINFO"):
     approved: Optional[str] = attr(name="approved", default=None)
     city: Optional[str] = attr(name="city", default=None)

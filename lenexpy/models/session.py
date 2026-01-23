@@ -15,7 +15,6 @@ from .pool import Pool
 from .timing import Timing
 
 
-# TODO: confirm root tag for Session.
 class Session(LenexBaseXmlModel, tag="SESSION"):
     course: Optional[Course] = attr(name="course", default=None)
     date: Optional[ddate] = attr(name="date", default=None)

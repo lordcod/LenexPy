@@ -13,7 +13,6 @@ class Calculate(StrEnum):
     SINGLE: str = 'SINGLE'
 
 
-# TODO: confirm root tag for AgeGroup.
 class AgeGroup(LenexBaseXmlModel, tag="AGEGROUP"):
     id: Optional[int] = attr(name="agegroupid", default=None)
     agemax: int = attr(name="agemax")

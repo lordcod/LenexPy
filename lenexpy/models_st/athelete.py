@@ -12,7 +12,6 @@ from lenexpy.models.nation import Nation
 # required_params = {'birthday', 'gender', 'firstname', 'lastname'}/
 
 
-# TODO: confirm root tag for Athlete.
 class Athlete(LenexBaseXmlModel, tag="ATHLETE"):
     athleteid: int = attr(name="athleteid")
     birthdate: date = attr(name="birthdate")

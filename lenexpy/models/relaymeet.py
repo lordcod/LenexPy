@@ -11,7 +11,6 @@ from .entry import Entry
 from .gender import Gender
 
 
-# TODO: confirm root tag for RelayMeet.
 class RelayMeet(LenexBaseXmlModel, tag="RELAY"):
     agemax: int = attr(name="agemax")
     agemin: int = attr(name="agemin")

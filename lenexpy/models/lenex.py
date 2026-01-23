@@ -11,7 +11,6 @@ from .timestandardlist import TimeStandardList
 from .constructor import Constructor
 
 
-# TODO: confirm root tag for Lenex.
 class Lenex(LenexBaseXmlModel, tag="LENEX"):
     constructor: Constructor = element(tag="CONSTRUCTOR")
     meet: Optional[Meet] = wrapped(

@@ -26,7 +26,6 @@ class HandicapClass(StrEnum):
     GER_GB = "GER.GB"
 
 
-# TODO: confirm root tag for Handicap.
 class Handicap(LenexBaseXmlModel, tag="HANDICAP"):
     breast: Optional[HandicapClass] = attr(name="breast", default=None)
     exception: Optional[str] = attr(name="exception", default=None)

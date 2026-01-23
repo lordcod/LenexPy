@@ -26,7 +26,6 @@ class Status(StrEnum):
     DNS = "DNS"
 
 
-# TODO: confirm root tag for Entry.
 class Entry(LenexBaseXmlModel, tag="ENTRY"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
     athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)

@@ -16,7 +16,6 @@ class TypeFee(StrEnum):
     LATEENTRY_RELAY = "LATEENTRY.RELAY"
 
 
-# TODO: confirm root tag for Fee.
 class Fee(LenexBaseXmlModel, tag="FEE"):
     currency: Optional[Currency] = attr(name="currency", default=None)
     type: Optional[TypeFee] = attr(name="type", default=None)

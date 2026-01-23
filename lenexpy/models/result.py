@@ -23,7 +23,6 @@ class StatusResult(StrEnum):
     RJC = "RJC"
 
 
-# TODO: confirm root tag for Result.
 class Result(LenexBaseXmlModel, tag="RESULT"):
     comment: Optional[str] = attr(name="comment", default=None)
     eventid: int = attr(name="eventid")

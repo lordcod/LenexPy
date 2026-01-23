@@ -12,7 +12,6 @@ from .swimtime import SwimTime
 from .athelete import Athlete
 
 
-# TODO: confirm root tag for Record.
 class Record(LenexBaseXmlModel, tag="RECORD"):
     # Child order observed in fixtures: SWIMSTYLE, (SPLITS), MEETINFO, RELAY, ATHLETE
     swimstyle: SwimStyle = element(tag="SWIMSTYLE")

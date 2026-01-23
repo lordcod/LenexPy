@@ -6,7 +6,6 @@ from pydantic_xml import attr
 from .base import LenexBaseXmlModel
 
 
-# TODO: confirm root tag for Ranking.
 class Ranking(LenexBaseXmlModel, tag="RANKING"):
     order: Optional[int] = attr(name="order", default=None)
     place: int = attr(name="place")

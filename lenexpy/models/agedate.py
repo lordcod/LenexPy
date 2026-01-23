@@ -14,7 +14,6 @@ class TypeAgeDate(StrEnum):
     LUX = "LUX"
 
 
-# TODO: confirm root tag for AgeDate.
 class AgeDate(LenexBaseXmlModel, tag="AGEDATE"):
     type: TypeAgeDate = attr(name="type")
     value: date = attr(name="value")

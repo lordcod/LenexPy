@@ -6,7 +6,6 @@ from .base import LenexBaseXmlModel
 from .contact import Contact
 
 
-# TODO: confirm root tag for Constructor.
 class Constructor(LenexBaseXmlModel, tag="CONSTRUCTOR"):
     contact: Contact = element(tag="CONTACT")
     name: str = attr(name="name")

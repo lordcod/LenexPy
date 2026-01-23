@@ -17,7 +17,6 @@ class StatusResult(StrEnum):
     WDR = "WDR"
 
 
-# TODO: confirm root tag for Result.
 class Result(LenexBaseXmlModel, tag="RESULT"):
     lane: int = attr(name="lane")
     swim_time: SwimTime = attr(name="swimtime")

@@ -14,7 +14,6 @@ class Conversion(StrEnum):
     NON_CONFORMING_LAST = "NON_CONFORMING_LAST"
 
 
-# TODO: confirm root tag for Qualify.
 class Qualify(LenexBaseXmlModel, tag="QUALIFY"):
     conversion: Optional[Conversion] = attr(name="conversion", default=None)
     from_: date = attr(name="from")

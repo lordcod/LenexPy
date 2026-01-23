@@ -28,7 +28,6 @@ class EntryType(StrEnum):
     INVITATION = 'INVITATION'
 
 
-# TODO: confirm root tag for Meet.
 class Meet(LenexBaseXmlModel, tag="MEET"):
     # Elements in the order they appear in real-world Lenex files to keep
     # round-tripped XML byte-identical.

@@ -16,7 +16,6 @@ class Final(StrEnum):
     D = 'D'
 
 
-# TODO: confirm root tag for Heat.
 class Heat(LenexBaseXmlModel, tag="HEAT"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
     daytime: Optional[dtime] = attr(name="daytime", default=None)

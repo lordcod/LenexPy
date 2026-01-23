@@ -17,7 +17,6 @@ class Technique(StrEnum):
     TURN = "TURN"
 
 
-# TODO: confirm root tag for SwimStyle.
 class SwimStyle(LenexBaseXmlModel, tag="SWIMSTYLE"):
     code: Optional[str] = attr(name="code", default=None)
     distance: Optional[int] = attr(name="distance", default=None)

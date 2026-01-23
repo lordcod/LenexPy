@@ -18,7 +18,6 @@ class TypeClub(StrEnum):
     UNATTACHED = "UNATTACHED"
 
 
-# TODO: confirm root tag for Club.
 class Club(LenexBaseXmlModel, tag="CLUB"):
     contact: Optional[Contact] = element(tag="CONTACT", default=None)
     code: Optional[str] = attr(name="code", default=None)

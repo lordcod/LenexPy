@@ -5,7 +5,6 @@ from pydantic_xml import attr
 from .base import LenexBaseXmlModel
 
 
-# TODO: confirm root tag for Contact.
 class Contact(LenexBaseXmlModel, tag="CONTACT"):
     city: Optional[str] = attr(name="city", default=None)
     country: Optional[str] = attr(name="country", default=None)

@@ -10,7 +10,6 @@ from .swimtime import SwimTime
 from .course import Course
 
 
-# TODO: confirm root tag for MeetInfoEntry.
 class MeetInfoEntry(LenexBaseXmlModel, tag="MEETINFO"):
     approved: Optional[str] = attr(name="approved", default=None)
     city: Optional[str] = attr(name="city", default=None)

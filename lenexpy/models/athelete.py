@@ -29,7 +29,6 @@ class AthleteStatus(StrEnum):
 # required_params = {'birthday', 'gender', 'firstname', 'lastname'}/
 
 
-# TODO: confirm root tag for Athlete.
 class Athlete(LenexBaseXmlModel, tag="ATHLETE"):
     athleteid: Optional[int] = attr(name="athleteid", default=None)
     sdmsid: Optional[int] = attr(name="sdmsid", default=None)

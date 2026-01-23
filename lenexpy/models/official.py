@@ -10,7 +10,6 @@ from .contact import Contact
 from .gender import Gender
 
 
-# TODO: confirm root tag for Official.
 class Official(LenexBaseXmlModel, tag="OFFICIAL"):
     contact: Optional[Contact] = element(tag="CONTACT", default=None)
     firstname: str = attr(name="firstname")

@@ -13,7 +13,6 @@ class TypePool(StrEnum):
     OCEAN = "OCEAN"
 
 
-# TODO: confirm root tag for Pool.
 class Pool(LenexBaseXmlModel, tag="POOL"):
     name: Optional[str] = attr(name="name", default=None)
     lanemax: Optional[int] = attr(name="lanemax", default=None)

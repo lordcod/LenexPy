@@ -17,7 +17,6 @@ class Status(StrEnum):
     WDR = "WDR"
 
 
-# TODO: confirm root tag for Entry.
 class Entry(LenexBaseXmlModel, tag="ENTRY"):
     entrytime: Optional[SwimTime] = attr(name="entrytime", default=None)
     lane: Optional[int] = attr(name="lane", default=None)

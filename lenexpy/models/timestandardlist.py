@@ -17,7 +17,6 @@ class TypeTimeStandardList(StrEnum):
     MINIMUM = "MINIMUM"
 
 
-# TODO: confirm root tag for TimeStandardList.
 class TimeStandardList(LenexBaseXmlModel, tag="TIMESTANDARDLIST"):
     id: int = attr(name="timestandardlistid")
     age_group: Optional[AgeGroup] = element(tag="AGEGROUP", default=None)

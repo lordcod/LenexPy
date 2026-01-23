@@ -18,7 +18,6 @@ class StatusRelayPosition(StrEnum):
     DNF = 'DNF'
 
 
-# TODO: confirm root tag for RelayRecord.
 class RelayRecord(LenexBaseXmlModel, tag="RELAY"):
     club: Optional[Club] = element(tag="CLUB", default=None)
     name: Optional[str] = attr(name="name", default=None)

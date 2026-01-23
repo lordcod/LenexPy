@@ -38,7 +38,6 @@ class TypeEvent(StrEnum):
     MASTERS = "MASTERS"
 
 
-# TODO: confirm root tag for Event.
 class Event(LenexBaseXmlModel, tag="EVENT"):
     # Preserve child order observed in fixtures: SWIMSTYLE, AGEGROUPS,
     # TIMESTANDARDREFS, HEATS.

@@ -11,7 +11,6 @@ from .course import Course
 from .record import Record
 
 
-# TODO: confirm root tag for RecordList.
 class RecordList(LenexBaseXmlModel, tag="RECORDLIST"):
     agegroup: Optional[AgeGroup] = element(tag="AGEGROUP", default=None)
     course: Course = attr(name="course")

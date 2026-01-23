@@ -18,8 +18,6 @@ class StatusRelayPosition(StrEnum):
     DSQ = 'DSQ'
     DNF = 'DNF'
 
-# TODO: confirm root tag for RelayPosition.
-
 
 class RelayPosition(LenexBaseXmlModel, tag="RELAYPOSITION"):
     # Relay positions in records embed a lightweight ATHLETE element.

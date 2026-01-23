@@ -30,7 +30,6 @@ class Role(StrEnum):
     MED = "MED"
 
 
-# TODO: confirm root tag for Judge.
 class Judge(LenexBaseXmlModel, tag="JUDGE"):
     number: Optional[int] = attr(name="number", default=None)
     officialid: Optional[int] = attr(name="officialid", default=None)
