@@ -1,4 +1,4 @@
-from datetime import time as dtime
+from datetime import datetime, date as ddate, time as dtime
 from typing import List, Optional
 
 from lenexpy.strenum import StrEnum
@@ -61,12 +61,14 @@ class Event(LenexBaseXmlModel, tag="EVENT"):
     fee: Optional[Fee] = element(tag="FEE", default=None)
 
     daytime: Optional[dtime] = attr(name="daytime", default=None)
+    date: Optional[ddate] = attr(name="date", default=None)
     eventid: int = attr(name="eventid")
     gender: Optional[Gender] = attr(name="gender", default=None)
     maxentries: Optional[int] = attr(name="maxentries", default=None)
-    number: int = attr(name="number")
+    number: Optional[int] = attr(name="number", default=None)
     order: Optional[int] = attr(name="order", default=None)
     preveventid: Optional[int] = attr(name="preveventid", default=None)
+    comment: Optional[str] = attr(name="comment", default=None)
     # Use str to avoid dropping non-standard round values such as EXTRAHEATS
     # or TIMETRIAL found in fixtures.
     round: Optional[str] = attr(name="round", default=None)
@@ -81,6 +83,33 @@ class Event(LenexBaseXmlModel, tag="EVENT"):
             raise ValueError(
                 "AGEGROUP elements inside EVENT must define agegroupid")
         return self
+
+    @model_validator(mode="after")
+    def _require_number_unless_break(self):
+        if self.round == "BREAK":
+            return self
+        if self.number is None:
+            raise ValueError("EVENT number is required unless round=BREAK")
+        return self
+
+    @field_validator("date", mode="before")
+    @classmethod
+    def _parse_date(cls, v):
+        if v is None or v == "":
+            return None
+        if isinstance(v, datetime):
+            return v.date()
+        if isinstance(v, ddate):
+            return v
+        if isinstance(v, str):
+            try:
+                return datetime.fromisoformat(v).date()
+            except ValueError:
+                try:
+                    return ddate.fromisoformat(v)
+                except ValueError:
+                    return v
+        return v
 
     @field_validator("daytime", mode="before")
     @classmethod

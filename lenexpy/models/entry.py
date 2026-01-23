@@ -1,5 +1,7 @@
+from __future__ import annotations
+
 from datetime import time
-from typing import List, Optional, Union
+from typing import TYPE_CHECKING, List, Optional, Union
 
 from lenexpy.strenum import StrEnum
 from pydantic import field_validator
@@ -12,6 +14,8 @@ from .handicap import HandicapClass
 from .meetinfoentry import MeetInfoEntry
 from .relayposition import RelayPosition
 from .swimtime import SwimTime
+if TYPE_CHECKING:
+    from .athelete import Athlete
 
 
 class Status(StrEnum):
@@ -25,10 +29,13 @@ class Status(StrEnum):
 # TODO: confirm root tag for Entry.
 class Entry(LenexBaseXmlModel, tag="ENTRY"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
+    athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)
+    clubname: Optional[str] = attr(name="clubname", default=None)
+    code: Optional[str] = attr(name="code", default=None)
     entrycourse: Optional[Course] = attr(name="entrycourse", default=None)
     entrydistance: Optional[int] = attr(name="entrydistance", default=None)
     entrytime: Optional[SwimTime] = attr(name="entrytime", default=None)
-    eventid: int = attr(name="eventid")
+    eventid: Optional[int] = attr(name="eventid", default=None)
     handicap: Optional[HandicapClass] = attr(name="handicap", default=None)
     heatid: Optional[int] = attr(name="heatid", default=None)
     lane: Optional[int] = attr(name="lane", default=None)

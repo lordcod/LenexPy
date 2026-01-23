@@ -23,4 +23,5 @@ class Entry(LenexBaseXmlModel, tag="ENTRY"):
     lane: Optional[int] = attr(name="lane", default=None)
     status: Optional[Status] = attr(name="status", default=None)
     clubname: Optional[str] = attr(name="clubname", default=None)
+    code: Optional[str] = attr(name="code", default=None)
     athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)
