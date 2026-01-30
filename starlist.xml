@@ -1,0 +1,1705 @@
+<STARTLIST>
+  <EVENTS>
+    <EVENT eventid="1060" daytime="09:40" gender="F" number="1" order="1" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+      <HEATS>
+        <HEAT heatid="3949" daytime="09:40" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:32.00" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Ульяна" lastname="Туменко" birthdate="2010-06-08" gender="F"  nation="RUS" license="II" athleteid="3528">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:33.30" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Алиса" lastname="Китаева" birthdate="2012-10-20" gender="F"  nation="RUS" license="II" athleteid="3267">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:34.20" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Диана" lastname="Чудинова" birthdate="2014-03-05" gender="F"  nation="RUS" license="II" athleteid="3263">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:34.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Евгения" lastname="Клюкина" birthdate="2015-03-31" gender="F"  nation="RUS" license="II" athleteid="3213">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:36.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Лидия" lastname="Гайдамащук" birthdate="2014-07-01" gender="F"  nation="RUS" license="III" athleteid="3598">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:36.00" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Марина" lastname="Шалан" birthdate="2015-02-11" gender="F"  nation="RUS" license="III" athleteid="3514">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3950" daytime="09:42" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="1" entrytime="00:00:39.87" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Евгения" lastname="Шевалдина" birthdate="2012-09-15" gender="F"  nation="RUS" license="II" athleteid="3438">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:37.50" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Дарья" lastname="Ким" birthdate="2015-01-30" gender="F"  nation="RUS" license="II" athleteid="3414">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:39.67" clubname="Подольск" code="ПОДОЛЬСК">
+              <ATHLETE firstname="Мария" lastname="Коваль" birthdate="2013-09-28" gender="F"  nation="RUS" license="Iюн" athleteid="3464">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:39.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Анна" lastname="Власова" birthdate="2012-09-26" gender="F"  nation="RUS" license="III" athleteid="3571">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:39.90" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Варвара" lastname="Валикова" birthdate="2013-01-30" gender="F"  nation="RUS" license="III" athleteid="3379">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:38.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Надежда" lastname="Шаповалова" birthdate="2017-06-28" gender="F"  nation="RUS" license="Iюн" athleteid="3357">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3951" daytime="09:43" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:40.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Анастасия" lastname="Доминова" birthdate="2013-07-01" gender="F"  nation="RUS" license="II" athleteid="3201">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:41.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Алина" lastname="Грецова" birthdate="2015-08-28" gender="F"  nation="RUS" license="III" athleteid="3594">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:40.01" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Елизавета" lastname="Черникова" birthdate="2015-05-04" gender="F"  nation="RUS" license="III" athleteid="3301">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:40.97" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Изабелла" lastname="Крятова" birthdate="2014-07-09" gender="F"  nation="RUS" license="III" athleteid="3242">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:45.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Таисия" lastname="Станкова" birthdate="2014-10-12" gender="F"  nation="RUS" license="Iюн" athleteid="3941">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:47.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Александра" lastname="Шабанова" birthdate="2015-04-04" gender="F"  nation="RUS" license="III" athleteid="3584">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3952" daytime="09:45" name="Заплыв 4" number="4" order="4">
+          <ENTRIES>
+            <ENTRY lane="1" entrytime="00:00:53.72" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Злата" lastname="Крятова" birthdate="2016-04-26" gender="F"  nation="RUS" license="IIюн" athleteid="3238">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:49.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Алиса" lastname="Загородникова" birthdate="2015-03-15" gender="F"  nation="RUS" license="IIюн" athleteid="3541">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:51.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Александра" lastname="Бояринова" birthdate="2015-10-03" gender="F"  nation="RUS" license="Iюн" athleteid="3563">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:52.00" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Валерия" lastname="Артëмова" birthdate="2016-09-16" gender="F"  nation="RUS" license="Iюн" athleteid="3329">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:50.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Есения" lastname="Пшеничкина" birthdate="2017-05-26" gender="F"  nation="RUS" license="IIюн" athleteid="3500">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3953" daytime="09:47" name="Заплыв 5" number="5" order="5">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:00:54.30" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Ангелина" lastname="Алхимова" birthdate="2011-01-17" gender="F"  nation="RUS" license="IIюн" athleteid="3391">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:54.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Мирослава" lastname="Сараева" birthdate="2014-11-20" gender="F"  nation="RUS" license="IIюн" athleteid="3537">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:00.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Виктория" lastname="Барыбина" birthdate="2016-04-30" gender="F"  nation="RUS" license="IIюн" athleteid="3410">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1062" daytime="09:49" gender="M" number="2" order="2" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="FLY" />
+      <HEATS>
+        <HEAT heatid="3954" daytime="09:49" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:29.57" clubname="Рязань" code="РЯЗАНЬ">
+              <ATHLETE firstname="Ярослав" lastname="Аленин" birthdate="2012-06-14" gender="M"  nation="RUS" license="II" athleteid="3487">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:30.90" clubname="Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Денис" lastname="Адовский" birthdate="2011-04-07" gender="M"  nation="RUS" license="II" athleteid="3254">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:30.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Степан" lastname="Силин" birthdate="2012-09-24" gender="M"  nation="RUS" license="II" athleteid="3610">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:29.90" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Иван" lastname="Галкин" birthdate="2013-07-27" gender="M"  nation="RUS" license="II" athleteid="3278">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:32.00" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Дмитрий" lastname="Полищук" birthdate="2014-03-29" gender="M"  nation="RUS" license="II" athleteid="3325">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:33.03" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Алексей" lastname="Кувыкин" birthdate="2013-05-27" gender="M"  nation="RUS" license="II" athleteid="3934">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3955" daytime="09:51" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:34.68" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Никита" lastname="Слобоздин" birthdate="2013-02-26" gender="M"  nation="RUS" license="III" athleteid="3271">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:37.50" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Макар" lastname="Варанин" birthdate="2015-01-25" gender="M"  nation="RUS" license="III" athleteid="3368">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:36.90" clubname="ПЦ &quot;Нептун&quot; Щелково" code="ЩЕЛКОВО">
+              <ATHLETE firstname="Александр" lastname="Кодочигов" birthdate="2015-02-12" gender="M"  nation="RUS" license="Iюн" athleteid="3473">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:39.00" clubname="Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Илья" lastname="Чуркин" birthdate="2014-02-04" gender="M"  nation="RUS" license="Iюн" athleteid="3251">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:41.50" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Павел" lastname="Пенкин" birthdate="2015-06-12" gender="M"  nation="RUS" license="III" athleteid="3576">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:39.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Михаил" lastname="Александров" birthdate="2012-09-14" gender="M"  nation="RUS" license="Iюн" athleteid="3545">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3956" daytime="09:53" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:00:46.00" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Даниил" lastname="Власов" birthdate="2016-10-15" gender="M"  nation="RUS" license="IIюн" athleteid="3334">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="NT" clubname="РСШОР Акватика (Казань)" code="КАЗАНЬ">
+              <ATHLETE firstname="Александр" lastname="Абросимов" birthdate="2017-07-27" gender="M"  nation="RUS" license="IIюн" athleteid="3482">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:45.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Алексей" lastname="Доминов" birthdate="2015-06-14" gender="M"  nation="RUS" license="Iюн" athleteid="3205">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:48.49" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Антон" lastname="Костриков" birthdate="2016-09-28" gender="M"  nation="RUS" license="IIюн" athleteid="3234">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:53.30" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Александр" lastname="Сафиулин" birthdate="2015-12-04" gender="M"  nation="RUS" license="Iюн" athleteid="3290">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1064" daytime="09:55" gender="F" number="3" order="6" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+      <HEATS>
+        <HEAT heatid="3957" daytime="09:55" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="1" entrytime="00:01:11.50" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Ольга" lastname="Шевалдина" birthdate="2011-01-02" gender="F"  nation="RUS" license="II" athleteid="3447">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:08.30" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Алиса" lastname="Китаева" birthdate="2012-10-20" gender="F"  nation="RUS" license="II" athleteid="3267">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:08.65" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Арина" lastname="Чикина" birthdate="2013-01-07" gender="F"  nation="RUS" athleteid="3945">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:10.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Александра" lastname="Бабаева" birthdate="2012-06-09" gender="F"  nation="RUS" license="II" athleteid="3388">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:11.50" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Варвара" lastname="Валикова" birthdate="2013-01-30" gender="F"  nation="RUS" license="III" athleteid="3379">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:11.80" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Екатерина" lastname="Игнатьева" birthdate="2013-05-14" gender="F"  nation="RUS" license="II" athleteid="3424">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3958" daytime="09:57" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:01:12.50" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Василиса" lastname="Нетребина" birthdate="2013-03-19" gender="F"  nation="RUS" license="II" athleteid="3350">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:17.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Лидия" lastname="Гайдамащук" birthdate="2014-07-01" gender="F"  nation="RUS" license="III" athleteid="3598">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:18.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Алина" lastname="Грецова" birthdate="2015-08-28" gender="F"  nation="RUS" license="III" athleteid="3594">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:17.17" clubname="Бронницы" code="БРОННИЦЫ">
+              <ATHLETE firstname="Юлия" lastname="Козлова" birthdate="2015-09-22" gender="F"  nation="RUS" license="III" athleteid="3217">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:20.00" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Софья" lastname="Кинденова" birthdate="2015-03-21" gender="F"  nation="RUS" athleteid="3930">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:18.45" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Изабелла" lastname="Крятова" birthdate="2014-07-09" gender="F"  nation="RUS" license="III" athleteid="3242">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3959" daytime="09:59" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:01:20.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Анастасия" lastname="Доминова" birthdate="2013-07-01" gender="F"  nation="RUS" license="II" athleteid="3201">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:30.00" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Виктория" lastname="Харина" birthdate="2016-07-22" gender="F"  nation="RUS" license="III" athleteid="3523">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:21.65" clubname="Железнодорожный" code="ЖЕЛЕЗНОДОР">
+              <ATHLETE firstname="Варвара" lastname="Поспелова" birthdate="2014-04-24" gender="F"  nation="RUS" license="III" athleteid="3229">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:30.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Есения" lastname="Пшеничкина" birthdate="2017-05-26" gender="F"  nation="RUS" license="IIюн" athleteid="3500">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:38.10" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Александра" lastname="Семендяева" birthdate="2017-11-28" gender="F"  nation="RUS" license="IIюн" athleteid="3342">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3960" daytime="10:02" name="Заплыв 4" number="4" order="4">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:01:50.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Алиса" lastname="Загородникова" birthdate="2015-03-15" gender="F"  nation="RUS" license="IIюн" athleteid="3541">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:40.65" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Злата" lastname="Крятова" birthdate="2016-04-26" gender="F"  nation="RUS" license="IIюн" athleteid="3238">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:54.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Мирослава" lastname="Сараева" birthdate="2014-11-20" gender="F"  nation="RUS" license="IIюн" athleteid="3537">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:50.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Виктория" lastname="Барыбина" birthdate="2016-04-30" gender="F"  nation="RUS" license="IIюн" athleteid="3410">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1066" daytime="10:05" gender="M" number="4" order="7" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="100" relaycount="1" stroke="FREE" />
+      <HEATS>
+        <HEAT heatid="3961" daytime="10:05" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:00:59.00" clubname="Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Иван" lastname="Чуркин" birthdate="2010-02-26" gender="M"  nation="RUS" license="II" athleteid="3248">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:59.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Валентин" lastname="Тимаков" birthdate="2012-07-17" gender="M"  nation="RUS" license="II" athleteid="3591">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:59.00" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Вадим" lastname="Зубарев" birthdate="2011-09-08" gender="M"  nation="RUS" license="II" athleteid="3428">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:06.50" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Максим" lastname="Павлючко" birthdate="2015-09-24" gender="M"  nation="RUS" license="II" athleteid="3338">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:05.00" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Алексей" lastname="Кувыкин" birthdate="2013-05-27" gender="M"  nation="RUS" license="II" athleteid="3934">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:11.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Арсений" lastname="Калабзин" birthdate="2012-05-22" gender="M"  nation="RUS" license="II" athleteid="3606">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3962" daytime="10:07" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="2" entrytime="00:01:15.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Павел" lastname="Харин" birthdate="2012-06-02" gender="M"  nation="RUS" license="II" athleteid="3602">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:15.50" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Лев" lastname="Лубов" birthdate="2013-03-14" gender="M"  nation="RUS" license="III" athleteid="3395">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:11.00" clubname="ШП NeoSwim (П. Посад)" code="ПАВЛОВСК.П">
+              <ATHLETE firstname="Андрей" lastname="Лысов" birthdate="2011-10-29" gender="M"  nation="RUS" license="Iюн" athleteid="3550">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:17.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Макар" lastname="Варанин" birthdate="2015-01-25" gender="M"  nation="RUS" license="III" athleteid="3368">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:13.00" clubname="ПЦ &quot;Нептун&quot; Щелково" code="ЩЕЛКОВО">
+              <ATHLETE firstname="Александр" lastname="Кодочигов" birthdate="2015-02-12" gender="M"  nation="RUS" license="Iюн" athleteid="3473">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:22.00" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Артём" lastname="Волков" birthdate="2017-03-29" gender="M"  nation="RUS" license="Iюн" athleteid="3455">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3963" daytime="10:10" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:01:26.87" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Даниэль" lastname="Фазлыев" birthdate="2016-03-10" gender="M"  nation="RUS" license="Iюн" athleteid="3866">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:30.95" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Антон" lastname="Костриков" birthdate="2016-09-28" gender="M"  nation="RUS" license="IIюн" athleteid="3234">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:30.00" clubname="ПЦ &quot;Нептун&quot; Щелково" code="ЩЕЛКОВО">
+              <ATHLETE firstname="Павел" lastname="Кодочигов" birthdate="2016-06-28" gender="M"  nation="RUS" license="Iюн" athleteid="3477">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:32.00" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Александр" lastname="Сафиулин" birthdate="2015-12-04" gender="M"  nation="RUS" license="Iюн" athleteid="3290">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:32.74" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Александр" lastname="Юрченко" birthdate="2015-11-08" gender="M"  nation="RUS" license="Iюн" athleteid="3286">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:26.96" clubname="ШП NeoSwim (П. Посад)" status="DSQ" code="ПАВЛОВСК.П">
+              <ATHLETE firstname="Егор" lastname="Яшин" birthdate="2014-02-12" gender="M"  nation="RUS" license="IIюн" athleteid="3859">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3964" daytime="10:12" name="Заплыв 4" number="4" order="4">
+          <ENTRIES>
+            <ENTRY lane="6" entrytime="NT" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Матвей" lastname="Кошелев" birthdate="2011-07-20" gender="M"  nation="RUS" athleteid="4008">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:33.43" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Салимхан" lastname="Мусаев" birthdate="2013-09-02" gender="M"  nation="RUS" license="Iюн" athleteid="3310">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:35.00" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Даниил" lastname="Власов" birthdate="2016-10-15" gender="M"  nation="RUS" license="IIюн" athleteid="3334">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:37.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Вадим" lastname="Пенкин" birthdate="2017-08-14" gender="M"  nation="RUS" license="IIюн" athleteid="3580">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:47.32" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Дмитрий" lastname="Акинин" birthdate="2017-05-20" gender="M"  nation="RUS" license="IIIюн" athleteid="3459">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1068" daytime="10:18" gender="F" number="5" order="10" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+      <HEATS>
+        <HEAT heatid="3966" daytime="10:18" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="2" entrytime="00:01:27.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Нина" lastname="Брусенцова" birthdate="2012-01-27" gender="F"  nation="RUS" license="II" athleteid="3364">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:22.00" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Ульяна" lastname="Туменко" birthdate="2010-06-08" gender="F"  nation="RUS" license="II" athleteid="3528">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:26.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Татьяна" lastname="Чирина" birthdate="2012-01-25" gender="F"  nation="RUS" license="II" athleteid="3353">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:27.00" clubname="Пушкино" code="ПУШКИНО">
+              <ATHLETE firstname="Варвара" lastname="Артамонова" birthdate="2012-01-24" gender="F"  nation="RUS" license="II" athleteid="3468">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:39.00" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Диана" lastname="Веремчук" birthdate="2013-01-22" gender="F"  nation="RUS" license="III" athleteid="3510">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:41.00" clubname="СШОР «Бригантина» (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Полина" lastname="Леонова" birthdate="2015-06-23" gender="F"  nation="RUS" license="Iюн" athleteid="3937">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3967" daytime="10:20" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:01:41.62" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Елизавета" lastname="Черникова" birthdate="2015-05-04" gender="F"  nation="RUS" license="III" athleteid="3301">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:49.38" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Кира" lastname="Шевалдина" birthdate="2016-01-29" gender="F"  nation="RUS" license="III" athleteid="3443">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:45.00" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Софья" lastname="Кинденова" birthdate="2015-03-21" gender="F"  nation="RUS" athleteid="3930">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:58.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Надежда" lastname="Шаповалова" birthdate="2017-06-28" gender="F"  nation="RUS" license="Iюн" athleteid="3357">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:02:03.00" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Валерия" lastname="Артëмова" birthdate="2016-09-16" gender="F"  nation="RUS" license="Iюн" athleteid="3329">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:50.00" clubname="СШОР Электросталь" status="DSQ" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Александра" lastname="Шабанова" birthdate="2015-04-04" gender="F"  nation="RUS" license="III" athleteid="3584">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1070" daytime="10:24" gender="M" number="6" order="11" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST" />
+      <HEATS>
+        <HEAT heatid="3968" daytime="10:24" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="6" entrytime="00:01:23.00" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Матвей" lastname="Коростелев" birthdate="2013-03-12" gender="M"  nation="RUS" license="III" athleteid="3519">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:22.00" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Артём" lastname="Туменко" birthdate="2010-06-08" gender="M"  nation="RUS" license="II" athleteid="3532">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:15.20" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Александр" lastname="Красюк" birthdate="2008-09-06" gender="M"  nation="RUS" license="I" athleteid="3407">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:19.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Дмитрий" lastname="Кузнецов" birthdate="2014-02-06" gender="M"  nation="RUS" license="II" athleteid="3588">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:21.10" clubname="Сергиев Посад" code="С.ПОСАД">
+              <ATHLETE firstname="Максим" lastname="Контанистов" birthdate="2010-07-22" gender="M"  nation="RUS" license="III" athleteid="3496">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:23.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Павел" lastname="Харин" birthdate="2012-06-02" gender="M"  nation="RUS" license="II" athleteid="3602">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3969" daytime="10:26" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:01:35.00" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Максим" lastname="Павлючко" birthdate="2015-09-24" gender="M"  nation="RUS" license="II" athleteid="3338">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:37.28" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Евгений" lastname="Киричук" birthdate="2015-07-24" gender="M"  nation="RUS" license="Iюн" athleteid="3452">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:45.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Михаил" lastname="Александров" birthdate="2012-09-14" gender="M"  nation="RUS" license="Iюн" athleteid="3545">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:53.73" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Даниэль" lastname="Фазлыев" birthdate="2016-03-10" gender="M"  nation="RUS" license="Iюн" athleteid="3866">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3970" daytime="10:29" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:01:55.66" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Степан" lastname="Якубенко" birthdate="2015-10-23" gender="M"  nation="RUS" license="IIюн" athleteid="3297">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:02:17.50" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Роман" lastname="Валиков" birthdate="2017-08-18" gender="M"  nation="RUS" license="IIIюн" athleteid="3375">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1072" daytime="10:32" gender="F" number="7" order="14" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+      <HEATS>
+        <HEAT heatid="3971" daytime="10:32" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:02:49.49" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Арина" lastname="Чикина" birthdate="2013-01-07" gender="F"  nation="RUS" athleteid="3945">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:02:55.00" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Екатерина" lastname="Игнатьева" birthdate="2013-05-14" gender="F"  nation="RUS" license="II" athleteid="3424">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:02:50.00" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Марина" lastname="Шалан" birthdate="2015-02-11" gender="F"  nation="RUS" license="III" athleteid="3514">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:02:52.50" clubname="Пушкино" code="ПУШКИНО">
+              <ATHLETE firstname="Варвара" lastname="Артамонова" birthdate="2012-01-24" gender="F"  nation="RUS" license="II" athleteid="3468">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:02:54.56" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Полина" lastname="Фомина" birthdate="2010-09-19" gender="F"  nation="RUS" license="II" athleteid="3361">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:03:03.73" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Евгения" lastname="Шевалдина" birthdate="2012-09-15" gender="F"  nation="RUS" license="II" athleteid="3438">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3972" daytime="10:36" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:03:08.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Арина" lastname="Прасковина" birthdate="2015-09-30" gender="F"  nation="RUS" license="III" athleteid="3852">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:03:16.00" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Валерия" lastname="Макоева" birthdate="2012-06-12" gender="F"  nation="RUS" license="III" athleteid="3259">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:03:05.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Анна" lastname="Зимина" birthdate="2013-11-14" gender="F"  nation="RUS" license="III" athleteid="3926">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:04:00.00" clubname="Москва" status="DSQ" code="МОСКВА">
+              <ATHLETE firstname="Виктория" lastname="Барыбина" birthdate="2016-04-30" gender="F"  nation="RUS" license="IIюн" athleteid="3410">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1074" daytime="10:41" gender="M" number="8" order="15" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="200" relaycount="1" stroke="BACK" />
+      <HEATS>
+        <HEAT heatid="3973" daytime="10:41" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:02:22.00" clubname="Рязань" code="РЯЗАНЬ">
+              <ATHLETE firstname="Ярослав" lastname="Аленин" birthdate="2012-06-14" gender="M"  nation="RUS" license="II" athleteid="3487">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:02:27.04" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Лев" lastname="Бурмистров" birthdate="2011-04-12" gender="M"  nation="RUS" license="II" athleteid="3275">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:02:23.00" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Вадим" lastname="Зубарев" birthdate="2011-09-08" gender="M"  nation="RUS" license="II" athleteid="3428">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:02:29.00" clubname="Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Денис" lastname="Адовский" birthdate="2011-04-07" gender="M"  nation="RUS" license="II" athleteid="3254">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:02:30.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Степан" lastname="Силин" birthdate="2012-09-24" gender="M"  nation="RUS" license="II" athleteid="3610">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:02:46.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Арсений" lastname="Калабзин" birthdate="2012-05-22" gender="M"  nation="RUS" license="II" athleteid="3606">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3974" daytime="10:45" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="2" entrytime="00:02:57.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Лев" lastname="Лубов" birthdate="2013-03-14" gender="M"  nation="RUS" license="III" athleteid="3395">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:02:50.00" clubname="СШ &quot;Время первых&quot; Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Егор" lastname="Папулов" birthdate="2011-07-27" gender="M"  nation="RUS" license="Iюн" athleteid="3505">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:03:00.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Павел" lastname="Пенкин" birthdate="2015-06-12" gender="M"  nation="RUS" license="III" athleteid="3576">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:02:56.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Александр" lastname="Порошин" birthdate="2014-04-05" gender="M"  nation="RUS" license="III" athleteid="3399">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:03:17.19" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Салимхан" lastname="Мусаев" birthdate="2013-09-02" gender="M"  nation="RUS" license="Iюн" athleteid="3310">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:03:21.66" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Александр" lastname="Сафиулин" birthdate="2015-12-04" gender="M"  nation="RUS" license="Iюн" athleteid="3290">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3975" daytime="10:50" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="6" entrytime="NT" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Матвей" lastname="Кошелев" birthdate="2011-07-20" gender="M"  nation="RUS" athleteid="4008">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:03:30.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Алексей" lastname="Доминов" birthdate="2015-06-14" gender="M"  nation="RUS" license="Iюн" athleteid="3205">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:03:35.00" clubname="ПЦ &quot;Нептун&quot; Щелково" code="ЩЕЛКОВО">
+              <ATHLETE firstname="Павел" lastname="Кодочигов" birthdate="2016-06-28" gender="M"  nation="RUS" license="Iюн" athleteid="3477">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:03:45.00" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Андрей" lastname="Нырков" birthdate="2015-10-05" gender="M"  nation="RUS" license="IIюн" athleteid="3321">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:03:40.01" clubname="МАУ ДО СШОР по плаванию (Мытищи)" status="DSQ" code="МЫТИЩИ">
+              <ATHLETE firstname="Степан" lastname="Якубенко" birthdate="2015-10-23" gender="M"  nation="RUS" license="IIюн" athleteid="3297">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1076" daytime="11:29" gender="F" number="9" order="19" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+      <HEATS>
+        <HEAT heatid="3976" daytime="11:29" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:01:25.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Василиса" lastname="Нетребина" birthdate="2013-03-19" gender="F"  nation="RUS" license="II" athleteid="3350">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:22.50" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Дарья" lastname="Ким" birthdate="2015-01-30" gender="F"  nation="RUS" license="II" athleteid="3414">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:33.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Анна" lastname="Власова" birthdate="2012-09-26" gender="F"  nation="RUS" license="III" athleteid="3571">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:31.78" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Изабелла" lastname="Крятова" birthdate="2014-07-09" gender="F"  nation="RUS" license="III" athleteid="3242">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:01:40.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Анастасия" lastname="Доминова" birthdate="2013-07-01" gender="F"  nation="RUS" license="II" athleteid="3201">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:37.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Таисия" lastname="Станкова" birthdate="2014-10-12" gender="F"  nation="RUS" license="Iюн" athleteid="3941">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1078" daytime="11:35" gender="M" number="10" order="20" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="100" relaycount="1" stroke="FLY" />
+      <HEATS>
+        <HEAT heatid="3978" daytime="11:35" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:01:11.50" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Максим" lastname="Павлючко" birthdate="2015-09-24" gender="M"  nation="RUS" license="II" athleteid="3338">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:01:23.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Макар" lastname="Варанин" birthdate="2015-01-25" gender="M"  nation="RUS" license="III" athleteid="3368">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="NT" clubname="РСШОР Акватика (Казань)" code="КАЗАНЬ">
+              <ATHLETE firstname="Александр" lastname="Абросимов" birthdate="2017-07-27" gender="M"  nation="RUS" license="IIюн" athleteid="3482">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:47.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Алексей" lastname="Доминов" birthdate="2015-06-14" gender="M"  nation="RUS" license="Iюн" athleteid="3205">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1080" daytime="11:38" gender="F" number="11" order="23" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+      <HEATS>
+        <HEAT heatid="3979" daytime="11:38" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="2" entrytime="00:00:31.35" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Ольга" lastname="Шевалдина" birthdate="2011-01-02" gender="F"  nation="RUS" license="II" athleteid="3447">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:31.54" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Диана" lastname="Чудинова" birthdate="2014-03-05" gender="F"  nation="RUS" license="II" athleteid="3263">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:31.18" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Арина" lastname="Чикина" birthdate="2013-01-07" gender="F"  nation="RUS" athleteid="3945">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:31.50" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Татьяна" lastname="Чирина" birthdate="2012-01-25" gender="F"  nation="RUS" license="II" athleteid="3353">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:31.83" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Евгения" lastname="Шевалдина" birthdate="2012-09-15" gender="F"  nation="RUS" license="II" athleteid="3438">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:30.75" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Екатерина" lastname="Игнатьева" birthdate="2013-05-14" gender="F"  nation="RUS" license="II" athleteid="3424">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3980" daytime="11:39" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:32.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Александра" lastname="Бабаева" birthdate="2012-06-09" gender="F"  nation="RUS" license="II" athleteid="3388">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:33.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Варвара" lastname="Валикова" birthdate="2013-01-30" gender="F"  nation="RUS" license="III" athleteid="3379">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:34.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Алина" lastname="Грецова" birthdate="2015-08-28" gender="F"  nation="RUS" license="III" athleteid="3594">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:35.49" clubname="Бронницы" code="БРОННИЦЫ">
+              <ATHLETE firstname="Юлия" lastname="Козлова" birthdate="2015-09-22" gender="F"  nation="RUS" license="III" athleteid="3217">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:35.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Виктория" lastname="Баркова" birthdate="2013-11-11" gender="F"  nation="RUS" license="Iюн" athleteid="3347">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:34.66" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Изабелла" lastname="Крятова" birthdate="2014-07-09" gender="F"  nation="RUS" license="III" athleteid="3242">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3981" daytime="11:41" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:36.00" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Евгения" lastname="Клюкина" birthdate="2015-03-31" gender="F"  nation="RUS" license="II" athleteid="3213">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:36.00" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Виктория" lastname="Харина" birthdate="2016-07-22" gender="F"  nation="RUS" license="III" athleteid="3523">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:36.00" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Софья" lastname="Кинденова" birthdate="2015-03-21" gender="F"  nation="RUS" athleteid="3930">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:38.02" clubname="Железнодорожный" code="ЖЕЛЕЗНОДОР">
+              <ATHLETE firstname="Варвара" lastname="Поспелова" birthdate="2014-04-24" gender="F"  nation="RUS" license="III" athleteid="3229">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:38.50" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Анна" lastname="Зимина" birthdate="2013-11-14" gender="F"  nation="RUS" license="III" athleteid="3926">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:38.95" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Кира" lastname="Шевалдина" birthdate="2016-01-29" gender="F"  nation="RUS" license="III" athleteid="3443">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3982" daytime="11:43" name="Заплыв 4" number="4" order="4">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:40.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Алиса" lastname="Загородникова" birthdate="2015-03-15" gender="F"  nation="RUS" license="IIюн" athleteid="3541">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:40.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Есения" lastname="Пшеничкина" birthdate="2017-05-26" gender="F"  nation="RUS" license="IIюн" athleteid="3500">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:44.00" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Злата" lastname="Крятова" birthdate="2016-04-26" gender="F"  nation="RUS" license="IIюн" athleteid="3238">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:42.70" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Александра" lastname="Семендяева" birthdate="2017-11-28" gender="F"  nation="RUS" license="IIюн" athleteid="3342">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:44.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Мирослава" lastname="Сараева" birthdate="2014-11-20" gender="F"  nation="RUS" license="IIюн" athleteid="3537">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3983" daytime="11:45" name="Заплыв 5" number="5" order="5">
+          <ENTRIES>
+            <ENTRY lane="1" entrytime="00:00:57.06" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Елизавета" lastname="Черникова" birthdate="2015-05-04" gender="F"  nation="RUS" license="III" athleteid="3301">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:45.00" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Валерия" lastname="Артëмова" birthdate="2016-09-16" gender="F"  nation="RUS" license="Iюн" athleteid="3329">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:50.30" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Ангелина" lastname="Алхимова" birthdate="2011-01-17" gender="F"  nation="RUS" license="IIюн" athleteid="3391">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:45.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Александра" lastname="Бояринова" birthdate="2015-10-03" gender="F"  nation="RUS" license="Iюн" athleteid="3563">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:57.00" clubname="Hydro Hooligans" code="ПОДОЛЬСК">
+              <ATHLETE firstname="Мария" lastname="Бернова" birthdate="2018-01-11" gender="F"  nation="RUS" athleteid="3197">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1082" daytime="11:47" gender="M" number="12" order="24" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="FREE" />
+      <HEATS>
+        <HEAT heatid="3984" daytime="11:47" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:26.00" clubname="Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Иван" lastname="Чуркин" birthdate="2010-02-26" gender="M"  nation="RUS" license="II" athleteid="3248">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:27.01" clubname="Рязань" code="РЯЗАНЬ">
+              <ATHLETE firstname="Ярослав" lastname="Аленин" birthdate="2012-06-14" gender="M"  nation="RUS" license="II" athleteid="3487">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:27.50" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Валентин" lastname="Тимаков" birthdate="2012-07-17" gender="M"  nation="RUS" license="II" athleteid="3591">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:29.00" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Артём" lastname="Туменко" birthdate="2010-06-08" gender="M"  nation="RUS" license="II" athleteid="3532">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:28.50" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Иван" lastname="Галкин" birthdate="2013-07-27" gender="M"  nation="RUS" license="II" athleteid="3278">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:29.00" clubname="Сергиев Посад" code="С.ПОСАД">
+              <ATHLETE firstname="Максим" lastname="Контанистов" birthdate="2010-07-22" gender="M"  nation="RUS" license="III" athleteid="3496">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3985" daytime="11:48" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:00:30.00" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Дмитрий" lastname="Полищук" birthdate="2014-03-29" gender="M"  nation="RUS" license="II" athleteid="3325">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:31.00" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Матвей" lastname="Коростелев" birthdate="2013-03-12" gender="M"  nation="RUS" license="III" athleteid="3519">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:29.30" clubname="ШП NeoSwim (П. Посад)" code="ПАВЛОВСК.П">
+              <ATHLETE firstname="Андрей" lastname="Лысов" birthdate="2011-10-29" gender="M"  nation="RUS" license="Iюн" athleteid="3550">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:32.00" clubname="Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Илья" lastname="Чуркин" birthdate="2014-02-04" gender="M"  nation="RUS" license="Iюн" athleteid="3251">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:31.78" clubname="СШ &quot;Время первых&quot; Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Егор" lastname="Папулов" birthdate="2011-07-27" gender="M"  nation="RUS" license="Iюн" athleteid="3505">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:32.91" clubname="ПЦ &quot;Нептун&quot; Щелково" code="ЩЕЛКОВО">
+              <ATHLETE firstname="Александр" lastname="Кодочигов" birthdate="2015-02-12" gender="M"  nation="RUS" license="Iюн" athleteid="3473">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3986" daytime="11:50" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:33.76" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Никита" lastname="Слобоздин" birthdate="2013-02-26" gender="M"  nation="RUS" license="III" athleteid="3271">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:35.00" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Артём" lastname="Волков" birthdate="2017-03-29" gender="M"  nation="RUS" license="Iюн" athleteid="3455">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:35.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Александр" lastname="Порошин" birthdate="2014-04-05" gender="M"  nation="RUS" license="III" athleteid="3399">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:36.00" clubname="ФК &quot;Одиссея&quot;" code="ВОСКРЕСЕНС">
+              <ATHLETE firstname="Михаил" lastname="Александров" birthdate="2012-09-14" gender="M"  nation="RUS" license="Iюн" athleteid="3545">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:37.22" clubname="Клин" code="КЛИН">
+              <ATHLETE firstname="Антон" lastname="Костриков" birthdate="2016-09-28" gender="M"  nation="RUS" license="IIюн" athleteid="3234">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:37.18" clubname="ПЦ &quot;Нептун&quot; Щелково" code="ЩЕЛКОВО">
+              <ATHLETE firstname="Павел" lastname="Кодочигов" birthdate="2016-06-28" gender="M"  nation="RUS" license="Iюн" athleteid="3477">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3987" daytime="11:52" name="Заплыв 4" number="4" order="4">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:37.24" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Даниэль" lastname="Фазлыев" birthdate="2016-03-10" gender="M"  nation="RUS" license="Iюн" athleteid="3866">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:40.54" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Андрей" lastname="Нырков" birthdate="2015-10-05" gender="M"  nation="RUS" license="IIюн" athleteid="3321">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:39.50" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Даниил" lastname="Власов" birthdate="2016-10-15" gender="M"  nation="RUS" license="IIюн" athleteid="3334">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:41.31" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Дмитрий" lastname="Акинин" birthdate="2017-05-20" gender="M"  nation="RUS" license="IIIюн" athleteid="3459">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:41.68" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Степан" lastname="Якубенко" birthdate="2015-10-23" gender="M"  nation="RUS" license="IIюн" athleteid="3297">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3988" daytime="11:53" name="Заплыв 5" number="5" order="5">
+          <ENTRIES>
+            <ENTRY lane="2" entrytime="00:00:47.00" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Глеб" lastname="Березин" birthdate="2015-07-13" gender="M"  nation="RUS" license="II" athleteid="3863">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:47.27" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Рамазан" lastname="Мусаев" birthdate="2015-06-20" gender="M"  nation="RUS" license="II" athleteid="3306">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:46.72" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Артемий" lastname="Юдин" birthdate="2014-11-19" gender="M"  nation="RUS" license="IIIюн" athleteid="3432">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:45.56" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Дмитрий" lastname="Данилюк" birthdate="2016-10-18" gender="M"  nation="RUS" license="IIIюн" athleteid="3314">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3989" daytime="11:55" name="Заплыв 6" number="6" order="6">
+          <ENTRIES>
+            <ENTRY lane="6" entrytime="NT" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Матвей" lastname="Кошелев" birthdate="2011-07-20" gender="M"  nation="RUS" athleteid="4008">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:55.00" clubname="Долгопрудный" code="ДОЛГОПРУДН">
+              <ATHLETE firstname="Дмитрий" lastname="Куранаков" birthdate="2017-06-06" gender="M"  nation="RUS" license="IIIюн" athleteid="3222">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:55.25" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Роман" lastname="Валиков" birthdate="2017-08-18" gender="M"  nation="RUS" license="IIIюн" athleteid="3375">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:15.00" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Руслан" lastname="Рудак" birthdate="2016-05-26" gender="M"  nation="RUS" athleteid="3317">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="NT" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Михаил" lastname="Паутов" birthdate="2017-11-07" gender="M"  nation="RUS" athleteid="3434">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1084" daytime="11:59" gender="F" number="13" order="27" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+      <HEATS>
+        <HEAT heatid="3991" daytime="11:59" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:37.00" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Ульяна" lastname="Туменко" birthdate="2010-06-08" gender="F"  nation="RUS" license="II" athleteid="3528">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:38.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Нина" lastname="Брусенцова" birthdate="2012-01-27" gender="F"  nation="RUS" license="II" athleteid="3364">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:38.60" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Татьяна" lastname="Чирина" birthdate="2012-01-25" gender="F"  nation="RUS" license="II" athleteid="3353">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:39.00" clubname="Пушкино" code="ПУШКИНО">
+              <ATHLETE firstname="Варвара" lastname="Артамонова" birthdate="2012-01-24" gender="F"  nation="RUS" license="II" athleteid="3468">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:41.00" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Алиса" lastname="Китаева" birthdate="2012-10-20" gender="F"  nation="RUS" license="II" athleteid="3267">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:42.50" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Диана" lastname="Веремчук" birthdate="2013-01-22" gender="F"  nation="RUS" license="III" athleteid="3510">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3992" daytime="12:01" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="2" entrytime="00:00:43.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Дарья" lastname="Ким" birthdate="2015-01-30" gender="F"  nation="RUS" license="II" athleteid="3414">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:43.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Анна" lastname="Власова" birthdate="2012-09-26" gender="F"  nation="RUS" license="III" athleteid="3571">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:43.62" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Ольга" lastname="Шевалдина" birthdate="2011-01-02" gender="F"  nation="RUS" license="II" athleteid="3447">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:43.00" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Марина" lastname="Шалан" birthdate="2015-02-11" gender="F"  nation="RUS" license="III" athleteid="3514">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:46.13" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Кира" lastname="Шевалдина" birthdate="2016-01-29" gender="F"  nation="RUS" license="III" athleteid="3443">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:44.99" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Валерия" lastname="Макоева" birthdate="2012-06-12" gender="F"  nation="RUS" license="III" athleteid="3259">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3993" daytime="12:03" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:46.84" clubname="Подольск" code="ПОДОЛЬСК">
+              <ATHLETE firstname="Мария" lastname="Коваль" birthdate="2013-09-28" gender="F"  nation="RUS" license="Iюн" athleteid="3464">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:49.08" clubname="Железнодорожный" code="ЖЕЛЕЗНОДОР">
+              <ATHLETE firstname="Варвара" lastname="Поспелова" birthdate="2014-04-24" gender="F"  nation="RUS" license="III" athleteid="3229">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:49.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Виктория" lastname="Баркова" birthdate="2013-11-11" gender="F"  nation="RUS" license="Iюн" athleteid="3347">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:50.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Таисия" lastname="Станкова" birthdate="2014-10-12" gender="F"  nation="RUS" license="Iюн" athleteid="3941">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3994" daytime="12:05" name="Заплыв 4" number="4" order="4">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:54.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Александра" lastname="Шабанова" birthdate="2015-04-04" gender="F"  nation="RUS" license="III" athleteid="3584">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:56.00" clubname="ШП SRC (Зеленоград)" code="ЗЕЛЕНОГРАД">
+              <ATHLETE firstname="Александра" lastname="Бояринова" birthdate="2015-10-03" gender="F"  nation="RUS" license="Iюн" athleteid="3563">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:01:02.30" clubname="Москва" status="DSQ" code="МОСКВА">
+              <ATHLETE firstname="Ангелина" lastname="Алхимова" birthdate="2011-01-17" gender="F"  nation="RUS" license="IIюн" athleteid="3391">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1086" daytime="12:07" gender="M" number="14" order="28" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST" />
+      <HEATS>
+        <HEAT heatid="3995" daytime="12:07" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:33.90" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Александр" lastname="Красюк" birthdate="2008-09-06" gender="M"  nation="RUS" license="I" athleteid="3407">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:37.00" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Матвей" lastname="Коростелев" birthdate="2013-03-12" gender="M"  nation="RUS" license="III" athleteid="3519">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:37.00" clubname="Сергиев Посад" code="С.ПОСАД">
+              <ATHLETE firstname="Максим" lastname="Контанистов" birthdate="2010-07-22" gender="M"  nation="RUS" license="III" athleteid="3496">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:36.10" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Дмитрий" lastname="Кузнецов" birthdate="2014-02-06" gender="M"  nation="RUS" license="II" athleteid="3588">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:38.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Павел" lastname="Харин" birthdate="2012-06-02" gender="M"  nation="RUS" license="II" athleteid="3602">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:42.50" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Евгений" lastname="Киричук" birthdate="2015-07-24" gender="M"  nation="RUS" license="Iюн" athleteid="3452">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3996" daytime="12:08" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:00:49.63" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Салимхан" lastname="Мусаев" birthdate="2013-09-02" gender="M"  nation="RUS" license="Iюн" athleteid="3310">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:49.00" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Артём" lastname="Волков" birthdate="2017-03-29" gender="M"  nation="RUS" license="Iюн" athleteid="3455">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:53.00" clubname="СШ &quot;Феникс&quot; (ДС &quot;Восток&quot;)" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Артём" lastname="Грищенков" birthdate="2015-07-09" gender="M"  nation="RUS" license="IIюн" athleteid="3855">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:50.00" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Александр" lastname="Юрченко" birthdate="2015-11-08" gender="M"  nation="RUS" license="Iюн" athleteid="3286">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:58.00" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Глеб" lastname="Березин" birthdate="2015-07-13" gender="M"  nation="RUS" license="II" athleteid="3863">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:56.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Вадим" lastname="Пенкин" birthdate="2017-08-14" gender="M"  nation="RUS" license="IIюн" athleteid="3580">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3997" daytime="12:11" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="6" entrytime="00:01:05.05" clubname="ШП NeoSwim (П. Посад)" code="ПАВЛОВСК.П">
+              <ATHLETE firstname="Егор" lastname="Яшин" birthdate="2014-02-12" gender="M"  nation="RUS" license="IIюн" athleteid="3859">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:58.77" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Рамазан" lastname="Мусаев" birthdate="2015-06-20" gender="M"  nation="RUS" license="II" athleteid="3306">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:58.93" clubname="Орехово-Зуево" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Дмитрий" lastname="Акинин" birthdate="2017-05-20" gender="M"  nation="RUS" license="IIIюн" athleteid="3459">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:58.47" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Дмитрий" lastname="Данилюк" birthdate="2016-10-18" gender="M"  nation="RUS" license="IIIюн" athleteid="3314">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:01:02.04" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Руслан" lastname="Рудак" birthdate="2016-05-26" gender="M"  nation="RUS" athleteid="3317">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:04.50" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" status="DSQ" code="С.ПАСАД">
+              <ATHLETE firstname="Роман" lastname="Валиков" birthdate="2017-08-18" gender="M"  nation="RUS" license="IIIюн" athleteid="3375">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1088" daytime="12:13" gender="F" number="15" order="31" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+      <HEATS>
+        <HEAT heatid="3998" daytime="12:13" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:00:36.74" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Диана" lastname="Чудинова" birthdate="2014-03-05" gender="F"  nation="RUS" license="II" athleteid="3263">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:37.50" clubname="Мытищи Дети воды" code="МЫТИЩИ">
+              <ATHLETE firstname="Евгения" lastname="Шевалдина" birthdate="2012-09-15" gender="F"  nation="RUS" license="II" athleteid="3438">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:36.48" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Полина" lastname="Фомина" birthdate="2010-09-19" gender="F"  nation="RUS" license="II" athleteid="3361">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:37.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Нина" lastname="Брусенцова" birthdate="2012-01-27" gender="F"  nation="RUS" license="II" athleteid="3364">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:38.50" clubname="СШ &quot;Орион&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Диана" lastname="Веремчук" birthdate="2013-01-22" gender="F"  nation="RUS" license="III" athleteid="3510">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:38.50" clubname="Балашиха" code="БАЛАШИХА">
+              <ATHLETE firstname="Анна" lastname="Зимина" birthdate="2013-11-14" gender="F"  nation="RUS" license="III" athleteid="3926">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="3999" daytime="12:14" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:39.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Лидия" lastname="Гайдамащук" birthdate="2014-07-01" gender="F"  nation="RUS" license="III" athleteid="3598">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:41.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Арина" lastname="Прасковина" birthdate="2015-09-30" gender="F"  nation="RUS" license="III" athleteid="3852">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:39.80" clubname="Бронницы" code="БРОННИЦЫ">
+              <ATHLETE firstname="Юлия" lastname="Козлова" birthdate="2015-09-22" gender="F"  nation="RUS" license="III" athleteid="3217">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:40.00" clubname="СШОР по ВВС Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Виктория" lastname="Харина" birthdate="2016-07-22" gender="F"  nation="RUS" license="III" athleteid="3523">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:40.24" clubname="МАУ ДО СШ &quot;Химки&quot;" code="ХИМКИ">
+              <ATHLETE firstname="Валерия" lastname="Макоева" birthdate="2012-06-12" gender="F"  nation="RUS" license="III" athleteid="3259">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:46.00" clubname="МБУ ДО СШ &quot;Центр&quot; (С. Посад)" code="С.ПАСАД">
+              <ATHLETE firstname="Надежда" lastname="Шаповалова" birthdate="2017-06-28" gender="F"  nation="RUS" license="Iюн" athleteid="3357">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="4000" daytime="12:16" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:50.00" clubname="СШОР «Бригантина» (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Полина" lastname="Леонова" birthdate="2015-06-23" gender="F"  nation="RUS" license="Iюн" athleteid="3937">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:51.37" clubname="МБУ ДО СШ &quot;Олимп&quot; Фрязино" code="ФРЯЗИНО">
+              <ATHLETE firstname="Александра" lastname="Семендяева" birthdate="2017-11-28" gender="F"  nation="RUS" license="IIюн" athleteid="3342">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:01:00.00" clubname="Hydro Hooligans" code="ПОДОЛЬСК">
+              <ATHLETE firstname="Мария" lastname="Бернова" birthdate="2018-01-11" gender="F"  nation="RUS" athleteid="3197">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+    <EVENT eventid="1090" daytime="12:18" gender="M" number="16" order="32" round="TIM" status="SEEDED" date="2026-01-17">
+      <SWIMSTYLE distance="50" relaycount="1" stroke="BACK" />
+      <HEATS>
+        <HEAT heatid="4001" daytime="12:18" name="Заплыв 1" number="1" order="1">
+          <ENTRIES>
+            <ENTRY lane="4" entrytime="00:00:31.91" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Лев" lastname="Бурмистров" birthdate="2011-04-12" gender="M"  nation="RUS" license="II" athleteid="3275">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:32.21" clubname="МАУ ДО СШОР по плаванию (Мытищи)" code="МЫТИЩИ">
+              <ATHLETE firstname="Иван" lastname="Галкин" birthdate="2013-07-27" gender="M"  nation="RUS" license="II" athleteid="3278">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:32.00" clubname="Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Денис" lastname="Адовский" birthdate="2011-04-07" gender="M"  nation="RUS" license="II" athleteid="3254">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:00:30.50" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Вадим" lastname="Зубарев" birthdate="2011-09-08" gender="M"  nation="RUS" license="II" athleteid="3428">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:32.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Степан" lastname="Силин" birthdate="2012-09-24" gender="M"  nation="RUS" license="II" athleteid="3610">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:33.33" clubname="ФК &quot;Нептун&quot; (Балашиха)" code="БАЛАШИХА">
+              <ATHLETE firstname="Артём" lastname="Туменко" birthdate="2010-06-08" gender="M"  nation="RUS" license="II" athleteid="3532">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="4002" daytime="12:20" name="Заплыв 2" number="2" order="2">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:33.50" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Дмитрий" lastname="Полищук" birthdate="2014-03-29" gender="M"  nation="RUS" license="II" athleteid="3325">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:36.50" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Арсений" lastname="Калабзин" birthdate="2012-05-22" gender="M"  nation="RUS" license="II" athleteid="3606">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:36.08" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Лев" lastname="Лубов" birthdate="2013-03-14" gender="M"  nation="RUS" license="III" athleteid="3395">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:39.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Павел" lastname="Пенкин" birthdate="2015-06-12" gender="M"  nation="RUS" license="III" athleteid="3576">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="5" entrytime="00:00:36.87" clubname="СШ &quot;Время первых&quot; Королев" code="КОРОЛЕВ">
+              <ATHLETE firstname="Егор" lastname="Папулов" birthdate="2011-07-27" gender="M"  nation="RUS" license="Iюн" athleteid="3505">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:39.00" clubname="Москва" code="МОСКВА">
+              <ATHLETE firstname="Александр" lastname="Порошин" birthdate="2014-04-05" gender="M"  nation="RUS" license="III" athleteid="3399">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="4003" daytime="12:22" name="Заплыв 3" number="3" order="3">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:44.00" clubname="СШ &quot;Феникс&quot; (ДС &quot;Восток&quot;)" code="ОРЕХ-ЗУЕВ0">
+              <ATHLETE firstname="Артём" lastname="Грищенков" birthdate="2015-07-09" gender="M"  nation="RUS" license="IIюн" athleteid="3855">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="1" entrytime="00:00:49.45" clubname="ШП NeoSwim (П. Посад)" code="ПАВЛОВСК.П">
+              <ATHLETE firstname="Егор" lastname="Яшин" birthdate="2014-02-12" gender="M"  nation="RUS" license="IIюн" athleteid="3859">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="2" entrytime="00:00:47.58" clubname="МБУ ДО &quot;СШ&quot; г.о. Пушкинский" code="ПУШКИНО">
+              <ATHLETE firstname="Андрей" lastname="Нырков" birthdate="2015-10-05" gender="M"  nation="RUS" license="IIюн" athleteid="3321">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="6" entrytime="00:00:50.55" clubname="МБОУ &quot;Лицей № 34&quot; корп.2" code="МЫТИЩИ ">
+              <ATHLETE firstname="Рамазан" lastname="Мусаев" birthdate="2015-06-20" gender="M"  nation="RUS" license="II" athleteid="3306">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="4004" daytime="12:23" name="Заплыв 4" number="4" order="4">
+          <ENTRIES>
+            <ENTRY lane="3" entrytime="00:00:51.00" clubname="СШОР Электросталь" code="ЭЛЕКТРОСТА">
+              <ATHLETE firstname="Вадим" lastname="Пенкин" birthdate="2017-08-14" gender="M"  nation="RUS" license="IIюн" athleteid="3580">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="00:00:57.00" clubname="Долгопрудный" code="ДОЛГОПРУДН">
+              <ATHLETE firstname="Дмитрий" lastname="Куранаков" birthdate="2017-06-06" gender="M"  nation="RUS" license="IIIюн" athleteid="3222">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+        <HEAT heatid="4005" daytime="12:26" name="Заплыв 5" number="5" order="5">
+          <ENTRIES>
+            <ENTRY lane="2" entrytime="NT" clubname="ШП NeoSwim (П. Посад)" code="ПАВЛОВСК.П">
+              <ATHLETE firstname="Андрей" lastname="Лысов" birthdate="2011-10-29" gender="M"  nation="RUS" license="Iюн" athleteid="3550">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="4" entrytime="NT" clubname="РСШОР Акватика (Казань)" code="КАЗАНЬ">
+              <ATHLETE firstname="Александр" lastname="Абросимов" birthdate="2017-07-27" gender="M"  nation="RUS" license="IIюн" athleteid="3482">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+            <ENTRY lane="3" entrytime="00:01:10.00" clubname="Мытищи" code="МЫТИЩИ">
+              <ATHLETE firstname="Михаил" lastname="Паутов" birthdate="2017-11-07" gender="M"  nation="RUS" athleteid="3434">
+                <HANDICAP />
+              </ATHLETE>
+            </ENTRY>
+          </ENTRIES>
+        </HEAT>
+      </HEATS>
+    </EVENT>
+  </EVENTS>
+</STARTLIST>

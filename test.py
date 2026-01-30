@@ -2,6 +2,7 @@ from pathlib import Path
 from lenexpy import fromfile, tofile
 from lenexpy.models.heat import Heat
 from lenexpy.models.meet import Meet
+from lenexpy.models.startlist import StartList
 
 
 filename = r"C:\Users\2008d\working-space\LenexPy\meet.xml"
@@ -13,3 +14,9 @@ filename = r"C:\Users\2008d\working-space\LenexPy\heat.xml"
 path = Path(filename)
 with open(path, "rb") as file:
     heat = Heat.from_xml(file.read())
+
+filename = r"C:\Users\2008d\working-space\LenexPy\starlist.xml"
+path = Path(filename)
+with open(path, "rb") as file:
+    startlist = StartList.from_xml(file.read())
+    print(startlist)
