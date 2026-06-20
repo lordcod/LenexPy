@@ -38,7 +38,7 @@ class LenexBaseXmlModel(BaseXmlModel):
 
     model_config = ConfigDict(
         arbitrary_types_allowed=False,
-        extra="forbid",
+        extra="ignore",
     )
     __xml_search_mode__ = SearchMode.UNORDERED
 

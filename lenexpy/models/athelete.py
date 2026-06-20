@@ -34,6 +34,7 @@ class Athlete(LenexBaseXmlModel, tag="ATHLETE"):
     sdmsid: Optional[int] = attr(name="sdmsid", default=None)
     birthdate: Optional[date] = attr(name="birthdate", default=None)
     firstname: Optional[str] = attr(name="firstname", default=None)
+    middlename: Optional[str] = attr(name="middlename", default=None)
     firstname_en: Optional[str] = attr(name="firstname.en", default=None)
     gender: Gender = attr(name="gender", default="")
     club: Optional[Club] = element(name="CLUB", default=None)

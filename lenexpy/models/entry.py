@@ -29,6 +29,7 @@ class Status(StrEnum):
 class Entry(LenexBaseXmlModel, tag="ENTRY"):
     agegroupid: Optional[int] = attr(name="agegroupid", default=None)
     athlete: Optional[Athlete] = element(tag="ATHLETE", default=None)
+    bonus: Optional[str] = attr(name="bonus", default=None)
     clubname: Optional[str] = attr(name="clubname", default=None)
     code: Optional[str] = attr(name="code", default=None)
     entrycourse: Optional[Course] = attr(name="entrycourse", default=None)
