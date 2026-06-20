@@ -52,6 +52,7 @@ def bootstrap_models() -> None:
     from .handicap import Handicap
     from .meetinfoentry import MeetInfoEntry
     from .meetinforecord import MeetInfoRecord
+    from .coach import Coach
 
     ns = {
         "Lenex": Lenex,
@@ -89,6 +90,7 @@ def bootstrap_models() -> None:
         "Handicap": Handicap,
         "MeetInfoEntry": MeetInfoEntry,
         "MeetInfoRecord": MeetInfoRecord,
+        "Coach": Coach
     }
 
     # Главная часть: rebuild корневой модели (она должна получить __xml_serializer__)
