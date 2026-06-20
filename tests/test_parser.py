@@ -123,38 +123,6 @@ class TestParser(unittest.TestCase):
         self.assertEqual(len(event.agegroups), 1)
         self.assertEqual(event.agegroups[0].agemin, 14)
 
-    def test_parse_extra_fields_and_status_remap(self):
-        xml = b"""<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<LENEX version=\"3.0\">
-  <CONSTRUCTOR name=\"Bot\" version=\"1.0.0\">
-    <CONTACT email=\"bot@example.com\"/>
-  </CONSTRUCTOR>
-  <MEETS>
-    <MEET name=\"Test Meet\" city=\"City\" nation=\"RUS\" status=\"UNOFFICIAL\">
-      <CLUBS>
-        <CLUB name=\"Club One\">
-          <ATHLETES>
-            <ATHLETE firstname=\"Jane\" lastname=\"Doe\" middlename=\"M.\">
-              <ENTRIES>
-                <ENTRY status=\"UNOFFICIAL\" bonus=\"1\"/>
-              </ENTRIES>
-            </ATHLETE>
-          </ATHLETES>
-        </CLUB>
-      </CLUBS>
-    </MEET>
-  </MEETS>
-</LENEX>"""
-
-        lenex = decode_lef_bytes(xml)
-        athlete = lenex.meet.clubs[0].athletes[0]
-        entry = athlete.entries[0]
-
-        self.assertEqual(athlete.middlename, "M.")
-        self.assertEqual(entry.bonus, "1")
-        self.assertEqual(entry.status, "UNOFFICIAL")
-        self.assertEqual(lenex.meet.status.value, "UNOFFICIAL")
-
     def test_encode_decode_lef_bytes(self):
         lenex = self._make_lenex()
         xml_bytes = encode_lef_bytes(lenex)

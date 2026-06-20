@@ -9,6 +9,7 @@ from .official import Official
 from .relaymeet import RelayMeet
 from .contact import Contact
 from .athelete import Athlete
+from .coach import Coach
 
 
 class TypeClub(StrEnum):
@@ -25,6 +26,11 @@ class Club(LenexBaseXmlModel, tag="CLUB"):
     athletes: List[Athlete] = wrapped(
         "ATHLETES",
         element(tag="ATHLETE"),
+        default_factory=list,
+    )
+    coaches: List[Coach] = wrapped(
+        "COACHES",
+        element(tag="COACH"),
         default_factory=list,
     )
     name: Optional[str] = attr(name="name", default=None)
