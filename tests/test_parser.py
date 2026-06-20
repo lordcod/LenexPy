@@ -1,13 +1,18 @@
 import json
 import tempfile
 import unittest
+import warnings
 from datetime import datetime
+
+from pydantic import ConfigDict
+from pydantic_xml import attr
 
 from lenexpy import tofile
 from lenexpy.decoder.lef_decoder import decode_lef_bytes
 from lenexpy.decoder.lef_encoder import encode_lef_bytes
 from lenexpy.decoder.lxf_decoder import decode_lxf_bytes
 from lenexpy.decoder.lxf_encoder import encode_lxf_bytes
+from lenexpy.models.base import LenexBaseXmlModel
 from lenexpy.models.contact import Contact
 from lenexpy.models.constructor import Constructor
 from lenexpy.models.event import Event
@@ -122,6 +127,28 @@ class TestParser(unittest.TestCase):
         self.assertEqual(event.swimstyle.stroke, "FREE")
         self.assertEqual(len(event.agegroups), 1)
         self.assertEqual(event.agegroups[0].agemin, 14)
+
+    def test_from_xml_warns_and_ignores_extra_forbidden_attributes(self):
+        class ForcedExtraModel(LenexBaseXmlModel, tag="ROOT"):
+            model_config = ConfigDict(extra="forbid")
+            name: str = attr(name="name")
+            value: int = attr(name="value", default=0)
+
+        payload = '<ROOT name="ok" value="7" extra="ignore-me" />'
+
+        with warnings.catch_warnings(record=True) as caught:
+            warnings.simplefilter("always")
+            parsed = ForcedExtraModel.from_xml(payload)
+
+        self.assertEqual(parsed.name, "ok")
+        self.assertEqual(parsed.value, 7)
+        self.assertTrue(
+            any(
+                "extra" in str(w.message).lower()
+                and "ignore" in str(w.message).lower()
+                for w in caught
+            )
+        )
 
     def test_encode_decode_lef_bytes(self):
         lenex = self._make_lenex()

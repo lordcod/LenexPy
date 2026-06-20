@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+import warnings
 from datetime import time as dtime
 from typing import Any
 
-from pydantic import ConfigDict, model_validator, model_serializer
+from pydantic import ConfigDict, ValidationError, model_serializer, model_validator
 from pydantic_xml import BaseXmlModel
 from pydantic_xml.model import SearchMode
 
@@ -28,19 +29,39 @@ def _convert_times(obj: Any) -> Any:
 
 
 class LenexBaseXmlModel(BaseXmlModel):
-    # ! DEV VERSION ! #
-    # model_config = ConfigDict(
-    #     arbitrary_types_allowed=True,
-    #     extra="allow",
-    #     protected_namespaces=(),
-    #     search_mode="unordered",
-    # )
-
     model_config = ConfigDict(
         arbitrary_types_allowed=False,
         extra="ignore",
     )
     __xml_search_mode__ = SearchMode.UNORDERED
+
+    @classmethod
+    def _contains_extra_forbidden(cls, exc: ValidationError) -> bool:
+        return any(error.get("type") == "extra_forbidden" for error in exc.errors())
+
+    @classmethod
+    def _from_xml_with_extra_ignored(cls, source: Any, **kwargs):
+        original_extra = cls.model_config.get("extra")
+        cls.model_config["extra"] = "ignore"
+        try:
+            return super(LenexBaseXmlModel, cls).from_xml(source, **kwargs)
+        finally:
+            cls.model_config["extra"] = original_extra
+
+    @classmethod
+    def from_xml(cls, source: Any, **kwargs):
+        try:
+            return super(LenexBaseXmlModel, cls).from_xml(source, **kwargs)
+        except ValidationError as exc:
+            if not cls._contains_extra_forbidden(exc):
+                raise
+
+            warnings.warn(
+                f"Ignoring extra XML fields while parsing {cls.__name__}: {exc}",
+                UserWarning,
+                stacklevel=2,
+            )
+            return cls._from_xml_with_extra_ignored(source, **kwargs)
 
     @model_validator(mode="before")
     @classmethod
