@@ -24,8 +24,10 @@ class TestParser(unittest.TestCase):
         constructor = Constructor(name="Bot", version="1.0.0", contact=contact)
         swimstyle = SwimStyle(distance=50, relaycount=1, stroke="FREE")
         event = Event(eventid=1, number=1, swimstyle=swimstyle)
-        session = Session(number=1, date=datetime.fromisoformat("2025-01-01T00:00:00"), events=[event])
-        meet = Meet(name="Test Meet", city="City", nation="RUS", sessions=[session])
+        session = Session(number=1, date=datetime.fromisoformat(
+            "2025-01-01T00:00:00"), events=[event])
+        meet = Meet(name="Test Meet", city="City",
+                    nation="RUS", sessions=[session])
         return Lenex(constructor=constructor, meet=meet, version="3.0")
 
     def test_parse_minimal_lenex(self):
@@ -120,6 +122,29 @@ class TestParser(unittest.TestCase):
         self.assertEqual(event.swimstyle.stroke, "FREE")
         self.assertEqual(len(event.agegroups), 1)
         self.assertEqual(event.agegroups[0].agemin, 14)
+
+    def test_parse_club_coaches(self):
+        xml = b"""<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<LENEX version=\"3.0\">
+  <CONSTRUCTOR name=\"Bot\" version=\"1.0.0\">
+    <CONTACT email=\"bot@example.com\"/>
+  </CONSTRUCTOR>
+  <MEETS>
+    <MEET name=\"Test Meet\" city=\"City\" nation=\"RUS\">
+      <CLUBS>
+        <CLUB name=\"Club One\">
+          <COACHES>
+            <COACH firstname=\"Jane\" lastname=\"Doe\"/>
+          </COACHES>
+        </CLUB>
+      </CLUBS>
+    </MEET>
+  </MEETS>
+</LENEX>"""
+
+        lenex = decode_lef_bytes(xml)
+        self.assertEqual(lenex.meet.clubs[0].coaches[0].firstname, "Jane")
+        self.assertEqual(lenex.meet.clubs[0].coaches[0].lastname, "Doe")
 
     def test_encode_decode_lef_bytes(self):
         lenex = self._make_lenex()
